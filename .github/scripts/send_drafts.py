@@ -36,19 +36,30 @@ def send(token: str, chat_id: str, text: str) -> dict:
         return json.load(response)
 
 
+def notify_failure(token: str, chat_id: str, message: str) -> None:
+    """Сообщает о поломке в тот же чат, чтобы сбой не выглядел как тишина."""
+    try:
+        send(token, chat_id, f"⚠️ Утренняя сводка не опубликовалась: {message}")
+        print("Уведомление о сбое отправлено в Telegram")
+    except Exception as error:  # noqa: BLE001 - уведомление не должно ронять скрипт
+        print(f"Не удалось отправить уведомление о сбое: {error}")
+
+
 def main() -> int:
     token = os.environ["TELEGRAM_BOT_TOKEN"]
     chat_id = os.environ["TELEGRAM_CHAT_ID"]
 
     if not os.path.exists(DRAFTS_FILE):
         print(f"{DRAFTS_FILE} не найден, публиковать нечего")
-        return 0
+        notify_failure(token, chat_id, f"файл {DRAFTS_FILE} не найден")
+        return 1
 
     with open(DRAFTS_FILE, encoding="utf-8") as f:
         posts = extract_posts(f.read())
 
     if not posts:
         print(f"В {DRAFTS_FILE} нет блоков с постами (тройные обратные кавычки)")
+        notify_failure(token, chat_id, "в файле черновиков нет готовых постов")
         return 1
 
     failed = 0
@@ -64,6 +75,7 @@ def main() -> int:
 
     if failed:
         print(f"Не отправлено постов: {failed} из {len(posts)}")
+        notify_failure(token, chat_id, f"{failed} из {len(posts)} постов не прошли (ошибка Telegram)")
         return 1
 
     print(f"Готово, отправлено постов: {len(posts)}")
