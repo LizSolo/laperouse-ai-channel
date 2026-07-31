@@ -1,0 +1,21 @@
+name: Publish editor review to Telegram
+
+on:
+  push:
+    paths:
+      - REVIEW.md
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Send editor review to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SOURCE_FILE: REVIEW.md
+          WHAT: Проверка редактора
+        run: python3 .github/scripts/send_drafts.py

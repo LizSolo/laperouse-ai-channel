@@ -12,7 +12,8 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-DRAFTS_FILE = "DRAFTS.md"
+DRAFTS_FILE = os.environ.get("SOURCE_FILE", "DRAFTS.md")
+WHAT = os.environ.get("WHAT", "Утренняя сводка")
 
 
 def extract_posts(markdown: str) -> list[str]:
@@ -39,7 +40,7 @@ def send(token: str, chat_id: str, text: str) -> dict:
 def notify_failure(token: str, chat_id: str, message: str) -> None:
     """Сообщает о поломке в тот же чат, чтобы сбой не выглядел как тишина."""
     try:
-        send(token, chat_id, f"⚠️ Утренняя сводка не опубликовалась: {message}")
+        send(token, chat_id, f"⚠️ {WHAT} не опубликована: {message}")
         print("Уведомление о сбое отправлено в Telegram")
     except Exception as error:  # noqa: BLE001 - уведомление не должно ронять скрипт
         print(f"Не удалось отправить уведомление о сбое: {error}")
