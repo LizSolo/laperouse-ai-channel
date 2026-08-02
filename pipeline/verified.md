@@ -1,46 +1,74 @@
-# Проверенные факты — черновики за 2026-08-01
+# Проверенные факты — черновики за 2026-08-02
 
 ## Ограничение окружения (важно для редактора)
 
-В этой сессии инструмент WebFetch и прямой curl к любым внешним хостам (включая anthropic.com, openai.com, example.com, google.com) возвращают 403 от прокси окружения — `curl -sS "$HTTPS_PROXY/__agentproxy/status"` показывает `recentRelayFailures` с `"gateway answered 403 to CONNECT (policy denial or upstream failure)"` для всех проверенных хостов без исключения. Это сетевая политика окружения (см. `/root/.ccr/README.md`: "403/407 from the proxy... do not retry or route around it"), не сбой конкретного сайта. WebSearch при этом работает нормально.
+В этой сессии `WebFetch` и прямой `curl` к внешним хостам (включая techcrunch.com) возвращают 403 от прокси окружения — подтверждено повторно (см. также запись в NOTES.md за 2026-08-01). `WebSearch` работает нормально. Факты ниже проверены перекрёстно через WebSearch по 8-10 независимым публикациям на каждую новость (включая официальные пресс-релизы/newsroom компаний) — цифры совпадают дословно, расхождений не найдено.
 
-Из-за этого факты ниже проверены НЕ прямым открытием первоисточника через WebFetch (как требует обычный процесс), а перекрёстной проверкой через WebSearch по 8+ независимым публикациям одной и той же новости (включая пресс-релиз компании через BusinessWire/PR Newswire, TechCrunch, Yahoo Finance, citybiz, SiliconANGLE, TheAIInsider, DealStreetAsia, Whalesbook) — цифры совпадают дословно во всех источниках, расхождений не найдено.
+---
 
-## Новость: Emergent — раунд Series C, $130 млн, оценка $1,5 млрд
+## Новость 1: Zoom Virtual Agent Receptionist — отдельный ИИ-ресепшн для любой телефонии
 
-Основной источник (официальный пресс-релиз компании через BusinessWire):
-https://www.businesswire.com/news/home/20260715082819/en/Emergent-Raises-Series-C-at-$1.5B-Valuation-to-Help-Entrepreneurs-and-SMBs-Build-the-Software-Their-Businesses-Run-On
+Источник-первоисточник (официальный newsroom Zoom):
+https://news.zoom.com/standalone-zoom-virtual-agent-receptionist/
+
+Официальный пресс-релиз (GlobeNewswire):
+https://www.globenewswire.com/news-release/2026/07/09/3324818/0/en/Deploy-Zoom-Virtual-Agent-Receptionist-across-any-telephony-environment.html
 
 Подтверждающие независимые источники:
-- https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/
-- https://www.citybiz.co/article/874754/emergent-raises-130-million-series-c-at-1-5-billion-valuation/
-- https://theaiinsider.tech/2026/07/28/emergent-closes-series-c-at-1-5b-valuation-becomes-unicorn-in-a-year-of-launch/
-- https://siliconangle.com/2026/07/15/emergent-emerges-latest-ai-unicorn-raising-130m-funding/
-- https://finance.yahoo.com/technology/ai/articles/emergent-raises-series-c-1-140800576.html
-- https://www.dealstreetasia.com/stories/emergent-unicorn-489228
+- https://www.streetinsider.com/Corporate+News/Zoom+offers+standalone+AI+receptionist+for+any+phone+system/26751108.html
+- https://www.stocktitan.net/news/ZM/deploy-zoom-virtual-agent-receptionist-across-any-telephony-bz9q9nkrvthn.html
+- https://finance.yahoo.com/technology/ai/articles/deploy-zoom-virtual-agent-receptionist-130000346.html
+- https://telecomreseller.com/2026/07/10/deploy-zoom-virtual-agent-receptionist-across-any-telephony-environment/
+- https://www.cxtoday.com/ai-automation-in-cx/zoom-virtual-agent-receptionist-standalone/
+- https://cxm.world/customer-experience/zoom-ai-receptionist-standalone/
 
 Проверенные факты (совпадают во всех источниках):
-- Компания: Emergent (emergent.sh) — платформа "vibe coding": строит рабочие приложения по текстовому описанию, без написания кода.
-- Раунд Series C: $130 млн, оценка $1,5 млрд.
-- Раунд объявлен ~15 июля 2026, примерно через год после публичного запуска сервиса.
-- Лид раунда: фонд Creaegis. Также участвовали Claypond, Sentinel Global и действующие инвесторы Khosla Ventures, SoftBank Vision Fund 2, Lightspeed, Y Combinator.
-- Общая сумма привлечённых инвестиций компании (с учётом всех раундов): $230 млн.
-- Больше 200 000 платящих клиентов.
-- Месячная активная аудитория: 1,5–2 млн пользователей (используется как справочный факт, в пост не включён).
-- ARR (годовой регулярный доход): $120 млн (используется как справочный факт, в пост не включён).
-- За год на платформе создано больше 12 млн приложений.
-- Основная аудитория: предприниматели и владельцы малого бизнеса без технического опыта (по данным источников — большинство пользователей).
-- Типичные приложения, которые строят пользователи: CRM, ERP/складской учёт, логистические инструменты, маркетплейсы.
-- Платформа автоматически разворачивает весь стек: фронтенд, бэкенд, сервер, авторизацию пользователей, приём платежей.
+- Компания: Zoom. Продукт: Zoom Virtual Agent (ZVA) Receptionist — теперь доступен как отдельный продукт.
+- Объявлено 9 июля 2026.
+- Главное изменение: раньше работал только внутри Zoom Phone, теперь подключается к ЛЮБОЙ телефонной системе — Cisco, Avaya, RingCentral и другим, без перехода на Zoom Phone.
+- Функции: отвечает и приветствует звонящих разговорным ИИ, отвечает на частые вопросы, живая расшифровка звонков (транскрипция), запись на приём/встречу (appointment scheduling), интеллектуальная маршрутизация звонков, переключение на живого человека при необходимости, работает в нерабочие часы (24/7).
+- Поддержка 10+ языков (английский, испанский, французский, немецкий, португальский, японский и другие — с первого дня).
+- Цена: от $29.99 в месяц за 100 минут при помесячной оплате, $24.99 в месяц за 100 минут при годовой оплате.
+- Есть бесплатный пробный период (free trial) для новых и существующих клиентов Zoom.
+- Русский язык в списке поддерживаемых на момент запуска не упомянут ни в одном источнике — в пост это не включено как утверждение "работает на русском".
 
-## Дополнительно проверено: доступ к Emergent из России
+## Дополнительно проверено: российские аналоги (для контекста, общий факт без деталей тарифов)
 
-Источники (WebSearch, независимые):
-- https://dtf.ru/howto/4119430-kak-oplatit-emergent-v-rossii-i-belarusi-cherez-payholder
-- https://foreignpay.ru/products/business/Emergent
+Источники (WebSearch, официальные сайты компаний):
+- https://moscow.megafon.ru/corporate/services/golosovoy_robot (МегаФон — голосовой робот для бизнеса)
+- https://business.mts.ru/moskva/golosovoj-robot (МТС Бизнес — голосовой робот)
+- https://www.mango-office.ru/products/contact-center/ai/voice-robot/ (Mango Office — голосовой робот, интеграции с CRM/1С)
 
-Факт: Emergent принимает оплату через Stripe (международные карты). Прямая оплата российской картой недоступна из-за санкционных ограничений — используются посредники/иностранные карты, как и у большинства подобных зарубежных сервисов.
+Факт: голосовые ИИ-роботы для обработки звонков бизнеса — существующая категория продуктов и у российских операторов/платформ (МегаФон, МТС Бизнес, Mango Office). В пост включён только сам факт существования категории на российском рынке, без конкретных цен (не проверялись детально).
 
-## Названия/цифры, использованные в посте — все присутствуют выше
+---
 
-Emergent, Creaegis, Khosla Ventures, SoftBank Vision Fund 2, Lightspeed, Y Combinator, $130 млн, $1,5 млрд, ~1 год с запуска, 200 000 клиентов, 12 млн приложений, оплата из России через иностранную карту/посредника.
+## Новость 2: Inforcer — раунд $50 млн, ИИ-риски и Shadow AI для малого бизнеса через MSP
+
+Источник (TechCrunch, обнаружен через WebSearch — прямой WebFetch на techcrunch.com заблокирован окружением, см. выше):
+https://techcrunch.com/2026/07/30/inforcer-raises-50m-to-help-prepare-smbs-for-a-new-world-of-ai-and-security-risks/
+
+Подтверждающие независимые источники:
+- https://tech.eu/2026/07/30/inforcer-raises-50m-series-c-to-scale-ai-security-platform-for-msps/
+- https://uk.finance.yahoo.com/news/inforcer-raises-50m-help-prepare-130000549.html
+- https://app.dealroom.co/news/note/inforcer-raises-50m-series-c-led-by-insight-partners-to-arm-msps-against-ai-threats
+- https://www.startupmag.co.uk/funding/inforcer-2026-series-c-funding/
+- https://www.thesaasnews.com/news/inforcer-raises-50m-series-c/
+- https://www.saasrise.com/deals/inforcer-raises-50m-series-c-to-scale-ai-security-platform-for-msps-9a4da560-ffd8-44dd-92a0-3b2626bec958
+- https://x.com/TradedVC/status/2082912448944697614 (co-founder/CEO quote)
+
+Проверенные факты (совпадают во всех источниках):
+- Компания: Inforcer, Лондон. Платформа для MSP (managed service providers — компании, которые обслуживают ИТ малого и среднего бизнеса на аутсорсе) для управления безопасностью Microsoft 365 и теперь ИИ-рисками клиентов из одной консоли.
+- Раунд объявлен 30 июля 2026: Series C, $50 млн, лид — фонд Insight Partners (также участвовали Dawn Capital и Meritech Capital).
+- Всего компания привлекла $110 млн за три раунда за 18 месяцев.
+- Рост бизнеса 300% год к году, оценка компании удвоилась между Series B и C (со слов CEO для TechCrunch).
+- CEO и сооснователь — Jamie Daum.
+- Новые функции платформы: Copilot Manager, Shadow AI detection (обнаружение несанкционированного использования ИИ-инструментов на рабочих устройствах), Threat Detection & Response (TDR).
+- Контекст рынка (упоминается в источниках как причина спроса): у большинства малых компаний нет своего ИТ-отдела, поэтому эту функцию для них выполняют MSP; риск в том, что сотрудники пользуются личными аккаунтами ChatGPT/Claude и подобных инструментов для рабочих задач без контроля компании, и туда может попадать конфиденциальная информация.
+- Общая статистика по shadow AI (используется как фоновый контекст, не привязана лично к Inforcer, но многократно подтверждена независимо через Microsoft/LinkedIn Work Trend Index и повторяется в отраслевых источниках про shadow AI): 78% сотрудников, использующих ИИ на работе, приносят свои личные инструменты, а не корпоративные. В пост включена только эта цифра с пометкой источника (Microsoft/LinkedIn Work Trend Index), без более спорных цифр (например "50% вставляемого — конфиденциальные данные" — эта цифра встречается не во всех источниках одинаково, в пост не включена).
+
+## Названия/цифры, использованные в постах — все присутствуют выше
+
+Пост 1 (Zoom): Zoom, Zoom Virtual Agent Receptionist, 9 июля 2026, Cisco, Avaya, RingCentral, 10+ языков, $29.99/мес за 100 минут (помесячно), $24.99/мес за 100 минут (годовая оплата), бесплатный пробный период, МегаФон, МТС Бизнес, Mango Office (только факт существования категории на рынке РФ).
+
+Пост 2 (Inforcer): Inforcer, Лондон, $50 млн, Series C, Insight Partners, Dawn Capital, Meritech Capital, $110 млн за 18 месяцев, 300% рост год к году, Jamie Daum, Copilot Manager, Shadow AI detection, Threat Detection & Response, 78% (Microsoft/LinkedIn Work Trend Index).
