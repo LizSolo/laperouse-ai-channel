@@ -1,74 +1,45 @@
-# Проверенные факты — черновики за 2026-08-02
+# Проверенные факты — черновики за 2026-08-03
 
 ## Ограничение окружения (важно для редактора)
 
-В этой сессии `WebFetch` и прямой `curl` к внешним хостам (включая techcrunch.com) возвращают 403 от прокси окружения — подтверждено повторно (см. также запись в NOTES.md за 2026-08-01). `WebSearch` работает нормально. Факты ниже проверены перекрёстно через WebSearch по 8-10 независимым публикациям на каждую новость (включая официальные пресс-релизы/newsroom компаний) — цифры совпадают дословно, расхождений не найдено.
+`WebFetch` в этой сессии снова возвращает HTTP 403 на любой URL, включая нейтральные (anthropic.com, из noProxy-списка) — то есть это не сетевая блокировка на уровне прокси (в статусе `recentRelayFailures` пусто), а сам инструмент WebFetch отдаёт 403. `WebSearch` работает нормально. Факты ниже проверены перекрёстно через WebSearch по 7+ независимым публикациям, включая официальный newsroom компании (about.fb.com) и официальную страницу цен (developers.facebook.com) — цифры совпадают дословно во всех источниках, расхождений не найдено.
 
 ---
 
-## Новость 1: Zoom Virtual Agent Receptionist — отдельный ИИ-ресепшн для любой телефонии
+## Новость: Meta Business Agent — бесплатный период для ИИ-агента в WhatsApp/Instagram/Messenger закончился, с 1 августа платный потокенный биллинг
 
-Источник-первоисточник (официальный newsroom Zoom):
-https://news.zoom.com/standalone-zoom-virtual-agent-receptionist/
+Официальный источник (анонс запуска, newsroom Meta):
+https://about.fb.com/news/2026/06/meta-business-agent/
 
-Официальный пресс-релиз (GlobeNewswire):
-https://www.globenewswire.com/news-release/2026/07/09/3324818/0/en/Deploy-Zoom-Virtual-Agent-Receptionist-across-any-telephony-environment.html
-
-Подтверждающие независимые источники:
-- https://www.streetinsider.com/Corporate+News/Zoom+offers+standalone+AI+receptionist+for+any+phone+system/26751108.html
-- https://www.stocktitan.net/news/ZM/deploy-zoom-virtual-agent-receptionist-across-any-telephony-bz9q9nkrvthn.html
-- https://finance.yahoo.com/technology/ai/articles/deploy-zoom-virtual-agent-receptionist-130000346.html
-- https://telecomreseller.com/2026/07/10/deploy-zoom-virtual-agent-receptionist-across-any-telephony-environment/
-- https://www.cxtoday.com/ai-automation-in-cx/zoom-virtual-agent-receptionist-standalone/
-- https://cxm.world/customer-experience/zoom-ai-receptionist-standalone/
-
-Проверенные факты (совпадают во всех источниках):
-- Компания: Zoom. Продукт: Zoom Virtual Agent (ZVA) Receptionist — теперь доступен как отдельный продукт.
-- Объявлено 9 июля 2026.
-- Главное изменение: раньше работал только внутри Zoom Phone, теперь подключается к ЛЮБОЙ телефонной системе — Cisco, Avaya, RingCentral и другим, без перехода на Zoom Phone.
-- Функции: отвечает и приветствует звонящих разговорным ИИ, отвечает на частые вопросы, живая расшифровка звонков (транскрипция), запись на приём/встречу (appointment scheduling), интеллектуальная маршрутизация звонков, переключение на живого человека при необходимости, работает в нерабочие часы (24/7).
-- Поддержка 10+ языков (английский, испанский, французский, немецкий, португальский, японский и другие — с первого дня).
-- Цена: от $29.99 в месяц за 100 минут при помесячной оплате, $24.99 в месяц за 100 минут при годовой оплате.
-- Есть бесплатный пробный период (free trial) для новых и существующих клиентов Zoom.
-- Русский язык в списке поддерживаемых на момент запуска не упомянут ни в одном источнике — в пост это не включено как утверждение "работает на русском".
-
-## Дополнительно проверено: российские аналоги (для контекста, общий факт без деталей тарифов)
-
-Источники (WebSearch, официальные сайты компаний):
-- https://moscow.megafon.ru/corporate/services/golosovoy_robot (МегаФон — голосовой робот для бизнеса)
-- https://business.mts.ru/moskva/golosovoj-robot (МТС Бизнес — голосовой робот)
-- https://www.mango-office.ru/products/contact-center/ai/voice-robot/ (Mango Office — голосовой робот, интеграции с CRM/1С)
-
-Факт: голосовые ИИ-роботы для обработки звонков бизнеса — существующая категория продуктов и у российских операторов/платформ (МегаФон, МТС Бизнес, Mango Office). В пост включён только сам факт существования категории на российском рынке, без конкретных цен (не проверялись детально).
-
----
-
-## Новость 2: Inforcer — раунд $50 млн, ИИ-риски и Shadow AI для малого бизнеса через MSP
-
-Источник (TechCrunch, обнаружен через WebSearch — прямой WebFetch на techcrunch.com заблокирован окружением, см. выше):
-https://techcrunch.com/2026/07/30/inforcer-raises-50m-to-help-prepare-smbs-for-a-new-world-of-ai-and-security-risks/
+Официальный источник (страница цен):
+https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/non-template-messages
 
 Подтверждающие независимые источники:
-- https://tech.eu/2026/07/30/inforcer-raises-50m-series-c-to-scale-ai-security-platform-for-msps/
-- https://uk.finance.yahoo.com/news/inforcer-raises-50m-help-prepare-130000549.html
-- https://app.dealroom.co/news/note/inforcer-raises-50m-series-c-led-by-insight-partners-to-arm-msps-against-ai-threats
-- https://www.startupmag.co.uk/funding/inforcer-2026-series-c-funding/
-- https://www.thesaasnews.com/news/inforcer-raises-50m-series-c/
-- https://www.saasrise.com/deals/inforcer-raises-50m-series-c-to-scale-ai-security-platform-for-msps-9a4da560-ffd8-44dd-92a0-3b2626bec958
-- https://x.com/TradedVC/status/2082912448944697614 (co-founder/CEO quote)
+- https://www.techtimes.com/articles/320787/20260716/meta-business-agent-billing-starts-aug-1-free-test-window-ends-days.htm
+- https://enterprisedna.co/resources/news/meta-business-agent-billing-august-1-token-pricing-2026/
+- https://www.businesstoday.in/technology/artificial-intelligence/story/whatsapp-introduces-token-based-pricing-for-ai-agents-from-august-1-540699-2026-07-03
+- https://www.cnbc.com/2026/06/03/meta-business-agent-is-zuckerberg-latest-effort-to-diversify-from-ads.html
+- https://techcrunch.com/2026/06/03/metas-ai-agent-for-whatsapp-business-is-now-available-globally/
+- https://www.threads.com/@mattnavarra/post/Da4ww97Cr62/ (агрегатор, цифры совпадают с официальными)
 
 Проверенные факты (совпадают во всех источниках):
-- Компания: Inforcer, Лондон. Платформа для MSP (managed service providers — компании, которые обслуживают ИТ малого и среднего бизнеса на аутсорсе) для управления безопасностью Microsoft 365 и теперь ИИ-рисками клиентов из одной консоли.
-- Раунд объявлен 30 июля 2026: Series C, $50 млн, лид — фонд Insight Partners (также участвовали Dawn Capital и Meritech Capital).
-- Всего компания привлекла $110 млн за три раунда за 18 месяцев.
-- Рост бизнеса 300% год к году, оценка компании удвоилась между Series B и C (со слов CEO для TechCrunch).
-- CEO и сооснователь — Jamie Daum.
-- Новые функции платформы: Copilot Manager, Shadow AI detection (обнаружение несанкционированного использования ИИ-инструментов на рабочих устройствах), Threat Detection & Response (TDR).
-- Контекст рынка (упоминается в источниках как причина спроса): у большинства малых компаний нет своего ИТ-отдела, поэтому эту функцию для них выполняют MSP; риск в том, что сотрудники пользуются личными аккаунтами ChatGPT/Claude и подобных инструментов для рабочих задач без контроля компании, и туда может попадать конфиденциальная информация.
-- Общая статистика по shadow AI (используется как фоновый контекст, не привязана лично к Inforcer, но многократно подтверждена независимо через Microsoft/LinkedIn Work Trend Index и повторяется в отраслевых источниках про shadow AI): 78% сотрудников, использующих ИИ на работе, приносят свои личные инструменты, а не корпоративные. В пост включена только эта цифра с пометкой источника (Microsoft/LinkedIn Work Trend Index), без более спорных цифр (например "50% вставляемого — конфиденциальные данные" — эта цифра встречается не во всех источниках одинаково, в пост не включена).
+- Продукт: Meta Business Agent — ИИ-агент для ответов клиентам в WhatsApp Business, Instagram (DM/Pro) и Messenger.
+- Запущен глобально 3 июня 2026 на конференции Meta Conversations в Лондоне.
+- Функции: отвечает на вопросы о товарах и услугах, рекомендует товары, записывает на приём/бронирует, квалифицирует лида, доводит разговор до оплаты, переключает сложный запрос на живого сотрудника.
+- До 31 июля 2026 подключение и использование было бесплатным. За это время агента подключили больше 1 млн компаний.
+- С 1 августа 2026 — платный потокенный биллинг: $2.00 за миллион токенов. Типичный диалог использует 20 000–25 000 токенов, то есть стоит примерно 4-5 центов за обращение.
+- С 1 октября 2026 Meta убирает вторую льготу: сейчас ответы живого сотрудника внутри 24-часового сервисного окна бесплатны, дальше начнут тарифицироваться и они.
 
-## Названия/цифры, использованные в постах — все присутствуют выше
+## Отдельно проверено: статус Meta-сервисов в России (для абзаца про российский контекст)
 
-Пост 1 (Zoom): Zoom, Zoom Virtual Agent Receptionist, 9 июля 2026, Cisco, Avaya, RingCentral, 10+ языков, $29.99/мес за 100 минут (помесячно), $24.99/мес за 100 минут (годовая оплата), бесплатный пробный период, МегаФон, МТС Бизнес, Mango Office (только факт существования категории на рынке РФ).
+Источники:
+- https://gogov.ru/ru-detector/whatsapp
+- https://ru.wikipedia.org/wiki/Частичная_блокировка_Telegram_и_WhatsApp_в_России
 
-Пост 2 (Inforcer): Inforcer, Лондон, $50 млн, Series C, Insight Partners, Dawn Capital, Meritech Capital, $110 млн за 18 месяцев, 300% рост год к году, Jamie Daum, Copilot Manager, Shadow AI detection, Threat Detection & Response, 78% (Microsoft/LinkedIn Work Trend Index).
+Проверенные факты:
+- Instagram и Facebook заблокированы в России с 2022 года (Meta Platforms Inc. признана экстремистской организацией и запрещена).
+- WhatsApp заблокирован в России с февраля 2026 года: Роскомнадзор поэтапно (с августа/ноября 2025) ограничивал звонки и скорость, затем в феврале 2026 исключил домены мессенджера из национальной системы доменных имён. Без VPN сервис не работает.
+
+## Расчёт в посте — собственная арифметика, не источник
+
+Пример "3000 обращений в месяц → счёт $120-150" — это прямое умножение проверенной ставки (4-5 центов за обращение) на гипотетическое число обращений, не отдельный источник. Число обращений (3000) иллюстративное, не привязано к конкретной компании.
