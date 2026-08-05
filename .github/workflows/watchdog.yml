@@ -2,8 +2,9 @@ name: Watchdog — did the morning run deliver?
 
 on:
   schedule:
-    # 03:00 UTC = 10:00 по Бангкоку, примерно через час после утреннего прогона
-    - cron: "0 3 * * *"
+    # 04:00 UTC = 11:00 по Бангкоку. Автор стартует в 09:00, редактор в 09:40 —
+    # час запаса после редактора, чтобы долгий прогон не выглядел как сбой.
+    - cron: "0 4 * * *"
   workflow_dispatch:
 
 jobs:
@@ -14,7 +15,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Check that DRAFTS.md was updated today
+      - name: Check that DRAFTS.md and REVIEW.md were updated today
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
