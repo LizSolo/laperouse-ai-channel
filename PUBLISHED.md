@@ -10,3 +10,4 @@
 - 2026-08-03 — Настройка Effort в Claude: какой режим под какие задачи, экономия лимитов — https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings
 - 2026-08-04 — Где ИИ-агенты реально окупаются в малом бизнесе: четыре направления и вопрос про пять часов в неделю — https://vc.ru/biznesiinnovacii/3017901-ii-agenty-v-malom-biznese-chto-realno-rabotayet
 - 2026-08-05 — ИИ-ресепшионист вместо администратора: Zoom как повод, разбор Mango Office, МТС Бизнес и МегаФона — https://news.zoom.com/standalone-zoom-virtual-agent-receptionist/
+- 2026-08-06 — Record a Skill в Cowork: рутину можно показать Claude записью экрана вместо текстовой инструкции; Pro/Max/Team, только Mac — https://support.claude.com/en/articles/12512198-how-to-create-custom-skills
