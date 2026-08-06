@@ -7,6 +7,13 @@
 
 Самопроверка попала сюда 2026-08-05: пропущенный ШАГ 4.5 выглядит как нормальный
 выпуск (посты-то пришли), поэтому его отсутствие ловится кодом, а не на глаз.
+
+Третий статус добавлен 2026-08-06. До него сторож знал два состояния: файлы за
+сегодня есть или их нет. День, когда прогон состоялся, но ни одна тема не прошла
+отбор, выглядел как сбой — а это законный исход, и агент не должен выдавливать
+слабый пост, лишь бы файл обновился. Такой день агент помечает сам, записывая
+pipeline/no-topics.md с причинами. Файл за сегодня = спокойное уведомление вместо
+тревоги; остальные три файла в этот день не проверяются, их и не должно быть.
 """
 
 import datetime
@@ -24,6 +31,12 @@ WATCHED = {
     "REVIEW.md": "разбор редактора (агент-редактор, 09:40)",
 }
 
+# Метка законного пустого дня: автор дошёл до конца, но брать было нечего
+NO_TOPICS_FILE = "pipeline/no-topics.md"
+
+# Сколько символов причин из no-topics.md дотягивать в уведомление
+NO_TOPICS_EXCERPT = 600
+
 
 def last_commit_date(path: str) -> str | None:
     """Дата последнего коммита файла в UTC.
@@ -40,6 +53,18 @@ def last_commit_date(path: str) -> str | None:
         env={**os.environ, "TZ": "UTC"},
     )
     return result.stdout.strip() or None
+
+
+def read_excerpt(path: str, limit: int) -> str:
+    """Причины из no-topics.md для уведомления. Файл пишет агент, доверия ноль."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            text = f.read().strip()
+    except OSError:
+        return ""
+    if len(text) > limit:
+        return text[:limit].rstrip() + "…"
+    return text
 
 
 def send(token: str, chat_id: str, text: str) -> None:
@@ -62,6 +87,18 @@ def main() -> int:
     chat_id = os.environ["TELEGRAM_CHAT_ID"]
 
     today = datetime.datetime.now(datetime.timezone.utc).date().isoformat()
+
+    # Пустой день проверяется первым: остальных трёх файлов в этот день быть
+    # не должно, и жаловаться на их отсутствие незачем.
+    if last_commit_date(NO_TOPICS_FILE) == today:
+        lines = ["ℹ️ Прогон состоялся, но подходящих тем сегодня не нашлось."]
+        reasons = read_excerpt(NO_TOPICS_FILE, NO_TOPICS_EXCERPT)
+        if reasons:
+            lines.append(reasons)
+        lines.append("Постов и разбора сегодня нет — это не сбой.")
+        send(token, chat_id, "\n\n".join(lines))
+        print(f"Пустой день: {NO_TOPICS_FILE} обновлён сегодня ({today}), уведомление отправлено")
+        return 0
 
     stale = []
     for path, label in WATCHED.items():
