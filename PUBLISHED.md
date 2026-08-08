@@ -1,13 +1,38 @@
-# Лог опубликованного
+# Лог отправленного
 
-Список тем, которые пользователь лично одобрила/переписала как финальные посты — чтобы cron-агент не предлагал те же темы повторно. Черновики, которые ушли в тестовую группу, но не были одобрены пользователем, сюда не входят (это просто пробы).
+Все темы, которые дошли до тестовой группы. По этому файлу работает дедупликация: правило
+T-02 в `RULES.md` сверяется со **всеми** строками, независимо от статуса.
 
-Формат: дата одобрения — тема — первоисточник.
+Два статуса:
 
-- 2026-07-31 — Claude Opus 5: цена не изменилась + контекст вырос до 1M токенов (для длинных документов/договоров) — https://www.anthropic.com/news/claude-opus-5
-- 2026-07-31 — Google AI Overviews: доля ответов прямо в поиске выросла до 43%, влияние на органический трафик сайтов — https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows/
-- 2026-08-02 — Shadow AI: 78% сотрудников используют ИИ с личных аккаунтов, о чём договориться с командой — https://techcrunch.com/2026/07/30/inforcer-raises-50m-to-help-prepare-smbs-for-a-new-world-of-ai-and-security-risks/
-- 2026-08-03 — Настройка Effort в Claude: какой режим под какие задачи, экономия лимитов — https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings
-- 2026-08-04 — Где ИИ-агенты реально окупаются в малом бизнесе: четыре направления и вопрос про пять часов в неделю — https://vc.ru/biznesiinnovacii/3017901-ii-agenty-v-malom-biznese-chto-realno-rabotayet
-- 2026-08-05 — ИИ-ресепшионист вместо администратора: Zoom как повод, разбор Mango Office, МТС Бизнес и МегаФона — https://news.zoom.com/standalone-zoom-virtual-agent-receptionist/
-- 2026-08-06 — Record a Skill в Cowork: рутину можно показать Claude записью экрана вместо текстовой инструкции; Pro/Max/Team, только Mac — https://support.claude.com/en/articles/12512198-how-to-create-custom-skills
+- `одобрено` — Лиза взяла пост в канал или переписала его как финальный;
+- `отправлено` — черновик ушёл в группу, но одобрения не получил.
+
+**Почему считаются оба.** До 08.08 файл хранил только одобренное, а отправленные черновики
+нигде не фиксировались. 07.08 агент выдал два поста подряд по темам, которые уходили в группу
+05.08, и редактор их не поймал: в файле их не было. Тема, которую читатель уже видел, занята
+вне зависимости от того, понравился пост или нет. Почему тема не понравилась — в `FEEDBACK.md`,
+здесь только факт отправки.
+
+**Формат строки:** `дата — статус — тема — первоисточник`.
+
+**Агент дописывает строки, а не перезаписывает файл.** Одна строка на каждый пост из
+`DRAFTS.md`, статус `отправлено`, в том же push, что и черновики. Статус на `одобрено` меняет
+Лиза руками.
+
+---
+
+- 2026-07-31 — одобрено — Claude Opus 5: цена не изменилась + контекст вырос до 1M токенов (для длинных документов/договоров) — https://www.anthropic.com/news/claude-opus-5
+- 2026-07-31 — одобрено — Google AI Overviews: доля ответов прямо в поиске выросла до 43%, влияние на органический трафик сайтов — https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows/
+- 2026-08-02 — одобрено — Shadow AI: 78% сотрудников используют ИИ с личных аккаунтов, о чём договориться с командой — https://techcrunch.com/2026/07/30/inforcer-raises-50m-to-help-prepare-smbs-for-a-new-world-of-ai-and-security-risks/
+- 2026-08-03 — одобрено — Настройка Effort в Claude: какой режим под какие задачи, экономия лимитов — https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings
+- 2026-08-04 — одобрено — Где ИИ-агенты реально окупаются в малом бизнесе: четыре направления и вопрос про пять часов в неделю — https://vc.ru/biznesiinnovacii/3017901-ii-agenty-v-malom-biznese-chto-realno-rabotayet
+- 2026-08-05 — одобрено — ИИ-ресепшионист вместо администратора: Zoom как повод, разбор Mango Office, МТС Бизнес и МегаФона — https://news.zoom.com/standalone-zoom-virtual-agent-receptionist/
+- 2026-08-05 — отправлено — Бизнес-помощник в СберБизнесе: наём сотрудника через интернет-банк, вакансия и подбор резюме на Работа.ру — https://bankinform.ru/news/142639
+- 2026-08-05 — отправлено — ChatGPT for PowerPoint: бесплатный период заканчивается, дальше расход кредитов — https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes
+- 2026-08-06 — отправлено — Авито: ИИ составляет объявление по фотографии товара — https://www.comnews.ru/digital-economy/content/246043/2026-06-26/2026-w26/1012/avito-nauchil-ii-sozdavat-obyavleniya-fotografii
+- 2026-08-06 — одобрено — Record a Skill в Cowork: рутину можно показать Claude записью экрана вместо текстовой инструкции; Pro/Max/Team, только Mac — https://support.claude.com/en/articles/12512198-how-to-create-custom-skills
+- 2026-08-06 — отправлено — Notion: Custom Agent запускается после протокола встречи в AI Meeting Notes — https://www.notion.com/releases/2026-07-31
+- 2026-08-07 — отправлено — ПОВТОР темы от 05.08: Бизнес-помощник в СберБизнесе, наём сотрудника — https://www.ng.ru/news/844512.html
+- 2026-08-07 — отправлено — ПОВТОР темы от 05.08: ChatGPT for PowerPoint, бесплатный период закончился — https://help.openai.com/en/articles/20001242-chatgpt-for-powerpoint
+- 2026-08-08 — отправлено — Ozon: пилотный ИИ-ассистент для покупателей, что это значит для карточки товара — https://www.cnews.ru/news/line/2026-08-04_ozon_zapustil_pilotnuyu_versiyu
