@@ -38,3 +38,6 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-08-08 — отправлено — Ozon: пилотный ИИ-ассистент для покупателей, что это значит для карточки товара — https://www.cnews.ru/news/line/2026-08-04_ozon_zapustil_pilotnuyu_versiyu
 - 2026-08-08 — отправлено — Google Meet: визуальные скриншоты в автозаметках встречи, настройка админа перед включением — https://workspaceupdates.googleblog.com/2026/08/visual-screenshots-now-included-in-Google-Meet-meeting-notes.html
 - 2026-08-08 — отправлено — Yandex AI Studio: агент-исследователь для рутинного поиска информации, кому пригодится — https://www.cnews.ru/news/line/2026-07-14_yandex_b2b_tech_otkryla_biznesu
+- 2026-08-08 — отправлено — Битрикс24: голосовой ИИ-агент Марта и модель BitrixGPT 5 сами вводят задачи и заполняют CRM — https://www.bitrix24.ru/journal/novinki-bitriks24-kosmos-agent-marta-ai-bitrixgpt-5-audio-zadachi-ai-i-raspoznavanie-emotsiy/
+- 2026-08-08 — отправлено — GPT-5.6 Luna: бесплатный ChatGPT теряет лимит на текстовые сообщения, добавлена кнопка Think — https://techcrunch.com/2026/08/06/openai-brings-unlimited-chatgpt-text-chats-to-free-users/
+- 2026-08-08 — отправлено — Claude Cowork на web и mobile: задачу можно начать на компьютере и довести до конца с телефона — https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/
