@@ -12,8 +12,14 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", "pipeline"))
+
 DRAFTS_FILE = os.environ.get("SOURCE_FILE", "DRAFTS.md")
 WHAT = os.environ.get("WHAT", "Утренняя сводка")
+
+# Гейт применяется только к постам: разбор редактора идёт через тот же скрипт,
+# но правила блоков X, M и Z к нему не относятся.
+LINT_ENABLED = DRAFTS_FILE == "DRAFTS.md"
 
 
 def extract_posts(markdown: str) -> list[str]:
@@ -47,6 +53,11 @@ def notify_failure(token: str, chat_id: str, message: str) -> None:
 
 
 def main() -> int:
+    # Windows-консоль по умолчанию cp1252: без этого печать отчёта роняет скрипт
+    # раньше, чем уйдёт уведомление о сбое, и сбой становится тишиной.
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
     token = os.environ["TELEGRAM_BOT_TOKEN"]
     chat_id = os.environ["TELEGRAM_CHAT_ID"]
 
@@ -62,6 +73,21 @@ def main() -> int:
         print(f"В {DRAFTS_FILE} нет блоков с постами (тройные обратные кавычки)")
         notify_failure(token, chat_id, "в файле черновиков нет готовых постов")
         return 1
+
+    if LINT_ENABLED:
+        import lint
+
+        errors, report = lint.analyse(DRAFTS_FILE)
+        if errors:
+            details = "\n".join(lint.failures(report))
+            print(f"Проверка не пройдена, нарушений: {errors}\n{details}")
+            notify_failure(
+                token,
+                chat_id,
+                f"посты не прошли проверку скриптом, нарушений {errors}:\n\n{details}",
+            )
+            return 1
+        print(f"Проверка пройдена, постов: {len(posts)}")
 
     failed = 0
     for number, text in enumerate(posts, start=1):

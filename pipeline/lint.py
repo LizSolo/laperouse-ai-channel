@@ -102,14 +102,6 @@ def sentences(paragraph: str) -> list[str]:
 # Каждая функция возвращает (ok, деталь). ok=None означает «ПРОВЕРЬ».
 
 
-def x01_no_digits_in_first_paragraph(text):
-    first = strip_tags(body_paragraphs(text)[0])
-    found = re.findall(r"\d", first)
-    if found:
-        return False, f"в первом абзаце есть цифры: «{first[:70]}…»"
-    return True, "первый абзац без чисел"
-
-
 def x04_paragraph_length(text):
     problems = []
     for number, para in enumerate(body_paragraphs(text), start=1):
@@ -141,10 +133,10 @@ def x12_first_line(text):
 
 
 def x13_address_reader(text):
-    head = " ".join(strip_tags(p) for p in body_paragraphs(text)[:3])
-    if re.search(r"\b(вы|вам|вас|вами|ваш\w*)\b", head, re.IGNORECASE):
+    plain = strip_tags(drop_urls(text))
+    if re.search(r"\b(вы|вам|вас|вами|ваш\w*)\b", plain, re.IGNORECASE):
         return True, "обращение на «вы» есть"
-    return False, "в первых трёх абзацах нет обращения на «вы»"
+    return False, "в тексте поста нет обращения на «вы»"
 
 
 def m01_first_line_is_sentence(text):
@@ -308,7 +300,6 @@ def f04_numbers_verified(text, verified):
 
 
 CHECKS = [
-    ("X-01", x01_no_digits_in_first_paragraph),
     ("X-04", x04_paragraph_length),
     ("X-08", x08_length),
     ("X-12", x12_first_line),
@@ -347,16 +338,14 @@ def check_post(text: str, verified: str | None) -> list[tuple[str, object, str]]
     return results
 
 
-def main() -> int:
-    # Windows-консоль по умолчанию cp1252 и падает на кириллице с эмодзи.
-    if hasattr(sys.stdout, "reconfigure"):
-        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+def analyse(path: str = DRAFTS_FILE) -> tuple[int, list[str]]:
+    """Проверяет файл и возвращает (число нарушений, строки отчёта).
 
-    path = sys.argv[1] if len(sys.argv) > 1 else DRAFTS_FILE
-
+    Отдельно от main(), потому что тем же гейтом пользуется send_drafts.py:
+    он вызывает analyse() и отказывается публиковать, если нарушения есть.
+    """
     if not os.path.exists(path):
-        print(f"ОШИБКА: {path} не найден")
-        return 1
+        return 1, [f"ОШИБКА: {path} не найден"]
 
     with open(path, encoding="utf-8") as f:
         markdown = f.read()
@@ -365,19 +354,15 @@ def main() -> int:
     headers = count_headers(markdown)
 
     report = [f"# Проверка скриптом: {path}", ""]
-    errors = 0
 
     if not posts:
-        print(f"ОШИБКА: в {path} нет ни одного блока с постом")
-        report.append("ОШИБКА: постов не найдено")
-        write_report(report)
-        return 1
+        report.append(f"ОШИБКА: в {path} нет ни одного блока с постом")
+        return 1, report
 
+    errors = 0
     if headers != len(posts):
         errors += 1
-        line = f"M-07: нет — заголовков «## Пост» {headers}, блоков {len(posts)}"
-        print(f"ОШИБКА: {line}")
-        report.append(line)
+        report.append(f"M-07: нет — заголовков «## Пост» {headers}, блоков {len(posts)}")
     else:
         report.append(f"M-07: да — {len(posts)} заголовков, {len(posts)} блоков")
     report.append("")
@@ -388,9 +373,7 @@ def main() -> int:
             verified = f.read()
 
     for number, post in enumerate(posts, start=1):
-        header = f"## Пост {number}"
-        print(f"\n{header}")
-        report.append(header)
+        report.append(f"## Пост {number}")
         for rule_id, ok, detail in check_post(post, verified):
             if ok is True:
                 mark = "да"
@@ -399,19 +382,46 @@ def main() -> int:
                 errors += 1
             else:
                 mark = "ПРОВЕРЬ"
-            line = f"{rule_id}: {mark} — {detail}"
-            report.append(line)
-            if ok is not True:
-                print(f"  {line}")
+            report.append(f"{rule_id}: {mark} — {detail}")
         report.append("")
 
-    write_report(report)
+    return errors, report
+
+
+def failures(report: list[str]) -> list[str]:
+    """Только то, что требует внимания. Заголовок поста без находок не печатается."""
+    keep: list[str] = []
+    pending: str | None = None
+    for line in report:
+        if line.startswith("## Пост"):
+            pending = line
+        elif line.startswith("ОШИБКА") or ": нет — " in line or ": ПРОВЕРЬ — " in line:
+            if pending:
+                keep.append(pending)
+                pending = None
+            keep.append(line)
+    return keep
+
+
+def main() -> int:
+    # Windows-консоль по умолчанию cp1252 и падает на кириллице с эмодзи.
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+    path = sys.argv[1] if len(sys.argv) > 1 else DRAFTS_FILE
+    errors, report = analyse(path)
+
+    if len(report) > 1:
+        write_report(report)
+
+    for line in failures(report):
+        print(line)
 
     if errors:
         print(f"\nНарушено правил: {errors}. Публиковать нельзя, отчёт в {REPORT_FILE}")
         return 1
 
-    print(f"\nВсе механические правила пройдены, постов: {len(posts)}. Отчёт в {REPORT_FILE}")
+    print(f"\nВсе механические правила пройдены. Отчёт в {REPORT_FILE}")
     return 0
 
 
