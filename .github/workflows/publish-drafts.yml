@@ -12,6 +12,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Гейт: посты с нарушенным механическим правилом в группу не уходят.
+      # Агент обязан прогнать этот же скрипт у себя и починить всё до push.
+      - name: Lint drafts
+        run: |
+          set -o pipefail
+          python3 pipeline/lint.py | tee lint-output.txt
+
+      - name: Report lint failure to Telegram
+        if: failure()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python3 .github/scripts/notify.py "Публикация остановлена: посты не прошли проверку скриптом" lint-output.txt
+
       - name: Send drafts to Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
