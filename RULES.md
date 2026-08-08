@@ -119,7 +119,7 @@ Z-02: да
 ## Охват источников
 1. Российские инструменты и кейсы — vc.ru, habr.com, cnews.ru: 3 кандидата
 2. Справка и release notes — docs.claude.com, notion.com/releases, help.openai.com: 1 кандидат
-3. Тех-медиа — techcrunch.com, theverge.com: пусто, только раунды
+3. Тех-медиа — techcrunch.com, theverge.com: пусто, только раунды (пусто 2 прогон подряд)
 4. Блоги лабораторий — anthropic.com/news, openai.com/news: 1 кандидат
 5. Бизнес-медиа — inc.com, technologyreview.com: пусто, обзоры без конкретики
 6. Российские маркетплейсы и платформы — ozon.ru, avito.ru: пусто, свежих релизов нет
