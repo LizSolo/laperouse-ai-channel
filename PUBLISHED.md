@@ -36,3 +36,5 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-08-07 — отправлено — ПОВТОР темы от 05.08: Бизнес-помощник в СберБизнесе, наём сотрудника — https://www.ng.ru/news/844512.html
 - 2026-08-07 — отправлено — ПОВТОР темы от 05.08: ChatGPT for PowerPoint, бесплатный период закончился — https://help.openai.com/en/articles/20001242-chatgpt-for-powerpoint
 - 2026-08-08 — отправлено — Ozon: пилотный ИИ-ассистент для покупателей, что это значит для карточки товара — https://www.cnews.ru/news/line/2026-08-04_ozon_zapustil_pilotnuyu_versiyu
+- 2026-08-08 — отправлено — Google Meet: визуальные скриншоты в автозаметках встречи, настройка админа перед включением — https://workspaceupdates.googleblog.com/2026/08/visual-screenshots-now-included-in-Google-Meet-meeting-notes.html
+- 2026-08-08 — отправлено — Yandex AI Studio: агент-исследователь для рутинного поиска информации, кому пригодится — https://www.cnews.ru/news/line/2026-07-14_yandex_b2b_tech_otkryla_biznesu
