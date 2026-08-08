@@ -743,9 +743,48 @@ allowlist и находит что угодно. Allowlist нужен ровно
 Они пересекаются, но не совпадают, и пока это было свалено в одно, список рос
 названиями компаний.
 
-→ проверка: T-06 в `RULES.md` (пять категорий) и раздел «Про домены в списке
-выше» в ШАГЕ 2.2 промпта автора, где разница между поиском и открытием страницы
-проговорена прямо.
+**Итоговый список, проверен прогоном 08.08 — открылись все 23:**
+
+```
+docs.claude.com
+support.claude.com
+help.openai.com
+openai.com
+anthropic.com
+www.anthropic.com
+notion.com
+www.notion.com
+support.google.com
+workspaceupdates.googleblog.com
+blog.google
+deepmind.google
+ai.meta.com
+bitrix24.ru
+www.bitrix24.ru
+amocrm.ru
+www.amocrm.ru
+yandex.cloud
+vc.ru
+habr.com
+cnews.ru
+www.cnews.ru
+techcrunch.com
+```
+
+Контрольные `example.com`, `google.com`, `vk.com`, `ozon.ru`, `bankinform.ru`
+закрыты на уровне CONNECT — фильтр работает, а не пропускает всё. `WebFetch`
+вытянул `vc.ru`, `support.claude.com` и `workspaceupdates.googleblog.com`
+целиком.
+
+**Два ложных отказа, которые не надо чинить.** `openai.com` и `help.openai.com`
+отдают 403 от Cloudflare с пометкой `challenge`: туннель устанавливается,
+защищается сам сайт. `support.google.com` отвечает 404, потому что на корне
+домена нет страницы; конкретные статьи справки открываются. Признак нашей
+блокировки один — отказ на CONNECT, до TLS; всё остальное это ответ сайта.
+
+→ проверка: T-06 в `RULES.md` (пять категорий) и разметка в ШАГЕ 2.2 промпта
+автора: домен в обратных кавычках открывается целиком, название без кавычек
+ищется поиском. Второго списка доменов в промпте нет.
 
 ## Дубли и расплывчатые формулировки вычищены (2026-08-08)
 
