@@ -41,3 +41,5 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-08-08 — отправлено — Битрикс24: голосовой ИИ-агент Марта и модель BitrixGPT 5 сами вводят задачи и заполняют CRM — https://www.bitrix24.ru/journal/novinki-bitriks24-kosmos-agent-marta-ai-bitrixgpt-5-audio-zadachi-ai-i-raspoznavanie-emotsiy/
 - 2026-08-08 — отправлено — GPT-5.6 Luna: бесплатный ChatGPT теряет лимит на текстовые сообщения, добавлена кнопка Think — https://techcrunch.com/2026/08/06/openai-brings-unlimited-chatgpt-text-chats-to-free-users/
 - 2026-08-08 — отправлено — Claude Cowork на web и mobile: задачу можно начать на компьютере и довести до конца с телефона — https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/
+- 2026-08-09 — отправлено — Точка Банк: ИИ-Ассистент селлера собирает отчёт о прибылях для продавцов Wildberries вместо ручного Excel — https://www.cnews.ru/news/line/2026-01-23_tochka_bank_zapustil_ii-assistenta
+- 2026-08-09 — отправлено — Контур.Фокус: ИИ-ассистент проверяет контрагента и оценивает риски сделки в диалоге — https://www.cnews.ru/news/line/2025-11-12_konturfokus_sozdal_ii-assistenta
