@@ -43,3 +43,5 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-08-08 — отправлено — Claude Cowork на web и mobile: задачу можно начать на компьютере и довести до конца с телефона — https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/
 - 2026-08-09 — отправлено — Точка Банк: ИИ-Ассистент селлера собирает отчёт о прибылях для продавцов Wildberries вместо ручного Excel — https://www.cnews.ru/news/line/2026-01-23_tochka_bank_zapustil_ii-assistenta
 - 2026-08-09 — отправлено — Контур.Фокус: ИИ-ассистент проверяет контрагента и оценивает риски сделки в диалоге — https://www.cnews.ru/news/line/2025-11-12_konturfokus_sozdal_ii-assistenta
+- 2026-08-10 — отправлено — МТС Линк: ИИ-ассистент подбирает шаблон резюме встречи под тип события (планёрка, собеседование, ретроспектива) — https://www.comnews.ru/digital-economy/content/246698/2026-08-03/2026-w32/1012/ii-assistent-mts-link-adaptiruet-rezyume-pod-format-vstrechi
+- 2026-08-10 — отправлено — Claude for Small Business: готовые сценарии и навыки для рутины малого бизнеса в Claude Cowork — https://www.anthropic.com/news/claude-for-small-business
