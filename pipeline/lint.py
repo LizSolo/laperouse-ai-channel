@@ -22,6 +22,7 @@ import sys
 
 DRAFTS_FILE = "DRAFTS.md"
 VERIFIED_FILE = os.path.join("pipeline", "verified.md")
+FUNNEL_FILE = os.path.join("pipeline", "funnel.md")
 REPORT_FILE = os.path.join("pipeline", "lint.md")
 
 MIN_CHARS = 900
@@ -388,12 +389,55 @@ def analyse(path: str = DRAFTS_FILE) -> tuple[int, list[str]]:
     return errors, report
 
 
+def t09_funnel_verdicts(path: str = FUNNEL_FILE) -> tuple[int, list[str]]:
+    """T-09: у каждого кандидата в воронке вердикт «взят» или «отсеян по <ID>».
+
+    Третьего вердикта нет. «Рассмотрен, отложен», «взят более сильный кандидат»,
+    «дублирует» — это отсев по вкусу: тема прошла правила, но поста не будет, и
+    причины в файле не остаётся. Проверяется здесь, а не глазами, потому что 11.08
+    так потерялись четыре темы и никто не заметил.
+    """
+    if not os.path.exists(path):
+        return 1, [f"ОШИБКА: {path} не найден"]
+
+    with open(path, encoding="utf-8") as f:
+        text = f.read()
+
+    marks = list(re.finditer(r"—\s*кат\.\s*\d+\s*—", text))
+    if not marks:
+        return 0, [f"T-09: ПРОВЕРЬ — в {path} не найдено ни одной строки кандидата"]
+
+    report: list[str] = []
+    errors = 0
+    for number, mark in enumerate(marks):
+        limit = marks[number + 1].start() if number + 1 < len(marks) else len(text)
+        tail = text[mark.end():limit].split("\n\n")[0]
+        name = " ".join(text[:mark.start()].split())[-60:]
+
+        # Вердикт стоит сразу после «— кат. N —». Иначе «взят более сильный кандидат»
+        # внутри объяснения засчитывается как «взят» — так 11.08 проходил Google Drive.
+        if re.match(r"\s*\**взят\b", tail):
+            continue
+        if re.match(r"\s*\**отсеян", tail) and re.search(r"\b[TFXMZ]-\d{2}\b", tail):
+            continue
+
+        errors += 1
+        verdict = " ".join(tail.split())[:50]
+        report.append(f"T-09: нет — вердикт без ID у «…{name}»: «{verdict}…»")
+
+    if errors:
+        report.insert(0, f"T-09: нет — кандидатов {len(marks)}, без вердикта по правилу {errors}")
+    else:
+        report.append(f"T-09: да — у всех {len(marks)} кандидатов вердикт «взят» или «отсеян по <ID>»")
+    return errors, report
+
+
 def failures(report: list[str]) -> list[str]:
     """Только то, что требует внимания. Заголовок поста без находок не печатается."""
     keep: list[str] = []
     pending: str | None = None
     for line in report:
-        if line.startswith("## Пост"):
+        if line.startswith("## Пост") or line.startswith("## Воронка"):
             pending = line
         elif line.startswith("ОШИБКА") or ": нет — " in line or ": ПРОВЕРЬ — " in line:
             if pending:
@@ -410,6 +454,13 @@ def main() -> int:
 
     path = sys.argv[1] if len(sys.argv) > 1 else DRAFTS_FILE
     errors, report = analyse(path)
+
+    # Воронка проверяется только здесь, не в analyse(): send_drafts.py зовёт analyse()
+    # как гейт публикации, а формат воронки — не повод не отправить готовый пост.
+    if path == DRAFTS_FILE:
+        funnel_errors, funnel_report = t09_funnel_verdicts()
+        errors += funnel_errors
+        report.extend(["## Воронка", *funnel_report, ""])
 
     if len(report) > 1:
         write_report(report)
