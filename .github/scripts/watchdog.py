@@ -14,6 +14,13 @@
 слабый пост, лишь бы файл обновился. Такой день агент помечает сам, записывая
 pipeline/no-topics.md с причинами. Файл за сегодня = спокойное уведомление вместо
 тревоги; остальные три файла в этот день не проверяются, их и не должно быть.
+
+Четвёртый статус добавлен 2026-08-11. Автор в тот день отработал полностью, но
+push ушёл в свою ветку claude/*, а не в master. Сторож смотрел только master и
+сказал «прогон не состоялся» — при том, что посты в группу пришли. Диагноз, не
+совпадающий с тем, что человек видит в телефоне, хуже отсутствия диагноза:
+чинится это за минуту, а ищется полдня. Поэтому файл, не обновлённый в master,
+ищется по остальным веткам, и «нигде нет» отделено от «есть, но не там».
 """
 
 import datetime
@@ -38,7 +45,7 @@ NO_TOPICS_FILE = "pipeline/no-topics.md"
 NO_TOPICS_EXCERPT = 600
 
 
-def last_commit_date(path: str) -> str | None:
+def last_commit_date(path: str, ref: str = "HEAD") -> str | None:
     """Дата последнего коммита файла в UTC.
 
     Берём дату принудительно в UTC (TZ + format-local), иначе git отдаёт её в
@@ -46,13 +53,44 @@ def last_commit_date(path: str) -> str | None:
     бы с сегодняшней датой по UTC как будто он из другого дня.
     """
     result = subprocess.run(
-        ["git", "log", "-1", "--format=%cd", "--date=format-local:%Y-%m-%d", "--", path],
+        ["git", "log", "-1", "--format=%cd", "--date=format-local:%Y-%m-%d", ref, "--", path],
         capture_output=True,
         text=True,
         check=True,
         env={**os.environ, "TZ": "UTC"},
     )
     return result.stdout.strip() or None
+
+
+def fetch_other_branches() -> None:
+    """Подтягивает остальные ветки: checkout приносит только ту, на которой запущен."""
+    subprocess.run(
+        ["git", "fetch", "--quiet", "origin", "+refs/heads/*:refs/remotes/origin/*"],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+
+
+def branches_with_today(path: str, today: str) -> list[str]:
+    """Ветки, кроме master, где файл обновлён сегодня.
+
+    Пустой список — обычное дело: агенты пушат прямо в master, и веток тогда нет
+    вовсе. Непустой значит, что прогон был, а результат не доехал.
+    """
+    result = subprocess.run(
+        ["git", "for-each-ref", "--format=%(refname:short)", "refs/remotes/origin/"],
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    found = []
+    for ref in result.stdout.split():
+        if ref in ("origin/HEAD", "origin/master"):
+            continue
+        if last_commit_date(path, ref) == today:
+            found.append(ref[len("origin/"):])
+    return found
 
 
 def read_excerpt(path: str, limit: int) -> str:
@@ -83,6 +121,11 @@ def send(token: str, chat_id: str, text: str) -> None:
 
 
 def main() -> int:
+    # Windows-консоль по умолчанию cp1252: без этого локальный прогон падает на
+    # первой же русской строке отчёта. В Actions строка ничего не меняет.
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
     token = os.environ["TELEGRAM_BOT_TOKEN"]
     chat_id = os.environ["TELEGRAM_CHAT_ID"]
 
@@ -100,26 +143,53 @@ def main() -> int:
         print(f"Пустой день: {NO_TOPICS_FILE} обновлён сегодня ({today}), уведомление отправлено")
         return 0
 
-    stale = []
+    fetch_other_branches()
+
+    stale = []      # файла за сегодня нет нигде
+    elsewhere = []  # файл за сегодня есть, но не в master
     for path, label in WATCHED.items():
         updated = last_commit_date(path)
         if updated == today:
             print(f"Всё в порядке: {path} обновлён сегодня ({updated})")
+            continue
+        print(f"{path} последний раз менялся {updated}, сегодня {today}")
+        branches = branches_with_today(path, today)
+        if branches:
+            print(f"  но за сегодня он есть в ветках: {', '.join(branches)}")
+            elsewhere.append((path, label, updated, branches))
         else:
-            print(f"{path} последний раз менялся {updated}, сегодня {today}")
             stale.append((path, label, updated))
 
-    if not stale:
+    if not stale and not elsewhere:
         return 0
 
-    lines = ["⚠️ Утренний прогон сегодня дошёл не до конца."]
-    for path, label, updated in stale:
-        when = updated or "никогда"
-        lines.append(f"• Не пришло: {label}. Файл {path} последний раз обновлялся {when}.")
-    lines.append("Похоже, прогон не состоялся или не отправил результат в репозиторий.")
+    lines = []
+    if elsewhere:
+        lines.append("⚠️ Прогон сегодня был, но результат остался вне master.")
+        for path, label, updated, branches in elsewhere:
+            when = updated or "никогда"
+            lines.append(
+                f"• {label}: {path} обновлён сегодня в ветке {', '.join(branches)}, "
+                f"в master — {when}."
+            )
+        lines.append(
+            "Редактор и сторож читают master, поэтому дальше цепочка встанет. "
+            "Ветку нужно перенести в master."
+        )
+    if stale:
+        if elsewhere:
+            lines.append("")
+        lines.append("⚠️ Утренний прогон сегодня дошёл не до конца.")
+        for path, label, updated in stale:
+            when = updated or "никогда"
+            lines.append(f"• Не пришло: {label}. Файл {path} последний раз обновлялся {when}.")
+        lines.append("Похоже, прогон не состоялся или не отправил результат в репозиторий.")
 
     send(token, chat_id, "\n".join(lines))
-    print(f"Уведомление отправлено в Telegram (не обновилось файлов: {len(stale)})")
+    print(
+        f"Уведомление отправлено в Telegram "
+        f"(нет нигде: {len(stale)}, есть вне master: {len(elsewhere)})"
+    )
     return 0
 
 
