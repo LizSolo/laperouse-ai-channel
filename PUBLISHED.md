@@ -45,3 +45,5 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-08-09 — отправлено — Контур.Фокус: ИИ-ассистент проверяет контрагента и оценивает риски сделки в диалоге — https://www.cnews.ru/news/line/2025-11-12_konturfokus_sozdal_ii-assistenta
 - 2026-08-10 — отправлено — МТС Линк: ИИ-ассистент подбирает шаблон резюме встречи под тип события (планёрка, собеседование, ретроспектива) — https://www.comnews.ru/digital-economy/content/246698/2026-08-03/2026-w32/1012/ii-assistent-mts-link-adaptiruet-rezyume-pod-format-vstrechi
 - 2026-08-10 — отправлено — Claude for Small Business: готовые сценарии и навыки для рутины малого бизнеса в Claude Cowork — https://www.anthropic.com/news/claude-for-small-business
+- 2026-08-11 — отправлено — amoCRM: тарифы дорожают с 1 сентября, как зафиксировать текущую цену — https://www.amocrm.ru/buy/
+- 2026-08-11 — отправлено — ATI.SU: ИИ-ассистент на GigaChat оформляет счета и закрывающие документы для перевозчиков в диалоге — https://www.cnews.ru/news/line/2026-07-06_logisticheskaya_platforma
