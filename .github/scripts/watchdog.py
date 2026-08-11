@@ -63,13 +63,31 @@ def last_commit_date(path: str, ref: str = "HEAD") -> str | None:
 
 
 def fetch_other_branches() -> None:
-    """Подтягивает остальные ветки: checkout приносит только ту, на которой запущен."""
-    subprocess.run(
+    """Подтягивает остальные ветки: checkout приносит только ту, на которой запущен.
+
+    Результат печатается: без этого «веток не нашлось» и «fetch не отработал»
+    выглядят в логе одинаково, а различать их придётся в день сбоя.
+    """
+    result = subprocess.run(
         ["git", "fetch", "--quiet", "origin", "+refs/heads/*:refs/remotes/origin/*"],
         capture_output=True,
         text=True,
         check=False,
     )
+    if result.returncode != 0:
+        print(f"git fetch вернул {result.returncode}: {result.stderr.strip()}")
+        return
+    print(f"Веток, кроме master, видно: {len(other_branches())}")
+
+
+def other_branches() -> list[str]:
+    result = subprocess.run(
+        ["git", "for-each-ref", "--format=%(refname:short)", "refs/remotes/origin/"],
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    return [r for r in result.stdout.split() if r not in ("origin/HEAD", "origin/master")]
 
 
 def branches_with_today(path: str, today: str) -> list[str]:
@@ -78,16 +96,8 @@ def branches_with_today(path: str, today: str) -> list[str]:
     Пустой список — обычное дело: агенты пушат прямо в master, и веток тогда нет
     вовсе. Непустой значит, что прогон был, а результат не доехал.
     """
-    result = subprocess.run(
-        ["git", "for-each-ref", "--format=%(refname:short)", "refs/remotes/origin/"],
-        capture_output=True,
-        text=True,
-        check=True,
-    )
     found = []
-    for ref in result.stdout.split():
-        if ref in ("origin/HEAD", "origin/master"):
-            continue
+    for ref in other_branches():
         if last_commit_date(path, ref) == today:
             found.append(ref[len("origin/"):])
     return found
