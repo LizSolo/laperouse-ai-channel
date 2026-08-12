@@ -23,6 +23,7 @@ import sys
 DRAFTS_FILE = "DRAFTS.md"
 VERIFIED_FILE = os.path.join("pipeline", "verified.md")
 FUNNEL_FILE = os.path.join("pipeline", "funnel.md")
+SELFCHECK_FILE = os.path.join("pipeline", "selfcheck.md")
 REPORT_FILE = os.path.join("pipeline", "lint.md")
 
 CATEGORIES = 5  # столько категорий источников в prompts/author.md, раздел 2.2
@@ -535,6 +536,55 @@ def t09_funnel_verdicts(path: str = FUNNEL_FILE) -> tuple[int, list[str]]:
     return errors, report
 
 
+def run_date(path: str, title: str) -> str | None:
+    """Дата из заголовка файла прогона: «# Воронка за 2026-08-12»."""
+    if not os.path.exists(path):
+        return None
+    with open(path, encoding="utf-8") as f:
+        head = f.readline()
+    found = re.search(rf"^#\s*{title}\s+за\s+(\S+)", head)
+    return found.group(1) if found else None
+
+
+def m09_selfcheck_code(found_errors: int, path: str = SELFCHECK_FILE) -> tuple[int, list[str]]:
+    """M-09: код скрипта в selfcheck.md — тот, который скрипт правда вернул.
+
+    12.08 автор написал «код 0», а в его же lint.md лежали пять «нет»: отчёт
+    противоречил файлу, который тот же прогон и записал, и редактор это пропустил.
+
+    Сверка идёт на уровне воронки, не в analyse(): кривая отчётность — не повод не
+    отправить готовый пост. Даты сверяются между собой, а не с системными часами:
+    автор работает по Бангкоку, а скрипт может запуститься где угодно. Пока
+    selfcheck не за тот же день, что воронка, сверять нечего — автор ещё в первом
+    проходе ШАГА 4.5, и в файле лежит вчерашнее.
+    """
+    if not os.path.exists(path):
+        return 0, [f"M-09: ПРОВЕРЬ — {path} не найден, код сверить не с чем"]
+
+    today = run_date(FUNNEL_FILE, "Воронка")
+    claimed_date = run_date(path, "Самопроверка")
+    if today is None or claimed_date != today:
+        return 0, [
+            f"M-09: ПРОВЕРЬ — самопроверка за {claimed_date or '—'}, воронка за "
+            f"{today or '—'}: сверка кода пропущена"
+        ]
+
+    with open(path, encoding="utf-8") as f:
+        text = f.read()
+
+    claimed = re.search(r"^Скрипт:.*?код\s*(\d+)", text, re.MULTILINE)
+    if not claimed:
+        return 0, [f"M-09: ПРОВЕРЬ — в {path} нет строки «Скрипт: … код N»"]
+
+    actual = 1 if found_errors else 0
+    if int(claimed.group(1)) != actual:
+        return 1, [
+            f"M-09: нет — в selfcheck.md код {claimed.group(1)}, а скрипт вернул "
+            f"{actual}: нарушений {found_errors}"
+        ]
+    return 0, [f"M-09: да — код в selfcheck.md совпадает с настоящим ({actual})"]
+
+
 def failures(report: list[str]) -> list[str]:
     """Только то, что требует внимания. Заголовок поста без находок не печатается."""
     keep: list[str] = []
@@ -564,7 +614,11 @@ def main() -> int:
         coverage_errors, coverage_report = t06_funnel_coverage()
         funnel_errors, funnel_report = t09_funnel_verdicts()
         errors += coverage_errors + funnel_errors
-        report.extend(["## Воронка", *coverage_report, *funnel_report, ""])
+        # Сверять есть с чем только после всех остальных проверок: автор в selfcheck
+        # отчитывается о коде прогона, а не о результате самой этой сверки.
+        code_errors, code_report = m09_selfcheck_code(errors)
+        errors += code_errors
+        report.extend(["## Воронка", *coverage_report, *funnel_report, *code_report, ""])
 
     if len(report) > 1:
         write_report(report)
