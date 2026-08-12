@@ -25,6 +25,8 @@ VERIFIED_FILE = os.path.join("pipeline", "verified.md")
 FUNNEL_FILE = os.path.join("pipeline", "funnel.md")
 REPORT_FILE = os.path.join("pipeline", "lint.md")
 
+CATEGORIES = 5  # столько категорий источников в prompts/author.md, раздел 2.2
+
 MIN_CHARS = 900
 MAX_CHARS = 1800
 MAX_FIRST_LINE = 150
@@ -389,6 +391,90 @@ def analyse(path: str = DRAFTS_FILE) -> tuple[int, list[str]]:
     return errors, report
 
 
+def funnel_section(text: str, title: str) -> str | None:
+    """Тело раздела `## <title>` до следующего заголовка того же уровня."""
+    found = re.search(
+        rf"^##\s+{re.escape(title)}\s*$(.*?)(?=^##\s(?!#)|\Z)", text, re.MULTILINE | re.DOTALL
+    )
+    return found.group(1) if found else None
+
+
+def split_items(body: str, pattern: str) -> list[tuple[re.Match[str], str]]:
+    """Режет тело раздела по строкам-началам: пункт длиннее одной строки."""
+    starts = list(re.finditer(pattern, body, re.MULTILINE))
+    items = []
+    for number, start in enumerate(starts):
+        limit = starts[number + 1].start() if number + 1 < len(starts) else len(body)
+        items.append((start, " ".join(body[start.start():limit].split())))
+    return items
+
+
+def t06_funnel_coverage(path: str = FUNNEL_FILE) -> tuple[int, list[str]]:
+    """T-06, счётная половина: в «Охвате источников» ровно пять категорий.
+
+    Названия и домены категорий сюда не переписываются — они живут в одном месте,
+    `prompts/author.md`, раздел 2.2. Скрипт считает строки и номера, а не сверяет
+    список. Вторая половина правила — названа ли в «пусто» реально открытая
+    страница — проверке счётом не поддаётся и остаётся глазам редактора.
+
+    Счёт унесён сюда, потому что 12.08 автор завёл шестой заход сверх пяти
+    категорий, а условие редактора ловило только «меньше пяти» и молчало.
+    """
+    if not os.path.exists(path):
+        return 1, [f"T-06: нет — {path} не найден"]
+
+    with open(path, encoding="utf-8") as f:
+        text = f.read()
+
+    body = funnel_section(text, "Охват источников")
+    if body is None:
+        return 1, [f"T-06: нет — в {path} нет раздела «Охват источников»"]
+
+    report: list[str] = []
+    errors = 0
+
+    items = split_items(body, r"^\s*(\d+)\.\s+\S")
+    numbers = [int(start.group(1)) for start, _ in items]
+    if numbers != list(range(1, CATEGORIES + 1)):
+        errors += 1
+        seen = ", ".join(str(n) for n in numbers) if numbers else "ни одной"
+        report.append(
+            f"T-06: нет — категорий в «Охвате источников» {len(numbers)} ({seen}), "
+            f"ожидается ровно {CATEGORIES} с номерами 1…{CATEGORIES}"
+        )
+    else:
+        report.append(f"T-06: да — в «Охвате источников» все {CATEGORIES} категорий, номера подряд")
+
+    # Категория закрыта кандидатом или словом «пусто». Что именно открывали — не к скрипту.
+    for start, chunk in items:
+        if not re.search(r"кандидат|пусто", chunk, re.IGNORECASE):
+            errors += 1
+            report.append(
+                f"T-06: нет — у категории {start.group(1)} нет ни кандидата, ни «пусто»: «{chunk[:60]}…»"
+            )
+
+    # Шестой заход виден двумя способами: по номеру кат. N у кандидата и по слову
+    # «рубрика» — в воронке ему больше взяться неоткуда, так он и появился 12.08.
+    beyond = sorted({
+        int(m.group(1)) for m in re.finditer(r"—\s*кат\.\s*(\d+)\s*—", text)
+        if not 1 <= int(m.group(1)) <= CATEGORIES
+    })
+    if beyond:
+        errors += 1
+        report.append(
+            f"T-06: нет — у кандидатов номера категорий вне 1…{CATEGORIES}: "
+            + ", ".join(str(n) for n in beyond)
+        )
+
+    rubric = re.search(r"^.*\bрубрик\w*.*$", text, re.MULTILINE | re.IGNORECASE)
+    if rubric:
+        errors += 1
+        line = " ".join(rubric.group(0).split())[:70]
+        report.append(f"T-06: нет — заход сверх пяти категорий: «{line}…»")
+
+    return errors, report
+
+
 def t09_funnel_verdicts(path: str = FUNNEL_FILE) -> tuple[int, list[str]]:
     """T-09: у каждого кандидата в воронке вердикт «взят» или «отсеян по <ID>».
 
@@ -425,8 +511,25 @@ def t09_funnel_verdicts(path: str = FUNNEL_FILE) -> tuple[int, list[str]]:
         verdict = " ".join(tail.split())[:50]
         report.append(f"T-09: нет — вердикт без ID у «…{name}»: «{verdict}…»")
 
+    # Кандидат без «— кат. N —» не попадает в marks вовсе, то есть проверку вердикта
+    # обходит целиком. 12.08 так прошли кандидаты выдуманной рубрики. Строку охвата
+    # («… — пусто, только раунды») это не задевает: кандидата в ней нет.
+    unmarked = 0
+    listed = funnel_section(text, "Кандидаты")
+    if listed is not None:
+        for _, chunk in split_items(listed, r"^-\s+\S"):
+            if re.search(r"—\s*кат\.\s*\d+\s*—", chunk) or re.search(r"пусто", chunk, re.IGNORECASE):
+                continue
+            unmarked += 1
+            trouble = (
+                "формат «— кат. N —» нарушен" if re.search(r"кат\.\s*\d+", chunk)
+                else "категория не указана"
+            )
+            report.append(f"T-09: нет — кандидат мимо проверки вердикта, {trouble}: «{chunk[:60]}…»")
+    errors += unmarked
+
     if errors:
-        report.insert(0, f"T-09: нет — кандидатов {len(marks)}, без вердикта по правилу {errors}")
+        report.insert(0, f"T-09: нет — размеченных кандидатов {len(marks)}, нарушений {errors}")
     else:
         report.append(f"T-09: да — у всех {len(marks)} кандидатов вердикт «взят» или «отсеян по <ID>»")
     return errors, report
@@ -458,9 +561,10 @@ def main() -> int:
     # Воронка проверяется только здесь, не в analyse(): send_drafts.py зовёт analyse()
     # как гейт публикации, а формат воронки — не повод не отправить готовый пост.
     if path == DRAFTS_FILE:
+        coverage_errors, coverage_report = t06_funnel_coverage()
         funnel_errors, funnel_report = t09_funnel_verdicts()
-        errors += funnel_errors
-        report.extend(["## Воронка", *funnel_report, ""])
+        errors += coverage_errors + funnel_errors
+        report.extend(["## Воронка", *coverage_report, *funnel_report, ""])
 
     if len(report) > 1:
         write_report(report)
