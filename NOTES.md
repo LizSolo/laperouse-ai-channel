@@ -129,7 +129,7 @@ HEAD` с `git ls-remote origin master`.
    `docs.claude.com/en/docs/claude-code/*` → **301** на `code.claude.com/docs/en/*`,
    API-разделы → **302** на `platform.claude.com`. `WebFetch` редирект на другой хост не
    следует, а возвращает его вызывающему, поэтому второй запрос уходит на хост, которого в
-   списке нет, и получает `EGRESS_BLOCKED`. Задевает категорию 2 и рубрику про Claude.
+   списке нет, и получает `EGRESS_BLOCKED`. Задевает категорию 2.
    **Добавить в Allowed domains `code.claude.com` и `platform.claude.com`.**
    `anthropic.com/news` и `support.claude.com` при этом открываются напрямую, проверено.
 
