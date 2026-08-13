@@ -35,6 +35,9 @@ MAX_FIRST_LINE = 150
 MAX_SENTENCES = 3
 SIGNATURE = "#ЛизаСоло 👩‍💻"
 
+# Служебная строка режима отбора: «— кат. 3 · T-05, узко» или «— кат. 3 · пометок нет»
+SERVICE_LINE = re.compile(r"^—\s*кат\.\s*\d+\s*·\s*\S")
+
 EMOJI_RANGES = (
     (0x1F300, 0x1FAFF),
     (0x2600, 0x27BF),
@@ -55,34 +58,8 @@ def extract_blocks(markdown: str) -> list[str]:
     return [b.strip() for b in blocks if b.strip()]
 
 
-def count_headers(markdown: str, kind: str = "Пост") -> int:
-    return len(re.findall(rf"^##\s+{kind}\b", markdown, re.MULTILINE))
-
-
-def blocks_by_kind(markdown: str) -> tuple[list[str], list[str]]:
-    """Делит блоки файла на посты и карточки витрины по ближайшему заголовку выше.
-
-    Витрина едет тем же Action, что и посты: отдельный workflow-файл под OAuth-токеном
-    в репозиторий не проходит (13.08), а `.github/workflows/` правится только PAT'ом.
-    Поэтому карточки лежат в DRAFTS.md рядом с постами, и отличить их можно только
-    здесь. Блок без заголовка считается постом: непроверенный пост хуже, чем лишняя
-    проверка карточки.
-    """
-    heads = [(m.start(), m.group(1))
-             for m in re.finditer(r"^##\s+(Пост|Витрина)\b", markdown, re.MULTILINE)]
-    posts: list[str] = []
-    cards: list[str] = []
-    for block in re.finditer(r"```[a-zA-Z]*\n(.*?)```", markdown, re.DOTALL):
-        body = block.group(1).strip()
-        if not body:
-            continue
-        kind = None
-        for start, name in heads:
-            if start > block.start():
-                break
-            kind = name
-        (cards if kind == "Витрина" else posts).append(body)
-    return posts, cards
+def count_headers(markdown: str) -> int:
+    return len(re.findall(r"^##\s+Пост\b", markdown, re.MULTILINE))
 
 
 def drop_urls(text: str) -> str:
@@ -229,6 +206,34 @@ def m05_signature(text):
     return False, f"последняя строка не подпись: «{last[:60]}»"
 
 
+def strip_service_line(text: str) -> str:
+    """Убирает служебную строку режима отбора: остальные правила её не касаются.
+
+    Иначе она ломала бы соседей на ровном месте — Z-01 видит в «\\n— кат. 3»
+    тире-связку, X-08 считает её знаки, M-05 не находит подпись последней строкой.
+    Проверяет её только T-13, и ему текст передаётся целиком.
+    """
+    lines = text.rstrip().split("\n")
+    if lines and SERVICE_LINE.match(lines[-1].strip()):
+        return "\n".join(lines[:-1]).rstrip()
+    return text
+
+
+def t13_service_line(text):
+    """T-13: в режиме отбора у каждого поста служебная строка с категорией.
+
+    Смысл режима — понять, какие категории источников дают посты, которые Лиза
+    берёт, а какие не дают. Без метки на посте этот вопрос решается по памяти,
+    то есть никак.
+    """
+    if not selection_mode():
+        return True, "режим отбора выключен, строка не нужна"
+    lines = [line.strip() for line in text.split("\n") if line.strip()]
+    if lines and SERVICE_LINE.match(lines[-1]):
+        return True, f"служебная строка на месте: «{lines[-1][:40]}»"
+    return False, f"нет служебной строки «— кат. N · пометки»: «{lines[-1][:40] if lines else ''}»"
+
+
 def m08_no_source_line(text):
     if re.search(r"^\s*Источник:\s*http", text, re.MULTILINE):
         return False, "строка «Источник: URL» попала внутрь блока"
@@ -357,15 +362,17 @@ CHECKS = [
 
 
 def check_post(text: str, verified: str | None) -> list[tuple[str, object, str]]:
+    body = strip_service_line(text)
     results = []
     for rule_id, rule in CHECKS:
         try:
-            ok, detail = rule(text)
+            ok, detail = rule(body)
         except Exception as error:  # noqa: BLE001 — сбой правила не должен ронять прогон
             ok, detail = None, f"правило не отработало: {error}"
         results.append((rule_id, ok, detail))
-    ok, detail = f04_numbers_verified(text, verified)
+    ok, detail = f04_numbers_verified(body, verified)
     results.append(("F-04", ok, detail))
+    results.append(("T-13", *t13_service_line(text)))
     return results
 
 
@@ -381,25 +388,21 @@ def analyse(path: str = DRAFTS_FILE) -> tuple[int, list[str]]:
     with open(path, encoding="utf-8") as f:
         markdown = f.read()
 
-    posts, cards = blocks_by_kind(markdown)
+    posts = extract_blocks(markdown)
+    headers = count_headers(markdown)
 
     report = [f"# Проверка скриптом: {path}", ""]
 
-    if not posts and not cards:
-        report.append(f"ОШИБКА: в {path} нет ни одного блока")
+    if not posts:
+        report.append(f"ОШИБКА: в {path} нет ни одного блока с постом")
         return 1, report
 
     errors = 0
-    # Карточки витрины считаются отдельно и по правилам поста не проверяются: это
-    # тема со ссылкой, а не текст для канала. Требовать от неё подпись и 900 знаков
-    # значило бы штрафовать за то, ради чего она заведена.
-    for kind, blocks in (("Пост", posts), ("Витрина", cards)):
-        headers = count_headers(markdown, kind)
-        if headers != len(blocks):
-            errors += 1
-            report.append(f"M-07: нет — заголовков «## {kind}» {headers}, блоков {len(blocks)}")
-        else:
-            report.append(f"M-07: да — «## {kind}»: {headers} заголовков, {len(blocks)} блоков")
+    if headers != len(posts):
+        errors += 1
+        report.append(f"M-07: нет — заголовков «## Пост» {headers}, блоков {len(posts)}")
+    else:
+        report.append(f"M-07: да — {len(posts)} заголовков, {len(posts)} блоков")
     report.append("")
 
     verified = None
@@ -629,21 +632,18 @@ def selection_mode(path: str = AUTHOR_PROMPT) -> bool:
         return re.search(r"^\*\*Режим отбора:\s*ВКЛ", f.read(), re.MULTILINE) is not None
 
 
-def t13_shortlist(path: str = DRAFTS_FILE) -> tuple[int, list[str]]:
-    """T-13: карточек витрины столько же, сколько «взят» в воронке.
+def t14_taken_accounted(path: str = DRAFTS_FILE) -> tuple[int, list[str]]:
+    """T-14: каждая взятая тема стала постом либо ушла в очередь на завтра.
 
-    Смысл витрины в том, что до Лизы доходит каждый прошедший кандидат, а не тот,
-    на который у автора хватило утра. Пропажу видно только счётом: в воронке взят,
-    в витрине нет — тема исчезает ровно так же, как исчезала до T-09.
-
-    Карточки считаются внутри блоков под заголовком «## Витрина»: то, что лежит вне
-    блока, send_drafts.py не отправит, и для Лизы его не существует. Номера нужны
-    подряд — ими она отвечает, какие темы разворачивать в посты (T-14).
+    Правило режима отбора и весь его смысл: до Лизы должно доходить всё, что прошло
+    отбор, а не то, на что хватило утра. Третьего исхода у взятой темы нет — пост
+    сегодня или строка в «Не проверено, взять завтра». Проверяется счётом, потому
+    что именно так темы и терялись раньше: молча, между воронкой и черновиками.
     """
     if not selection_mode():
-        return 0, ["T-13: пропущено — режим отбора выключен"]
+        return 0, ["T-14: пропущено — режим отбора выключен"]
     if not os.path.exists(FUNNEL_FILE):
-        return 0, [f"T-13: ПРОВЕРЬ — {FUNNEL_FILE} не найден, считать не с чем"]
+        return 0, [f"T-14: ПРОВЕРЬ — {FUNNEL_FILE} не найден, считать не с чем"]
 
     with open(FUNNEL_FILE, encoding="utf-8") as f:
         funnel = f.read()
@@ -654,8 +654,13 @@ def t13_shortlist(path: str = DRAFTS_FILE) -> tuple[int, list[str]]:
         if re.match(r"\s*\**взят\b", funnel[mark.end():limit].split("\n\n")[0]):
             taken += 1
 
+    deferred = 0
+    queue = funnel_section(funnel, "Не проверено, взять завтра")
+    if queue is not None:
+        deferred = len(split_items(queue, r"^-\s+\S"))
+
     if not os.path.exists(path):
-        return 1, [f"T-13: нет — {path} не найден, а в воронке взято {taken}"]
+        return 1, [f"T-14: нет — {path} не найден, а в воронке взято {taken}"]
 
     with open(path, encoding="utf-8") as f:
         text = f.read()
@@ -663,16 +668,15 @@ def t13_shortlist(path: str = DRAFTS_FILE) -> tuple[int, list[str]]:
     today = run_date(FUNNEL_FILE, "Воронка")
     written = run_date(path, "Черновики")
     if today is not None and written != today:
-        return 1, [f"T-13: нет — черновики за {written or '—'}, воронка за {today}"]
+        return 1, [f"T-14: нет — черновики за {written or '—'}, воронка за {today}"]
 
-    _, cards = blocks_by_kind(text)
-    numbers = [int(n) for card in cards
-               for n in re.findall(r"^\s*(\d+)\.\s+\S", card, re.MULTILINE)]
-    if numbers != list(range(1, len(numbers) + 1)):
-        return 1, [f"T-13: нет — номера карточек не подряд с единицы: {numbers}"]
-    if len(numbers) != taken:
-        return 1, [f"T-13: нет — карточек {len(numbers)}, а в воронке взято {taken}"]
-    return 0, [f"T-13: да — карточек в витрине {len(numbers)}, столько же взято в воронке"]
+    posts = len(extract_blocks(text))
+    if posts + deferred != taken:
+        return 1, [
+            f"T-14: нет — взято {taken}, а постов {posts} и отложено {deferred}: "
+            f"{taken - posts - deferred} тем пропало между воронкой и черновиками"
+        ]
+    return 0, [f"T-14: да — взято {taken} = постов {posts} + отложено {deferred}"]
 
 
 def failures(report: list[str]) -> list[str]:
@@ -703,7 +707,7 @@ def main() -> int:
     if path == DRAFTS_FILE:
         coverage_errors, coverage_report = t06_funnel_coverage()
         funnel_errors, funnel_report = t09_funnel_verdicts()
-        shortlist_errors, shortlist_report = t13_shortlist()
+        shortlist_errors, shortlist_report = t14_taken_accounted()
         errors += coverage_errors + funnel_errors + shortlist_errors
         # Сверять есть с чем только после всех остальных проверок: автор в selfcheck
         # отчитывается о коде прогона, а не о результате самой этой сверки.
