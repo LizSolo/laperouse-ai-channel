@@ -21,10 +21,12 @@ import re
 import sys
 
 DRAFTS_FILE = "DRAFTS.md"
+SHORTLIST_FILE = "SHORTLIST.md"
 VERIFIED_FILE = os.path.join("pipeline", "verified.md")
 FUNNEL_FILE = os.path.join("pipeline", "funnel.md")
 SELFCHECK_FILE = os.path.join("pipeline", "selfcheck.md")
 REPORT_FILE = os.path.join("pipeline", "lint.md")
+AUTHOR_PROMPT = os.path.join("prompts", "author.md")
 
 CATEGORIES = 5  # столько категорий источников в prompts/author.md, раздел 2.2
 
@@ -585,6 +587,64 @@ def m09_selfcheck_code(found_errors: int, path: str = SELFCHECK_FILE) -> tuple[i
     return 0, [f"M-09: да — код в selfcheck.md совпадает с настоящим ({actual})"]
 
 
+def selection_mode(path: str = AUTHOR_PROMPT) -> bool:
+    """Включён ли режим отбора. Выключатель живёт в одном месте — промпте автора.
+
+    Скрипт читает его там же, где агент, чтобы «ВКЛ» не разошлось с поведением:
+    вторая копия состояния разошлась бы с первой, как разошлись три копии списка
+    категорий до 12.08.
+    """
+    if not os.path.exists(path):
+        return False
+    with open(path, encoding="utf-8") as f:
+        return re.search(r"^\*\*Режим отбора:\s*ВКЛ", f.read(), re.MULTILINE) is not None
+
+
+def t13_shortlist(path: str = SHORTLIST_FILE) -> tuple[int, list[str]]:
+    """T-13: карточек в SHORTLIST.md столько же, сколько «взят» в воронке.
+
+    Смысл витрины в том, что до Лизы доходит каждый прошедший кандидат, а не тот,
+    на который у автора хватило утра. Пропажу видно только счётом: в воронке взят,
+    в витрине нет — тема исчезает ровно так же, как исчезала до T-09.
+
+    Карточки считаются внутри блоков в тройных кавычках: то, что лежит вне блока,
+    send_drafts.py не отправит, и для Лизы его не существует. Номера нужны подряд —
+    ими она отвечает, какие темы разворачивать в посты (T-14).
+    """
+    if not selection_mode():
+        return 0, ["T-13: пропущено — режим отбора выключен"]
+    if not os.path.exists(FUNNEL_FILE):
+        return 0, [f"T-13: ПРОВЕРЬ — {FUNNEL_FILE} не найден, считать не с чем"]
+
+    with open(FUNNEL_FILE, encoding="utf-8") as f:
+        funnel = f.read()
+    marks = list(re.finditer(r"—\s*кат\.\s*\d+\s*—", funnel))
+    taken = 0
+    for number, mark in enumerate(marks):
+        limit = marks[number + 1].start() if number + 1 < len(marks) else len(funnel)
+        if re.match(r"\s*\**взят\b", funnel[mark.end():limit].split("\n\n")[0]):
+            taken += 1
+
+    if not os.path.exists(path):
+        return 1, [f"T-13: нет — {path} не найден, а в воронке взято {taken}"]
+
+    with open(path, encoding="utf-8") as f:
+        text = f.read()
+
+    today = run_date(FUNNEL_FILE, "Воронка")
+    listed = run_date(path, "Витрина")
+    if today is not None and listed != today:
+        return 1, [f"T-13: нет — витрина за {listed or '—'}, воронка за {today}"]
+
+    numbers = [int(n) for block in extract_blocks(text)
+               for n in re.findall(r"^\s*(\d+)\.\s+\S", block, re.MULTILINE)]
+    if numbers != list(range(1, len(numbers) + 1)):
+        return 1, [f"T-13: нет — номера карточек не подряд с единицы: {numbers}"]
+    if len(numbers) != taken:
+        return 1, [f"T-13: нет — карточек {len(numbers)}, а в воронке взято {taken}"]
+    return 0, [f"T-13: да — карточек в витрине {len(numbers)}, столько же взято в воронке"]
+
+
 def failures(report: list[str]) -> list[str]:
     """Только то, что требует внимания. Заголовок поста без находок не печатается."""
     keep: list[str] = []
@@ -613,12 +673,16 @@ def main() -> int:
     if path == DRAFTS_FILE:
         coverage_errors, coverage_report = t06_funnel_coverage()
         funnel_errors, funnel_report = t09_funnel_verdicts()
-        errors += coverage_errors + funnel_errors
+        shortlist_errors, shortlist_report = t13_shortlist()
+        errors += coverage_errors + funnel_errors + shortlist_errors
         # Сверять есть с чем только после всех остальных проверок: автор в selfcheck
         # отчитывается о коде прогона, а не о результате самой этой сверки.
         code_errors, code_report = m09_selfcheck_code(errors)
         errors += code_errors
-        report.extend(["## Воронка", *coverage_report, *funnel_report, *code_report, ""])
+        report.extend(
+            ["## Воронка", *coverage_report, *funnel_report, *shortlist_report,
+             *code_report, ""]
+        )
 
     if len(report) > 1:
         write_report(report)
