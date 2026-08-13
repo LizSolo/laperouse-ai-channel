@@ -21,7 +21,6 @@ import re
 import sys
 
 DRAFTS_FILE = "DRAFTS.md"
-SHORTLIST_FILE = "SHORTLIST.md"
 VERIFIED_FILE = os.path.join("pipeline", "verified.md")
 FUNNEL_FILE = os.path.join("pipeline", "funnel.md")
 SELFCHECK_FILE = os.path.join("pipeline", "selfcheck.md")
@@ -56,8 +55,34 @@ def extract_blocks(markdown: str) -> list[str]:
     return [b.strip() for b in blocks if b.strip()]
 
 
-def count_headers(markdown: str) -> int:
-    return len(re.findall(r"^##\s+Пост\b", markdown, re.MULTILINE))
+def count_headers(markdown: str, kind: str = "Пост") -> int:
+    return len(re.findall(rf"^##\s+{kind}\b", markdown, re.MULTILINE))
+
+
+def blocks_by_kind(markdown: str) -> tuple[list[str], list[str]]:
+    """Делит блоки файла на посты и карточки витрины по ближайшему заголовку выше.
+
+    Витрина едет тем же Action, что и посты: отдельный workflow-файл под OAuth-токеном
+    в репозиторий не проходит (13.08), а `.github/workflows/` правится только PAT'ом.
+    Поэтому карточки лежат в DRAFTS.md рядом с постами, и отличить их можно только
+    здесь. Блок без заголовка считается постом: непроверенный пост хуже, чем лишняя
+    проверка карточки.
+    """
+    heads = [(m.start(), m.group(1))
+             for m in re.finditer(r"^##\s+(Пост|Витрина)\b", markdown, re.MULTILINE)]
+    posts: list[str] = []
+    cards: list[str] = []
+    for block in re.finditer(r"```[a-zA-Z]*\n(.*?)```", markdown, re.DOTALL):
+        body = block.group(1).strip()
+        if not body:
+            continue
+        kind = None
+        for start, name in heads:
+            if start > block.start():
+                break
+            kind = name
+        (cards if kind == "Витрина" else posts).append(body)
+    return posts, cards
 
 
 def drop_urls(text: str) -> str:
@@ -356,21 +381,25 @@ def analyse(path: str = DRAFTS_FILE) -> tuple[int, list[str]]:
     with open(path, encoding="utf-8") as f:
         markdown = f.read()
 
-    posts = extract_blocks(markdown)
-    headers = count_headers(markdown)
+    posts, cards = blocks_by_kind(markdown)
 
     report = [f"# Проверка скриптом: {path}", ""]
 
-    if not posts:
-        report.append(f"ОШИБКА: в {path} нет ни одного блока с постом")
+    if not posts and not cards:
+        report.append(f"ОШИБКА: в {path} нет ни одного блока")
         return 1, report
 
     errors = 0
-    if headers != len(posts):
-        errors += 1
-        report.append(f"M-07: нет — заголовков «## Пост» {headers}, блоков {len(posts)}")
-    else:
-        report.append(f"M-07: да — {len(posts)} заголовков, {len(posts)} блоков")
+    # Карточки витрины считаются отдельно и по правилам поста не проверяются: это
+    # тема со ссылкой, а не текст для канала. Требовать от неё подпись и 900 знаков
+    # значило бы штрафовать за то, ради чего она заведена.
+    for kind, blocks in (("Пост", posts), ("Витрина", cards)):
+        headers = count_headers(markdown, kind)
+        if headers != len(blocks):
+            errors += 1
+            report.append(f"M-07: нет — заголовков «## {kind}» {headers}, блоков {len(blocks)}")
+        else:
+            report.append(f"M-07: да — «## {kind}»: {headers} заголовков, {len(blocks)} блоков")
     report.append("")
 
     verified = None
@@ -600,16 +629,16 @@ def selection_mode(path: str = AUTHOR_PROMPT) -> bool:
         return re.search(r"^\*\*Режим отбора:\s*ВКЛ", f.read(), re.MULTILINE) is not None
 
 
-def t13_shortlist(path: str = SHORTLIST_FILE) -> tuple[int, list[str]]:
-    """T-13: карточек в SHORTLIST.md столько же, сколько «взят» в воронке.
+def t13_shortlist(path: str = DRAFTS_FILE) -> tuple[int, list[str]]:
+    """T-13: карточек витрины столько же, сколько «взят» в воронке.
 
     Смысл витрины в том, что до Лизы доходит каждый прошедший кандидат, а не тот,
     на который у автора хватило утра. Пропажу видно только счётом: в воронке взят,
     в витрине нет — тема исчезает ровно так же, как исчезала до T-09.
 
-    Карточки считаются внутри блоков в тройных кавычках: то, что лежит вне блока,
-    send_drafts.py не отправит, и для Лизы его не существует. Номера нужны подряд —
-    ими она отвечает, какие темы разворачивать в посты (T-14).
+    Карточки считаются внутри блоков под заголовком «## Витрина»: то, что лежит вне
+    блока, send_drafts.py не отправит, и для Лизы его не существует. Номера нужны
+    подряд — ими она отвечает, какие темы разворачивать в посты (T-14).
     """
     if not selection_mode():
         return 0, ["T-13: пропущено — режим отбора выключен"]
@@ -632,12 +661,13 @@ def t13_shortlist(path: str = SHORTLIST_FILE) -> tuple[int, list[str]]:
         text = f.read()
 
     today = run_date(FUNNEL_FILE, "Воронка")
-    listed = run_date(path, "Витрина")
-    if today is not None and listed != today:
-        return 1, [f"T-13: нет — витрина за {listed or '—'}, воронка за {today}"]
+    written = run_date(path, "Черновики")
+    if today is not None and written != today:
+        return 1, [f"T-13: нет — черновики за {written or '—'}, воронка за {today}"]
 
-    numbers = [int(n) for block in extract_blocks(text)
-               for n in re.findall(r"^\s*(\d+)\.\s+\S", block, re.MULTILINE)]
+    _, cards = blocks_by_kind(text)
+    numbers = [int(n) for card in cards
+               for n in re.findall(r"^\s*(\d+)\.\s+\S", card, re.MULTILINE)]
     if numbers != list(range(1, len(numbers) + 1)):
         return 1, [f"T-13: нет — номера карточек не подряд с единицы: {numbers}"]
     if len(numbers) != taken:
