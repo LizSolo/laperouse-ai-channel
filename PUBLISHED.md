@@ -48,3 +48,4 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-08-11 — отправлено — amoCRM: тарифы дорожают с 1 сентября, как зафиксировать текущую цену — https://www.amocrm.ru/buy/
 - 2026-08-11 — отправлено — ATI.SU: ИИ-ассистент на GigaChat оформляет счета и закрывающие документы для перевозчиков в диалоге — https://www.cnews.ru/news/line/2026-07-06_logisticheskaya_platforma
 - 2026-08-12 — одобрено — Anthropic: невидимые водяные знаки в тексте и файлах Claude, что это значит для бизнеса, отдающего клиентам ИИ-контент под своим именем — https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content
+- 2026-08-13 — отправлено — ChatGPT Business: платные Premium-места (5x лимит, без потолка в 5 часов), кому в команде их покупать — https://openai.com/index/premium-seats-chatgpt-business/
