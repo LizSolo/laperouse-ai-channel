@@ -54,3 +54,8 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-08-14 — отправлено — Google Таблицы: Sheets canvas превращает данные в канбан-доску или дашборд по текстовому запросу — https://workspaceupdates.googleblog.com/2026/08/use-google-sheets-canvas-to-visualize-data.html
 - 2026-08-14 — отправлено — Microsoft объединяет Copilot и M365 Copilot, отключает групповые чаты, подкасты, Copilot Labs и Deep Research до 18 августа — https://techcrunch.com/2026/08/13/microsoft-kills-off-unsuccessful-ai-features-while-merging-its-separate-copilot-apps/
 - 2026-08-14 — отправлено — Mesh (Automattic): бесплатная CRM для контактов на 1000 записей вышла на Android — https://techcrunch.com/2026/08/12/mesh-automattics-crm-for-everyone-comes-to-android/
+- 2026-08-15 — отправлено — Битрикс24 Коворк/Код: AI-агент вместо разработчика для внутренних задач и приложений в CRM — https://www.bitrix24.ru/journal/vaybkod-bitrix24-gayd-novichkov/
+- 2026-08-15 — отправлено — Циан: интервью ИТ-директора про GPT Gateway и почему 95% внедрений ИИ не окупаются без расчёта ROI — https://www.cnews.ru/reviews/tehnologii_iskusstvennogo_intellekta_1/interviews/maksim_radyukov
+- 2026-08-15 — отправлено — Claude Sonnet 5: цена по API $2/$10 за MTok остаётся постоянной, повышения до $3/$15 с 1 сентября не будет — https://platform.claude.com/docs/en/about-claude/pricing
+- 2026-08-15 — отправлено — Notion: карточка сравнения моделей ИИ по скорости, качеству и цене вместо списка названий — https://www.notion.com/releases/2026-08-14
+- 2026-08-15 — отправлено — Google: можно отключить видимый watermark на AI-изображениях, видео и музыке в Gemini — https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/
