@@ -59,3 +59,8 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-08-15 — отправлено — Claude Sonnet 5: цена по API $2/$10 за MTok остаётся постоянной, повышения до $3/$15 с 1 сентября не будет — https://platform.claude.com/docs/en/about-claude/pricing
 - 2026-08-15 — отправлено — Notion: карточка сравнения моделей ИИ по скорости, качеству и цене вместо списка названий — https://www.notion.com/releases/2026-08-14
 - 2026-08-15 — отправлено — Google: можно отключить видимый watermark на AI-изображениях, видео и музыке в Gemini — https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/
+- 2026-08-16 — отправлено — ChatGPT Business: функция Computer History запоминает, чем занимался сотрудник на Mac, включает администратор — https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes
+- 2026-08-16 — отправлено — Anthropic: сканирование скиллов и плагинов на угрозы в Claude Cowork (бета, Enterprise) — https://support.claude.com/en/articles/15927065-get-started-with-skill-and-plugin-scanning
+- 2026-08-16 — отправлено — Notion: документами можно делиться с Custom Agent прямо из меню Share, без настроек агента — https://www.notion.com/releases/2026-08-07
+- 2026-08-16 — отправлено — Gemini 3.7 Flash: агентные сценарии в API вдвое дешевле по вводной цене до конца 2026 года — https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/
+- 2026-08-16 — отправлено — OpenAI: программа для малого бизнеса вокруг агента ChatGPT Work, который берёт многошаговые задачи целиком — https://www.inc.com/chloe-aiello/openai-just-unveiled-a-massive-push-to-turn-small-business-owners-into-ai-power-users/91377329
