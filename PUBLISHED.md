@@ -64,3 +64,5 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-08-16 — отправлено — Notion: документами можно делиться с Custom Agent прямо из меню Share, без настроек агента — https://www.notion.com/releases/2026-08-07
 - 2026-08-16 — отправлено — Gemini 3.7 Flash: агентные сценарии в API вдвое дешевле по вводной цене до конца 2026 года — https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/
 - 2026-08-16 — отправлено — OpenAI: программа для малого бизнеса вокруг агента ChatGPT Work, который берёт многошаговые задачи целиком — https://www.inc.com/chloe-aiello/openai-just-unveiled-a-massive-push-to-turn-small-business-owners-into-ai-power-users/91377329
+- 2026-08-17 — отправлено — Контур.Фокус: ИИ-анализ договоров с контрагентами за 10 минут вместо ручного изучения — https://www.cnews.ru/news/line/2026-08-11_konturfokus_predstavil
+- 2026-08-17 — отправлено — Vibecraft от Яндекса: вайб-кодинг сайтов, который на деле требует Git и SSH-ключи — https://habr.com/ru/articles/1070724/
