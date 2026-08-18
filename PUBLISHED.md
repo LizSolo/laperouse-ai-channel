@@ -66,3 +66,8 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-08-16 — отправлено — OpenAI: программа для малого бизнеса вокруг агента ChatGPT Work, который берёт многошаговые задачи целиком — https://www.inc.com/chloe-aiello/openai-just-unveiled-a-massive-push-to-turn-small-business-owners-into-ai-power-users/91377329
 - 2026-08-17 — отправлено — Контур.Фокус: ИИ-анализ договоров с контрагентами за 10 минут вместо ручного изучения — https://www.cnews.ru/news/line/2026-08-11_konturfokus_predstavil
 - 2026-08-17 — отправлено — Vibecraft от Яндекса: вайб-кодинг сайтов, который на деле требует Git и SSH-ключи — https://habr.com/ru/articles/1070724/
+- 2026-08-18 — отправлено — Китайские LLM (Qwen, GLM, Kimi) в российском бизнесе: потребление выросло в 11,3 раза — https://www.cnews.ru/news/line/2026-08-13_potreblenie_kitajskih_llm
+- 2026-08-18 — отправлено — AI Guard: расширение для Chrome маскирует чувствительные данные перед отправкой в ИИ-чат — https://habr.com/ru/articles/1071398/
+- 2026-08-18 — отправлено — Google Workspace: Admin Assist приносит Gemini-подсказки прямо в Admin console — http://workspaceupdates.googleblog.com/2026/08/use-gemini-to-help-manage-google-Workspace-for-your-organization.html
+- 2026-08-18 — отправлено — Wispr Flow: голосовой ИИ выходит за пределы диктовки, заметки со встреч и модель Canto — https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation/
+- 2026-08-18 — отправлено — Grok Bot от SpaceXAI: постоянные ИИ-агенты, которые работают в ваших приложениях за $120/мес — https://venturebeat.com/orchestration/spacexais-grok-bot-turns-agents-into-persistent-digital-coworkers-that-can-operate-your-apps-for-120-per-month
