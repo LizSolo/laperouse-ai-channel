@@ -79,3 +79,26 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-08-20 — отправлено — Google Chat: единый интерфейс «Ask Gemini» с 26 августа заменяет боковую панель Gemini — http://workspaceupdates.googleblog.com/2026/08/ask-gemini-in-chat.html
 - 2026-08-20 — отправлено — Calendly: AI-конспектор Notetaker и ассистент Callie вместо отдельной подписки на запись встреч — https://techcrunch.com/2026/08/19/calendly-throws-its-hat-into-meeting-note-taker-circus/
 - 2026-08-20 — отправлено — OpenAI: ChatGPT Ads расширяется на 31 европейскую страну с 24 августа — https://dataconomy.com/2026/08/19/openai-chatgpt-ads-launch-european-markets-august-24/
+- 2026-08-21 — отправлено — Диасофт: ИИ-агенты в Digital Q.PM автоматизируют планирование, мониторинг и отчётность по проектам — https://www.cnews.ru/news/line/2026-08-20_diasoft_integrirovala
+- 2026-08-21 — отправлено — ZeBrains: AI-платформа Artiroute ищет документы по смыслу и создаёт их по шаблону — https://www.cnews.ru/news/line/2026-08-20_zebrains_predstavila_ii-platformu
+- 2026-08-21 — отправлено — Скорозвон (Naumen Contact Center): ИИ-тренер переговоров получил женский голос — https://www.cnews.ru/news/line/2026-08-20_v_ii-trenere_skorozvona
+- 2026-08-21 — отправлено — Экзон: ИИ находит нужный материал среди 25 тысяч накладных на стройплощадке — https://www.cnews.ru/news/line/2026-08-20_ii_v_ekzon_nahodit_igolku
+- 2026-08-21 — отправлено — Anthropic: коннектор к Economic Index отвечает на вопросы об использовании ИИ по профессиям — https://www.anthropic.com/news/anthropic-economic-index-connector
+- 2026-08-21 — отправлено — Anthropic: Inference hooks для Claude Enterprise проверяют промпты сотрудников до выполнения — https://platform.claude.com/docs/en/manage-claude/inference-hooks
+- 2026-08-21 — отправлено — Anthropic: Compliance API выгружает транскрипты сессий Cowork и Claude Code для аудита — https://platform.claude.com/docs/en/manage-claude/compliance-sessions
+- 2026-08-21 — отправлено — Notion: ИИ-заметки со встреч автоматически запускают кастомных агентов — https://www.notion.com/releases/2026-07-31
+- 2026-08-21 — отправлено — Notion: расход AI-агентов Workers виден в общем дашборде кредитов — https://www.notion.com/releases/2026-07-24
+- 2026-08-21 — отправлено — Google Chat: отчёты по использованию Gemini показывают администратору реальную вовлечённость команды — http://workspaceupdates.googleblog.com/2026/08/view-google-chat-usage-metrics-in-Gemini-reports-dashboard.html
+- 2026-08-21 — отправлено — Google Slides: запись презентаций с автоозвучкой через интеграцию с Google Vids — http://workspaceupdates.googleblog.com/2026/08/record-presentations-in-Google-Slides-with-Google-Vids.html
+- 2026-08-21 — отправлено — Google Workspace Studio: новые контролы ограничивают доступ Gemini к данным Drive для no-code агентов — http://workspaceupdates.googleblog.com/2026/08/new-enterprise-security-controls-for-Workspace-Studio-enable-expanded-collaboration-use-cases.html
+- 2026-08-21 — отправлено — Meta: AI-приложение для Mac объединяет аналитику рекламы, почту и документы для малого бизнеса — https://techcrunch.com/2026/08/20/meta-ais-new-mac-app-wants-you-to-talk-to-your-apps/
+- 2026-08-21 — отправлено — Ramp: AI-роутер Router переключает модели разных провайдеров с единым дашбордом трат — https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router/
+- 2026-08-21 — отправлено — Cursor: платформа хостинга кода Origin как альтернатива GitHub — https://techcrunch.com/2026/08/18/cursor-capitalizes-on-github-frustration-launches-rival-hosting-platform/
+- 2026-08-21 — отправлено — OpenAI: Private Safety Processing защищает корпоративных клиентов API без хранения переписки — https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/
+- 2026-08-21 — отправлено — Google: кнопка «Preferred Sources» помогает издателям вернуть видимость в ИИ-поиске — https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/
+- 2026-08-21 — отправлено — Snowflake: Cortex AI Gateway контролирует расходы на ИИ-агентов по командам — https://siliconangle.com/2026/07/28/snowflake-debuts-cortex-ai-gateway-govern-monitor-enterprise-ai-agents/
+- 2026-08-21 — отправлено — Google DeepMind: открытые модели Gemma преодолели 1 млрд загрузок — https://blog.google/innovation-and-ai/technology/developers-tools/gemma-one-billion-downloads/
+- 2026-08-21 — отправлено — Google DeepMind: модель SL2T переводит жестовый язык в текст на Pixel 11 — https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/
+- 2026-08-21 — отправлено — Google DeepMind: WeatherNext предупреждает о циклоне на день раньше — https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/
+- 2026-08-21 — отправлено — Google Labs: Lyria 3.5 в Flow Music улучшает генерацию музыки для рекламы — https://blog.google/innovation-and-ai/models-and-research/google-labs/lyria-3-5/
+- 2026-08-21 — отправлено — OpenAI: Ultrafast mode для GPT-5.6 Sol на чипах Cerebras ускоряет ответы до 14 раз — https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai
