@@ -102,3 +102,10 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-08-21 — отправлено — Google DeepMind: WeatherNext предупреждает о циклоне на день раньше — https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/
 - 2026-08-21 — отправлено — Google Labs: Lyria 3.5 в Flow Music улучшает генерацию музыки для рекламы — https://blog.google/innovation-and-ai/models-and-research/google-labs/lyria-3-5/
 - 2026-08-21 — отправлено — OpenAI: Ultrafast mode для GPT-5.6 Sol на чипах Cerebras ускоряет ответы до 14 раз — https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai
+- 2026-08-22 — отправлено — Wildberries: «Анализ внимания» показывает тепловую карту и заметность элементов фото карточки товара — https://www.cnews.ru/news/line/2026-08-21_wildberries_zapustila_ii-servis
+- 2026-08-22 — отправлено — Wildberries: ИИ-сравнение товаров теперь строится на отзывах и вопросах покупателей, а не только на характеристиках — https://www.cnews.ru/news/line/2026-08-21_wildberries_vypustila_krupnoe
+- 2026-08-22 — отправлено — Яндекс: продавцы без сайта получают заказы из Поиска и чата с Алисой через Yandex Commerce Protocol — https://www.cnews.ru/news/line/2026-08-21_prodavtsy_bez_sajtov_teper
+- 2026-08-22 — отправлено — Anthropic: в Claude Managed Agents появился жёсткий денежный лимит на сессию ИИ-агента — https://platform.claude.com/docs/en/managed-agents/budgets
+- 2026-08-22 — отправлено — Google Workspace: Gemini Notebook можно скопировать целиком, источники можно добавлять автоматически — https://workspaceupdates.googleblog.com/2026/08/make-copy-of-notebook-in-gemini-notebook.html
+- 2026-08-22 — отправлено — Google: Environment Hooks в Gemini API позволяют проверять действия ИИ-агента до и после выполнения — https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/
+- 2026-08-22 — отправлено — OpenAI: модели кибербезопасности Daybreak Red и Daybreak Blue доступны на Amazon Bedrock — https://aws.amazon.com/about-aws/whats-new/2026/08/openai-daybreak-red-and-blue-on-amazon-bedrock/
