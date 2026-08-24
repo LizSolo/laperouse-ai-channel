@@ -114,3 +114,5 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-08-23 — отправлено — Свой MCP-сервер за двадцать минут: как подключить Claude и Cursor к своей базе данных без REST-бэкенда — https://vc.ru/ai/3090104-kak-podklyuchit-claude-i-cursor-k-mcp-serveru
 - 2026-08-23 — отправлено — Google Workspace: Allowlisted Domains API управляет списком доверенных доменов программно вместо ручной консоли — https://workspaceupdates.googleblog.com/2026/08/allowlisted-domains-api-now-generally-available.html
 - 2026-08-23 — отправлено — Anthropic: Claude Managed Agents подгружает skills прямо из GitHub-репозитория команды — https://platform.claude.com/docs/en/managed-agents/skills#load-skills-from-a-github-repository
+- 2026-08-24 — отправлено — Т2: ИИ-витрина «Элюмента» даёт единое окно доступа к 50+ нейросетям с оплатой с баланса телефона — https://www.cnews.ru/news/line/2026-08-13_t2_zapuskaet_edinoe_okno
+- 2026-08-24 — отправлено — BSS: «Речевая аналитика» 2.15 — встроенный ИИ стал автономным агентом, сам разбирает звонки по расписанию — https://www.cnews.ru/news/line/2026-08-10_bss_perevela_rechevuyu_analitiku
