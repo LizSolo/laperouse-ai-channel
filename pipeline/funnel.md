@@ -235,16 +235,19 @@ T-05 не проверяется у Claude и ChatGPT (исключение по
 без проблем с фактами; до пометочного хвоста время дошло только частично. Ниже — пять оставшихся,
 все с пометками, все из категорий 2-4:
 
-- ChatGPT Sites, совместное редактирование сайта — кат. 2 — help.openai.com/en/articles/11391654-chatgpt-business-release-notes
-  — не успел, сессия подошла к пределу очереди, тема с пометками стояла в хвосте
-- ChatGPT, плагин для Apple Messages — кат. 3 — https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/
-  — не успел, та же причина
-- «Sign in with ChatGPT» — кат. 3 — https://help.openai.com/en/articles/20001410-sign-in-with-chatgpt
-  — не успел, та же причина
-- NanoClaw, команды агентов в Slack — кат. 3 — https://venturebeat.com/orchestration/nanoclaw-comes-to-slack-letting-you-create-persistent-ai-agent-teams-and-colleagues-from-a-single-message
-  — не успел, та же причина
-- OpenAI × Stampli, сборка маркетинг-контекста в ChatGPT Work — кат. 4 — https://openai.com/index/stampli/
-  — не успел, та же причина
+- ChatGPT Sites, совместное редактирование сайта (категория 2). Источник:
+  help.openai.com/en/articles/11391654-chatgpt-business-release-notes. Не успел, сессия подошла
+  к пределу очереди, тема с пометками стояла в хвосте.
+- ChatGPT, плагин для Apple Messages (категория 3). Источник:
+  https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/.
+  Не успел, та же причина.
+- «Sign in with ChatGPT» (категория 3). Источник:
+  https://help.openai.com/en/articles/20001410-sign-in-with-chatgpt. Не успел, та же причина.
+- NanoClaw, команды агентов в Slack (категория 3). Источник:
+  https://venturebeat.com/orchestration/nanoclaw-comes-to-slack-letting-you-create-persistent-ai-agent-teams-and-colleagues-from-a-single-message.
+  Не успел, та же причина.
+- OpenAI × Stampli, сборка маркетинг-контекста в ChatGPT Work (категория 4). Источник:
+  https://openai.com/index/stampli/. Не успел, та же причина.
 
 ## Домены, закрытые allowlist
 

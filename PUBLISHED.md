@@ -116,3 +116,13 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-08-23 — отправлено — Anthropic: Claude Managed Agents подгружает skills прямо из GitHub-репозитория команды — https://platform.claude.com/docs/en/managed-agents/skills#load-skills-from-a-github-repository
 - 2026-08-24 — отправлено — Т2: ИИ-витрина «Элюмента» даёт единое окно доступа к 50+ нейросетям с оплатой с баланса телефона — https://www.cnews.ru/news/line/2026-08-13_t2_zapuskaet_edinoe_okno
 - 2026-08-24 — отправлено — BSS: «Речевая аналитика» 2.15 — встроенный ИИ стал автономным агентом, сам разбирает звонки по расписанию — https://www.cnews.ru/news/line/2026-08-10_bss_perevela_rechevuyu_analitiku
+- 2026-08-25 — отправлено — GigaChat Ultra: голосовой диалог в приложении вместо ввода текста — https://giga.chat/help/articles/voice-input
+- 2026-08-25 — отправлено — Habr (alpinadigital): успех ИИ-трансформации держится на одном мотивированном человеке в команде, а не на бюджете — https://habr.com/ru/companies/alpinadigital/articles/1066708/
+- 2026-08-25 — отправлено — ChatGPT Business: доплата за новое место теперь списывается сразу, а не в следующем счёте — https://help.openai.com/en/articles/8792536-managing-billing-and-seats-in-chatgpt-business
+- 2026-08-25 — отправлено — Instinct: персональный ИИ-ассистент с широким доступом к данным и риском для приватности — https://techcrunch.com/2026/08/24/instincts-powerful-ai-assistant-is-raising-privacy-and-security-concerns/
+- 2026-08-25 — отправлено — Inc.com: 55% руководителей жалеют об увольнениях под предлогом замены ИИ, волна тихого возврата к найму — https://www.inc.com/bruce-crumley/55-percent-of-leaders-regret-ai-layoffs-and-a-major-hiring-reversal-has-begun/91380901
+- 2026-08-25 — отправлено — Axios: роль AI enablement lead для точечного внедрения ИИ по одному отделу за раз — https://www.axios.com/2026/07/27/ai-enablement-plan-companies-ceos
+- 2026-08-25 — отправлено — Notion: раздел Developer в сайдбаре объединяет управление Workers, подключениями и токенами — https://www.notion.com/releases/2026-08-19
+- 2026-08-25 — отправлено — Google Gemini: интерактивные 3D-визуализации и симуляции по текстовому запросу — http://workspaceupdates.googleblog.com/2026/08/generate-interactive-simulations-and-models-in-the-Gemini-app.html
+- 2026-08-25 — отправлено — Anthropic: safety-классификаторы Claude Fable 5 по биологии стали реже отказывать на легитимные вопросы — https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards
+- 2026-08-25 — отправлено — Anthropic × Cognizant: расширенное партнёрство, автоматизация проверки договоров сократила обработку на 40% — https://www.anthropic.com/news/cognizant-anthropic
