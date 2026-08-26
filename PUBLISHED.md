@@ -126,3 +126,18 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-08-25 — отправлено — Google Gemini: интерактивные 3D-визуализации и симуляции по текстовому запросу — http://workspaceupdates.googleblog.com/2026/08/generate-interactive-simulations-and-models-in-the-Gemini-app.html
 - 2026-08-25 — отправлено — Anthropic: safety-классификаторы Claude Fable 5 по биологии стали реже отказывать на легитимные вопросы — https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards
 - 2026-08-25 — отправлено — Anthropic × Cognizant: расширенное партнёрство, автоматизация проверки договоров сократила обработку на 40% — https://www.anthropic.com/news/cognizant-anthropic
+- 2026-08-26 — отправлено — ChatGPT Sites: совместное редактирование сайта — https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes
+- 2026-08-26 — отправлено — ChatGPT: плагин для Apple Messages готовит черновики ответов на Mac — https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/
+- 2026-08-26 — отправлено — NanoClaw: команда именных ИИ-агентов в Slack из одного сообщения — https://venturebeat.com/orchestration/nanoclaw-comes-to-slack-letting-you-create-persistent-ai-agent-teams-and-colleagues-from-a-single-message
+- 2026-08-26 — отправлено — «Sign in with ChatGPT»: единый вход в Notion, HubSpot, Airtable и другие сервисы — https://help.openai.com/en/articles/20001410-sign-in-with-chatgpt
+- 2026-08-26 — отправлено — OpenAI × Stampli: контент-команда сократила время выпуска на 68% через ChatGPT Work — https://openai.com/index/stampli/
+- 2026-08-26 — отправлено — Сбер: «Бизнес-помощник» на GigaChat в СберБизнес подбирает сотрудников — https://novostivoronezha.ru/2026/08/03/359124
+- 2026-08-26 — отправлено — Claude: единая память Chat + Cowork, раздел Topics — https://support.claude.com/en/articles/12138966-release-notes
+- 2026-08-26 — отправлено — Notion: недельный лимит использования Notion AI для Business/Enterprise — https://www.notion.com/releases
+- 2026-08-26 — отправлено — Claude Code: буст недельного лимита +50% продлён до 31 августа — https://support.claude.com/en/articles/12138966-release-notes
+- 2026-08-26 — отправлено — ChatGPT Business: новый уровень места Premium seat за $125/мес — https://openai.com/index/premium-seats-chatgpt-business/
+- 2026-08-26 — отправлено — OpenAI: отчёт «From assistance to execution» о лидерах внедрения ИИ — https://openai.com/index/how-enterprises-put-ai-to-work/
+- 2026-08-26 — отправлено — Axios: CEO меняют риторику про ИИ и сокращения — https://www.axios.com/2026/08/20/ceos-shift-messaging-around-ai-and-layoffs
+- 2026-08-26 — отправлено — Inc.com: отделы продаж автоматизируют рутину, но найм продавцов растёт — https://www.inc.com/brian-contreras/fastest-growing-companies-ai-sales-marketing-customer-service/91377352
+- 2026-08-26 — отправлено — Inc.com: волна увольнений в биг-техе как окно найма для малого бизнеса — https://www.inc.com/joe-procopio/tech-mass-layoffs-are-creating-a-once-in-a-lifetime-opportunity-for-small-business-growth/91388469
+- 2026-08-26 — отправлено — MIT Technology Review Insights: доступ к данным тормозит внедрение AI-агентов — https://www.technologyreview.com/2026/08/12/1141032/scaling-ai-agents-with-trustworthy-data/
