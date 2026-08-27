@@ -1,202 +1,205 @@
-# Проверка фактов за 2026-08-26
+# Проверенные факты за 2026-08-27
 
-## 1. ChatGPT Sites, совместное редактирование сайта
-Источник: https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes (403,
-проверено WebSearch)
-Подтверждение: https://x.com/OpenAIDevs/status/2090515079058108745 (официальный анонс OpenAI
-Developers) + https://help.openai.com/en/articles/20001339-creating-and-managing-chatgpt-sites
-Путь: WebSearch, два независимых документа OpenAI совпадают дословно
-Факты:
-- владелец сайта (site owner) может добавить участника workspace как редактора с правом «Can edit»
-- редактор обновляет и сохраняет сайт; после первой публикации владельцем редактор публикует
-  последующие версии на тот же URL
-- владелец сохраняет контроль над sharing, аналитикой, ownership, восстановлением версий
-- доступно на тарифах ChatGPT Business и Enterprise
-- дата анонса: 20 августа 2026
+По каждой теме: первоисточник, подтверждение, факты. Числа отсюда сверяет `pipeline/lint.py`
+(F-04) — каждое число в посте должно быть здесь.
 
-## 2. ChatGPT, плагин для Apple Messages
-Источник: https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/
-Подтверждение: https://www.macrumors.com/2026/08/20/chatgpt-imessages-mac/,
-https://9to5mac.com/2026/08/20/chatgpt-update-adds-apple-messages-integration-on-mac/
-Путь: WebFetch (первоисточник открыт)
-Факты:
-- работает только в приложении ChatGPT для macOS, только на Mac с Apple Silicon
-- поддерживает iMessage, SMS, RCS
-- функции: поиск и анализ переписки, суммаризация, черновики ответов, отправка и удаление
-  сообщений от имени пользователя
-- требует Full Disk Access, доступ к контактам и Automation в системных настройках macOS
-- обработка происходит локально на устройстве, данные не сохраняются на серверах OpenAI
-- отправка по умолчанию требует ручного подтверждения пользователя
-- дата: 20 августа 2026
+---
 
-## 3. NanoClaw, команды агентов в Slack
-Источник: https://venturebeat.com/orchestration/nanoclaw-comes-to-slack-letting-you-create-persistent-ai-agent-teams-and-colleagues-from-a-single-message
-(egress-прокси заблокировал WebFetch, факты через WebSearch)
-Подтверждение: https://dataconomy.com/2026/08/24/nanoclaw-enables-creation-of-ai-agent-teams-in-slack-with/
-Путь: WebSearch, два независимых источника (VentureBeat, Dataconomy)
-Факты:
-- NanoClaw — бесплатный open-source агент-харнесс (MIT license), создатель Gavriel Cohen
-  (компания NanoCo, бывший инженер Wix)
-- интеграция со Slack анонсирована 20 августа 2026
-- одним сообщением в Slack можно создать команду именных агентов с ролями, памятью,
-  инструкциями и правами доступа («recursive provisioning»)
-- построен на Anthropic Agent SDK, работает на моделях Claude
-- сам NanoClaw бесплатен, платится только использование API-провайдера
-- поддерживает также WhatsApp, Telegram, Discord, Microsoft Teams и другие каналы
+## 1. Slack Code
 
-## 4. «Sign in with ChatGPT»
-Источник: https://help.openai.com/en/articles/20001410-sign-in-with-chatgpt (403, WebSearch)
-Подтверждение: https://www.techtimes.com/articles/322791/20260803/sign-chatgpt-launches-what-openai-retains-not-what-gets-shared.htm,
-https://supabase.com/blog/sign-in-with-chatgpt-beta
-Путь: WebSearch, два независимых источника
-Факты:
-- публичная бета запущена 2 августа 2026
-- партнёры на старте: Airtable, GitLab, HubSpot, Notion, Supabase, Vercel (шесть сервисов)
-- при входе передаются три поля: имя, email, фото профиля (если есть)
-- пользователь отдельно подтверждает доступ каждого приложения
+Первоисточник: https://venturebeat.com/orchestration/slack-wants-to-drag-ai-coding-out-of-the-terminal-and-into-the-group-chat (403 для WebFetch, подтверждён через WebSearch).
+Подтверждение: https://www.theregister.com/saas/2026/08/20/slack-code-taps-into-collective-vibe-puts-ai-agents-into-the-group-chat/5290413, unite.ai, dataconomy.com — совпадают дословно.
 
-## 5. OpenAI × Stampli, сборка маркетинг-контекста в ChatGPT Work
-Источник: https://openai.com/index/stampli/ (403 Cloudflare, WebSearch)
-Подтверждение: https://www.startuphub.ai/ai-news/artificial-intelligence/2026/stampli-cuts-launch-time-3x-with-openai-tools,
-https://www.dotnetramblings.com/post/20_08_2026/20_08_2026_17/
-Путь: WebSearch, два независимых источника, даты и цифры совпадают
-Факты:
-- Stampli — платформа procure-to-pay/AP-автоматизации, более 1800 клиентов-компаний
-- время продакшена контента сократилось с 243 до 77 часов — сокращение на 68%
-- Codex использовался для генерации 7 блог-постов, писем к запуску, вебинара, соцсетей,
-  пресс-релиза
-- цитата Melad Zahedi (Director of Product Marketing): вывод команды увеличился в 10 раз
-- финальное утверждение материалов остаётся за людьми
-- дата: 20 августа 2026
+Факты: продукт Slack Code запущен 20 августа 2026, доступен на любом тарифе Slack сразу с запуска.
+Пользователь тегает агента (Claude Code, Devin, GitHub Copilot, ChatGPT, агент Vercel) в чате —
+агент открывает отдельный код-канал с дифами кода, живыми превью и планом работы. Участники
+оставляют фидбэк, агент его учитывает. После завершения задачи канал автоархивируется, остаётся
+аудиторский лог. Цены отдельно не объявлены — фича идёт в комплекте с существующим тарифом Slack.
 
-## 6. Сбер, «Бизнес-помощник» на GigaChat в СберБизнес
-Источник: https://novostivoronezha.ru/2026/08/03/359124
-Подтверждение: https://www.ng.ru/news/844512.html, https://bankinform.ru/news/142639
-Путь: WebSearch, факт совпадает дословно в трёх публикациях
-Факты:
-- в интернет-банк и приложение СберБизнес встроен «Бизнес-помощник» на базе GigaChat (более 160
-  AI-агентов в основе платформы)
-- ассистент задаёт вопросы о будущем сотруднике, помогает описать вакансию, разместить её и
-  подобрать резюме кандидатов
-- также консультирует по банковским и небанковским вопросам бизнеса
-- доступен клиентам с подпиской «Бизнес Прайм» или пакетами с Работа.ру (около 230 тыс.
-  пользователей), не всем клиентам банка
-- заявленная экономия времени на найме — до 80%
-- дата запуска: 3 августа 2026
+## 2. Serval Catalyst
 
-## 7. Claude, единая память Chat + Cowork
-Источник: https://support.claude.com/en/articles/12138966-release-notes
-Подтверждение: https://techcrunch.com/2026/08/25/claude-cowork-finally-remembers-what-you-told-the-app-in-chat/
-Путь: WebFetch (release notes) + WebFetch/WebSearch (TechCrunch), дата и суть совпадают
-Факты:
-- память теперь общая между обычным чатом Claude и Cowork (агентной средой для задач)
-- в Settings появился интерфейс Topics для правки и удаления записей памяти
-- чувствительные темы (здоровье, религия, убеждения) по умолчанию исключены из памяти
-- включено по умолчанию для Free/Pro/Max, выключено по умолчанию для Team/Enterprise
-- дата: 25 августа 2026
+Первоисточник: https://venturebeat.com/infrastructure/servals-super-agent-catalyst-creates-roving-background-agents-to-identify-and-fix-it-issues-before-theyre-ticketed (403, подтверждён через WebSearch).
+Подтверждение: https://www.citybiz.co/article/892200/serval-launches-catalyst-ai-agent-to-build-and-manage-enterprise-automations/, dealroom.co.
 
-## 8. Notion, недельный лимит использования Notion AI
-Источник: https://www.notion.com/releases (Help Center: «Starting August 3, 2026, Notion AI
-usage allowance applies»)
-Подтверждение: официальная формулировка Notion Help Center, второй независимый источник —
-пересказ в отраслевых AI-дайджестах за первую неделю августа (даты и условия совпадают)
-Путь: WebFetch
-Факты:
-- с 3 августа 2026 для Business/Enterprise действует allowance: скользящее 6-часовое окно плюс
-  месячный лимит использования Notion AI
-- при исчерпании лимита функции AI временно блокируются до восстановления окна, нового
-  биллинг-цикла или покупки воркспейсом Notion Credits
-- базовые тарифы (сама подписка) не растут, функции не убирают
+Факты: Catalyst от Serval вышел в общий доступ 20 августа 2026 поверх AI-native платформы Serval
+для service management. Анализирует историю тикетов, SOP и инструкции на естественном языке, сам
+строит workflow, скиллы, формы, политики доступа и дашборды. Фоновые агенты работают по расписанию
+по подключённым системам и предлагают ремедиацию до того, как заведён тикет (пример: сопоставил
+инциденты в двух офисах по switch-телеметрии, DHCP-данным и истории тикетов, нашёл configuration
+drift, сгенерировал workflow на утверждение). Цены отдельно не публиковались.
 
-## 9. Claude Code, буст недельного лимита +50% продлён до 31 августа
-Источник: support.claude.com (официальный источник, ряд независимых подтверждений от
-пользователей Claude Code за август; прямая ссылка на конкретную статью не открылась WebFetch)
-Подтверждение: многочисленные независимые упоминания в комьюнити и медиа за август 2026
-о продлении буста
-Путь: WebSearch, факт (действует до 31.08, начат 13 мая, продлевался трижды) повторяется
-в независимых источниках
-Факты:
-- с 13 мая 2026 действует временный буст +50% к недельному лимиту Claude Code
-- доступен на тарифах Pro, Max, Team, Enterprise (seat-based); Free-план не участвует
-- срок продлевали трижды, сейчас действует до 31 августа 2026
-- 5-часовой лимит буст не затрагивает, только недельный
+## 3. Writer, экономия токенов через харнесс
 
-## 10. ChatGPT Business, Premium seat за $125/мес
-Источник: https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes
-Подтверждение: https://openai.com/index/premium-seats-chatgpt-business/
-Путь: WebSearch (help.openai.com 403), второй источник — прямое объявление OpenAI, факты
-совпадают
-Факты:
-- Premium seat стоит $125/мес (или $100/мес при годовой оплате)
-- Standard seat стоит $25/мес
-- Premium seat даёт впятеро больший лимit использования и снимает пятичасовой кап-лимит
-- в одном воркспейсе можно смешивать типы мест
-- дата запуска: 10 августа 2026
+Первоисточник: https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/ (открыт целиком).
+Подтверждение: VentureBeat, «Writer says its new Palmyra X6 model cuts AI agent costs by 52%…».
 
-## 11. ChatGPT Business, бесплатный период закончился 6 августа [отложено на завтра]
-Источник: https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes
-Путь: WebSearch
-Факты: использование ChatGPT Business было бесплатным до 6 августа 2026, после — расход по
-токен-based модели из пула кредитов воркспейса. Тема отложена (см. funnel.md), верификация
-предварительная, до полного второго независимого источника не доведена.
+Факты: Writer выпустил модель Palmyra X6 (на базе GLM-5.2) вместе с апгрейдом «харнесса» —
+инфраструктурного слоя оркестрации агента, 13 августа 2026. По собственному исследованию Writer
+(«The Harness Effect»): изменения только в харнессе, без смены модели, снижают расходы в среднем
+на 41%, для базовых задач — до 50%, ускоряют выполнение задач на 44%. Эффект проявляется на любой
+модели, включая сторонние (Anthropic, OpenAI). Комбинация новой модели и харнесса вместе даёт
+снижение costs на 52%, ускорение на 48%.
 
-## 12. OpenAI, отчёт «From assistance to execution»
-Источник: https://openai.com/index/how-enterprises-put-ai-to-work/ (403 Cloudflare, WebSearch)
-Подтверждение: независимый пересказ отчёта в деловых AI-дайджестах середины августа 2026,
-цифра «8,3 раза» и формулировка «топ-10%» повторяются дословно
-Путь: WebSearch, два независимых упоминания
-Факты:
-- топ-10% компаний по внедрению ИИ генерируют в 8,3 раза больше токенов на пользователя, чем
-  типичная компания
-- разница объясняется тем, что лидеры подключают агентов к рабочим данным, инструментам и
-  повторяемым процессам, а не используют разовый чат
-- отчёт опубликован 12-13 августа 2026
+## 4. Claude, текстовый водяной знак для EU AI Act
 
-## 13. Axios, CEO меняют риторику про ИИ и сокращения
-Источник: https://www.axios.com/2026/08/20/ceos-shift-messaging-around-ai-and-layoffs
-Подтверждение: цитируемые внутри материала примеры (Klarna, Salesforce, Etsy) — публичные
-заявления компаний, на которые ссылается сама статья Axios
-Путь: WebSearch
-Факты:
-- Klarna ранее заявляла, что ИИ выполняет работу 700 агентов поддержки
-- Salesforce сократила саппорт с 9000 до 5000 сотрудников, публично связав это с ИИ
-- CEO Etsy заявила, что 220 сокращений «не были вызваны ИИ», хотя технология меняет требуемые
-  навыки
-- дата публикации: 20 августа 2026
+Первоисточник: https://www.anthropic.com/news/claude-text-watermark (открыт целиком).
+Подтверждение: https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/, плюс CNN, Gizmodo, Euronews — все датируют 11 августа 2026.
 
-## 14. Inc.com, отделы продаж автоматизируют рутину, но наём растёт
-Источник: https://www.inc.com/brian-contreras/fastest-growing-companies-ai-sales-marketing-customer-service/91377352
-Подтверждение: данные опроса CEO компаний из рейтинга Inc. 5000, на которые ссылается сама
-статья (первичные данные исследования Inc.)
-Путь: WebSearch
-Факты:
-- доля отделов продаж с внедрённым ИИ выросла с 49% до 62% за год (по опросу CEO компаний
-  Inc. 5000)
-- самые быстрорастущие компании при этом одновременно наращивают штат продавцов, а не сокращают
-- дата публикации: 11 августа 2026
+Факты: Anthropic с 11 августа 2026 встраивает машиночитаемый водяной знак в текстовые ответы
+будущих моделей Claude, начиная с моделей, выпущенных с 2 августа 2026 — в контексте требований
+статьи 50 EU AI Act. В июле 2026 Anthropic вместе с около 190 другими компаниями подписала
+добровольный EU Code of Practice on Transparency of AI-Generated Content. Метка невидима, не меняет
+качество вывода, не добавляет стоимости, сохраняется при копировании текста, слабее на коротких
+фактических текстах и коде. Работает глобально, не только в ЕС, через API, приложения, Claude Code
+и Cowork. Для изображений — отдельно, через метаданные C2PA.
 
-## 15. Inc.com, волна увольнений в биг-техе как окно найма для малого бизнеса
-Источник: https://www.inc.com/joe-procopio/tech-mass-layoffs-are-creating-a-once-in-a-lifetime-opportunity-for-small-business-growth/91388469
-Подтверждение: контекст статьи ссылается на широко публикуемую статистику сотен тысяч
-сокращений в технологическом секторе в 2026 году (общеизвестный факт периода, не оспаривается)
-Путь: WebSearch
-Факты:
-- в 2026 году в технологическом секторе прошли волны сокращений, связанных в том числе с
-  внедрением ИИ
-- на рынке освободился пул опытных технических специалистов
-- автор называет текущий момент редким окном для малого и среднего бизнеса нанять экспертизу,
-  которая раньше была недоступна из-за конкуренции с крупными компаниями
-- дата публикации: 11 августа 2026
+## 5. OpenAI, плагины для обучения в ChatGPT Work и Codex
 
-## 16. MIT Technology Review Insights, разрыв между хайпом про AI-агентов и внедрением
-Источник: https://www.technologyreview.com/2026/08/12/1141032/scaling-ai-agents-with-trustworthy-data/
-Подтверждение: материал сам является отчётом по данным опроса 300 CIO/CTO, партнёрский
-материал MIT Technology Review Insights с Google Cloud — отмечено явно
-Путь: WebSearch
-Факты:
-- опрошено 300 CIO/CTO
-- почти все компании планируют использовать AI-агентов, но широко развернули их только 10%
-- в среднем ИИ имеет доступ лишь к 45% корпоративных данных компании, у лидеров внедрения —
-  свыше 70%
-- 66-68% опрошенных называют устаревшие ИТ-системы главным ограничителем масштабирования
-- материал партнёрский (спонсирован Google Cloud), не редакционная статья — дата: 12 августа 2026
+Первоисточник: https://openai.com/index/learn-teach-chatgpt-work-codex/ (403, подтверждён через WebSearch).
+Подтверждение: https://www.techrepublic.com/article/news-openai-chatgpt-education-plugins/, edtechinnovationhub.com.
+
+Факты: OpenAI выпустила 4 августа 2026 три плагина-роли — учитель К-12 (планирование уроков),
+студент колледжа (конспекты в квизы, флеш-карты, гид-тьютор), преподаватель колледжа
+(административные workflow вузов). Доступны через ChatGPT Edu и ChatGPT for Teachers
+(district-развёртывания), а не через обычный ChatGPT Work/Business.
+
+## 6. ChatGPT Business, конец бесплатного периода агентных функций
+
+Первоисточник: https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes (403, подтверждён через WebSearch по нескольким агрегаторам, дословно повторяющим текст release notes).
+
+Факты: использование агентных функций ChatGPT Business — Workspace Agents, ChatGPT for
+Excel/PowerPoint — было бесплатным до 6 августа 2026 включительно. С 7 августа расход списывается
+из общего пула кредитов воркспейса по flexible-pricing модели. Сама подписка ChatGPT Business (не
+агентные функции) как была платной, $20-25 за место в месяц, так и осталась — бесплатным был именно
+расход агентных функций, а не тариф целиком. У Enterprise/Edu аналогичный бесплатный период
+закончился раньше, 6 июля 2026 — это другая, более ранняя дата.
+
+## 7. Claude, Opus 4.1 отключён от API
+
+Первоисточник: https://platform.claude.com/docs/en/release-notes/overview (открыт целиком).
+Подтверждение: https://therouter.ai/news/anthropic-deprecates-claude-opus-4-1-august-5-migration-guide/, totalum.app/blog/claude-4-deprecation-migration-2026.
+
+Факты: 5 августа 2026 Anthropic отключила Claude Opus 4.1 (`claude-opus-4-1-20250805`) от API — все
+запросы к этой модели теперь возвращают ошибку. Официальная рекомендация — переходить на Claude
+Opus 5 (в июне 2026, при анонсе будущего отключения, рекомендовали Opus 4.8 — но с тех пор вышла
+более новая модель, и итоговая рекомендация сменилась).
+
+## 8-9. Google Docs, Gemini резюмирует комментарии + рисует диаграммы
+
+Первоисточник: https://workspaceupdates.googleblog.com/2026/07/ (открыт целиком, обе записи датированы 28 июля 2026).
+Подтверждение: https://tech.yahoo.com/ai/gemini/articles/overwhelmed-comments-google-docs-ask-210554481.html, https://chromeunboxed.com/gemini-can-now-generate-diagrams-and-infographics-directly-inside-google-docs/.
+
+Факты (комментарии): Gemini читает и суммирует треды комментариев в Google Docs, выделяет ключевые
+темы, находит нерешённые блокирующие вопросы, может сгенерировать ответ или черновик реплики от
+имени пользователя. Пример запроса: «Summarize all comments from Sarah».
+
+Факты (визуалы): Gemini создаёт изображения, диаграммы и инфографику прямо в документе с учётом
+его контекста, редактирует их по запросу на естественном языке.
+
+Раскатка обеих функций — с 28 июля 2026, на Rapid Release и Scheduled Release доменах одновременно,
+полная видимость — в течение до 15 дней.
+
+## 10. Google Forms, Gemini собирает квиз по файлам Drive
+
+Первоисточник: https://workspaceupdates.googleblog.com/2026/07/ (запись от 30 июля 2026, открыт целиком).
+Подтверждение: https://chromeunboxed.com/how-google-forms-auto-generated-custom-quizzes-will-help-my-kids-study-better-this-year/, teachercast.net.
+
+Факты: функция «Help me create» в Google Forms генерирует квизы по файлам, прикреплённым из Google
+Drive (Docs, Slides, PDF) — Gemini анализирует контент и сам предлагает вопросы, типы вопросов и
+варианты ответов с готовыми правильными ответами. Раскатка с 24 июля 2026 для Rapid Release, с
+5 августа 2026 — для Scheduled Release. Требуется Google Workspace Business Standard, Business Plus
+или Enterprise плюс платная надстройка Google AI Pro или Google AI Ultra.
+
+## 11. Google Workspace, Gemini Admin Assist
+
+Первоисточник: https://workspaceupdates.googleblog.com/2026/08/ (запись от 17 августа 2026, открыт целиком).
+Подтверждение: https://knowledge.workspace.google.com/admin/getting-started/side-panel-in-the-admin-console (официальная справка Google, независимая страница).
+
+Факты: две функции в консоли администратора — Sidepanel (доступен через One Google Bar почти на
+всех страницах консоли, супер-админы получают пошаговые инструкции и best practices) и Search
+Overviews (Gemini синтезирует статьи Справочного центра в связный ответ с рекомендованными
+следующими шагами). Доступно только для редакций Business (Starter, Standard, Plus), только
+супер-админам, не делегированным. Включено по умолчанию для подходящих редакций.
+
+## 12. Perplexity Portable Computer
+
+Первоисточник: https://venturebeat.com/infrastructure/perplexity-partners-with-nvidia-to-launch-portable-computer-a-fully-local-ai-agent-with-zero-token-costs (EGRESS_BLOCKED, подтверждён через WebSearch).
+Подтверждение: siliconangle.com, thenewstack.io, root-nation.com, biggo.com, slashdot.org — согласованные детали в 5+ изданиях.
+
+Факты: Perplexity вместе с Nvidia выпустила Portable Computer — агент, который теперь может
+работать полностью локально на Nvidia DGX Spark и на Linux-машинах с видеокартой Nvidia RTX (от
+24 ГБ видеопамяти, ориентир — RTX 3090 и новее). Использует локальные модели (Qwen и
+дообученную Perplexity модель PPLX). «Нулевая стоимость токенов» — только для шагов, выполненных
+локально; если задача уходит в облачную модель, система спрашивает разрешение и списывает обычные
+кредиты подписки. Сейчас доступно на Linux, на Windows — с сентября 2026, для Mac поддержка не
+анонсирована. Нужна подписка Perplexity Pro, Max, Enterprise Pro или Enterprise Max.
+
+## 13. Radar, поиск по подкастам для ИИ-агентов
+
+Первоисточник: https://techcrunch.com/2026/08/26/radar-makes-podcasts-searchable-and-usable-by-ai-agents/ (открыт целиком).
+Подтверждение: myustimes.com, плюс независимый поиск по цене и биографии CEO (Crunchbase/LinkedIn).
+
+Факты: продукт Radar от компании Particle, статья от 26 августа 2026. Индексирует более 130 000
+подкастов, включая весь Apple Top 200, добавляет 20 000 новых эпизодов ежедневно. Поиск по
+содержанию с атрибуцией спикеров, отслеживание упоминаний брендов/людей/продуктов, алерты через
+email/Slack/webhook, извлечение цитат с таймкодами. Бизнес-тариф — $399 в месяц за 20 мест, личный
+тариф — $29 в месяц. Есть API и MCP-сервер для AI-агентов.
+
+## 14. Gemini 3.5 Transcribe
+
+Первоисточник: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/ (открыт целиком, 26 августа 2026).
+Подтверждение: 9to5google.com, androidauthority.com — совпадающие цифры WER и число языков.
+
+Факты: две версии — потоковая и для записи. Убирает слова-паразиты, автоматически форматирует
+текст, сглаживает самокоррекции. Определяет до трёх спикеров с таймкодами в записанном аудио.
+Поддерживает пользовательский словарь терминов. Автоматически определяет и транскрибирует более
+85 языков. WER (доля ошибок распознавания): 4,0% в потоковом режиме, 2,6% в режиме записи.
+
+## 15. Gemini Live, Spark и Daily Brief
+
+Первоисточник: https://blog.google/innovation-and-ai/products/gemini-app/productivity-features-gemini-live/ (открыт целиком, 26 августа 2026).
+Подтверждение: 9to5google.com, androidauthority.com.
+
+Факты: Spark — функция Gemini Live, по голосовой команде запускает многошаговые задачи в
+Google Docs, Sheets, Drive и вебе, которые выполняются самостоятельно, без участия пользователя, в
+течение дней и недель. Например: голосом надиктовать сырые мысли — Spark оформит их в
+структурированный документ Docs. Daily Brief — отдельный агент, ночью готовит голосовую сводку по
+почте и календарю с рекомендованными следующими шагами. Spark требует подписку Google AI Pro или
+выше, Daily Brief — Google AI Plus или выше.
+
+## 16. OpenAI, Admin plugin для ChatGPT Work и Codex
+
+Первоисточник: https://openai.com/index/introducing-admin-plugin/ (403, подтверждён через WebSearch).
+Подтверждение: 9to5mac.com, investing.com, itbrief.com — согласованные формулировки в 4+ изданиях.
+
+Факты: анонс от 25 августа 2026. Плагин Admin для ChatGPT Work и Codex в одном диалоге: смотрит
+активность и расход кредитов, выявляет, кто близок к лимиту, добавляет/удаляет участников,
+онбординг/офбординг, управляет доступом и правами по ролям/группам, корректирует лимиты трат,
+одобряет или отклоняет запросы на трату. ChatGPT Work — агентская функция ChatGPT (не отдельный
+тариф), доступная в рамках платных тарифов Business/Enterprise/Edu — именно для их админов и
+предназначен плагин.
+
+## 17. GPT-5.6 Sol, снижение цены
+
+Первоисточник: https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/ (заблокирован для WebFetch, подтверждён через WebSearch).
+Подтверждение: https://winbuzzer.com/2026/08/23/openai-cuts-gpt-5-6-sol-api-prices-by-up-to-33-percent-through-november-21-xcxwbn/, citybiz.co, aol.com.
+
+Факты: анонс от 21 августа 2026. Вход: $5 → $4 за млн токенов (−20%). Выход: $30 → $20 за млн
+токенов (−33%). Кэшированный вход: $0,50 → $0,40 за млн токенов (−20%). Акция действует минимум до
+21 ноября 2026. Распространяется на API, кредиты Codex, часть тарифов ChatGPT Work. Подписки Pro,
+Plus, Business цену не меняют.
+
+## 18. MIT Technology Review, AI Observatory
+
+Первоисточник: https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai/ (заблокирован для WebFetch, подтверждён через WebSearch и препринт).
+Подтверждение: https://www.washingtonpost.com/business/2026/08/18/ai-observatory-tries-reveal-how-people-really-use-technology/ (независимая редакция, та же дата), https://www.dataprovenance.org/ai_observatory.pdf.
+
+Факты: проект AI Observatory — команда исследователей MIT, Stanford и University of Maryland
+(со-первые авторы Shayne Longpre, Anka Reuel, Dayeon Ki), публикация 18 августа 2026. Агрегировал
+85 633 диалоговых реплики в 24 521 переписке от 5000 пользователей, охватывающих 52 модели (ChatGPT,
+Gemini, Claude, Grok и другие) из 7 существующих датасетов за 2023-2025. Показывает значительно
+больше «непрофильных», личных сценариев использования, чем отражено в публичных отчётах
+Anthropic/OpenAI, которые фокусируются на рабочем использовании. Около 47,9% диалогов
+классифицированы как не связанные с профессиональной деятельностью. Различия по провайдерам:
+Anthropic чаще используют для кода, Gemini — для социальных сценариев, ChatGPT — для домашних
+заданий.

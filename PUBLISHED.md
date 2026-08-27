@@ -141,3 +141,21 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-08-26 — отправлено — Inc.com: отделы продаж автоматизируют рутину, но найм продавцов растёт — https://www.inc.com/brian-contreras/fastest-growing-companies-ai-sales-marketing-customer-service/91377352
 - 2026-08-26 — отправлено — Inc.com: волна увольнений в биг-техе как окно найма для малого бизнеса — https://www.inc.com/joe-procopio/tech-mass-layoffs-are-creating-a-once-in-a-lifetime-opportunity-for-small-business-growth/91388469
 - 2026-08-26 — отправлено — MIT Technology Review Insights: доступ к данным тормозит внедрение AI-агентов — https://www.technologyreview.com/2026/08/12/1141032/scaling-ai-agents-with-trustworthy-data/
+- 2026-08-27 — отправлено — Slack Code: ИИ-агенты программирования прямо в командных каналах — https://venturebeat.com/orchestration/slack-wants-to-drag-ai-coding-out-of-the-terminal-and-into-the-group-chat
+- 2026-08-27 — отправлено — Serval Catalyst: фоновые IT-агенты чинят проблемы до тикета — https://venturebeat.com/infrastructure/servals-super-agent-catalyst-creates-roving-background-agents-to-identify-and-fix-it-issues-before-theyre-ticketed
+- 2026-08-27 — отправлено — Writer: апгрейд харнесса агентов снижает токен-косты сильнее смены модели — https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/
+- 2026-08-27 — отправлено — Claude: текстовый водяной знак для соответствия EU AI Act — https://www.anthropic.com/news/claude-text-watermark
+- 2026-08-27 — отправлено — OpenAI: готовые плагины для обучения в ChatGPT Work и Codex — https://openai.com/index/learn-teach-chatgpt-work-codex/
+- 2026-08-27 — отправлено — ChatGPT Business: бесплатный период агентных функций закончился 6 августа — https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes
+- 2026-08-27 — отправлено — Claude Opus 4.1 отключён от API, рекомендован переход на Opus 5 — https://platform.claude.com/docs/en/release-notes/overview
+- 2026-08-27 — отправлено — Google Docs: Gemini резюмирует треды комментариев — https://workspaceupdates.googleblog.com/2026/07/
+- 2026-08-27 — отправлено — Google Docs: Gemini генерирует изображения и диаграммы в документе — https://workspaceupdates.googleblog.com/2026/07/
+- 2026-08-27 — отправлено — Google Forms: Gemini собирает квиз по файлам из Drive — https://workspaceupdates.googleblog.com/2026/07/
+- 2026-08-27 — отправлено — Google Workspace: Gemini Admin Assist в консоли администратора — https://workspaceupdates.googleblog.com/2026/08/
+- 2026-08-27 — отправлено — Perplexity Portable Computer: локальный агент с нулевой стоимостью токенов — https://venturebeat.com/infrastructure/perplexity-partners-with-nvidia-to-launch-portable-computer-a-fully-local-ai-agent-with-zero-token-costs
+- 2026-08-27 — отправлено — Radar: поиск по 130 000+ подкастам для ИИ-агентов, тариф для бизнеса $399/мес — https://techcrunch.com/2026/08/26/radar-makes-podcasts-searchable-and-usable-by-ai-agents/
+- 2026-08-27 — отправлено — Gemini 3.5 Transcribe: расшифровка звонков без слов-паразитов, до 3 спикеров — https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/
+- 2026-08-27 — отправлено — Gemini Live: голосовое делегирование многошаговых задач через Spark и Daily Brief — https://blog.google/innovation-and-ai/products/gemini-app/productivity-features-gemini-live/
+- 2026-08-27 — отправлено — OpenAI: Admin plugin для ChatGPT Work и Codex — https://openai.com/index/introducing-admin-plugin/
+- 2026-08-27 — отправлено — OpenAI: GPT-5.6 Sol дешевле на 20-33% минимум до 21 ноября — https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/
+- 2026-08-27 — отправлено — MIT Technology Review: проект AI Observatory о реальном использовании ИИ — https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai/
