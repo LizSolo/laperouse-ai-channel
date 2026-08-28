@@ -159,3 +159,7 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-08-27 — отправлено — OpenAI: Admin plugin для ChatGPT Work и Codex — https://openai.com/index/introducing-admin-plugin/
 - 2026-08-27 — отправлено — OpenAI: GPT-5.6 Sol дешевле на 20-33% минимум до 21 ноября — https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/
 - 2026-08-27 — отправлено — MIT Technology Review: проект AI Observatory о реальном использовании ИИ — https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai/
+- 2026-08-28 — отправлено — Альфа-Банк: «Лаборатория роботизации» диагностирует процессы бизнес-клиентов и подбирает робототехнические решения, старт в IV квартале 2026 — https://www.vedomosti.ru/finance/articles/2026/08/27/1224002-alfa-bank-pomozhet-biznesu-vnedryat-robotov
+- 2026-08-28 — отправлено — Claude: встроенный браузер в Cowork заходит на сайты без API и заполняет формы за пользователя — https://support.claude.com/en/articles/16607400-use-the-built-in-browser-in-claude-cowork
+- 2026-08-28 — отправлено — OpenAI: вебхук-задачи в ChatGPT Work на Gmail/Slack/GitHub и расшаренные scheduled tasks в воркспейсе — https://help.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt
+- 2026-08-28 — отправлено — Salesforce и Anthropic: партнёрство «Claudeforce», плагин Salesforce in Claude с 37 скиллами продаж — https://www.salesforce.com/news/press-releases/2026/08/26/salesforce-and-anthropic-announce-claudeforce/
