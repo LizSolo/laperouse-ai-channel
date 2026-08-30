@@ -168,3 +168,5 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-08-29 — отправлено — Notion: агент предлагает правки вместо прямого применения изменений — https://www.notion.com/releases/2026-08-28
 - 2026-08-29 — отправлено — Google Drive: классификация данных на основе Gemini для DLP-политик, открытая бета на Enterprise Plus/Frontline Plus — https://workspaceupdates.googleblog.com/2026/08/gemini-based-data-classification-in-Google-Drive-is-now-available-in-open-beta.html
 - 2026-08-29 — отправлено — OpenAI, Anthropic, Google и 100+ компаний: открытое письмо о защите от AI-кибератак на критическую инфраструктуру — https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/
+- 2026-08-30 — отправлено — YouGile: ИИ-агент (Codex, Claude Code) сам разбирает задачи и обновляет статусы в таск-трекере — https://habr.com/ru/articles/1076064/
+- 2026-08-30 — отправлено — Google AI Mode: отслеживание цен на авиабилеты и бронирование отелей в диалоге — https://techcrunch.com/2026/08/27/googles-ai-mode-can-now-track-flight-prices-help-book-hotels-and-more/
