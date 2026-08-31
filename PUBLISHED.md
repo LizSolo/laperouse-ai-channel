@@ -170,3 +170,5 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-08-29 — отправлено — OpenAI, Anthropic, Google и 100+ компаний: открытое письмо о защите от AI-кибератак на критическую инфраструктуру — https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/
 - 2026-08-30 — отправлено — YouGile: ИИ-агент (Codex, Claude Code) сам разбирает задачи и обновляет статусы в таск-трекере — https://habr.com/ru/articles/1076064/
 - 2026-08-30 — отправлено — Google AI Mode: отслеживание цен на авиабилеты и бронирование отелей в диалоге — https://techcrunch.com/2026/08/27/googles-ai-mode-can-now-track-flight-prices-help-book-hotels-and-more/
+- 2026-08-31 — отправлено — Claude (Fable 5 → Opus 4.8) удалил 700 ГБ данных разработчика из-за повторного использования имени переменной в защитном скрипте — https://habr.com/ru/news/1076130/
+- 2026-08-31 — отправлено — Inc.com: три стадии внедрения ИИ в малом бизнесе (Reed Wilson, Courser) — от «ИИ уже есть, вы не знаете где» до измерения бизнес-результата — https://www.inc.com/reed-wilson/why-ai-feels-so-hard-for-small-businesses/91392567
