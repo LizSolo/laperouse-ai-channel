@@ -186,3 +186,6 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-09-04 — отправлено — Gemini: агентное понимание видео снижает расход токенов на разбор видео до 88% — https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/
 - 2026-09-04 — отправлено — Anthropic: Claude Commerce Agents, открытый (Apache 2.0) шаблон ИИ-агентов для покупателей и продавцов в интернет-магазине — https://github.com/anthropics/commerce-agents
 - 2026-09-04 — отправлено — Data Sapience: предиктивная аналитика предсказывает отказ насоса на НПЗ за 60 дней, подготовка к ремонту сокращается на 70% — https://habr.com/ru/companies/datasapience/articles/1078104/
+- 2026-09-05 — отправлено — Fractional CMO перевела отдел маркетинга на связку ИИ-агентов за 6 недель, освободила 15-20 часов в неделю за счёт трёх ставок — https://vc.ru/ai/3119831-kak-direktor-po-marketingu-perevela-otdel-na-ai-agentov
+- 2026-09-05 — отправлено — Financial Times/habr: гонка за самую мощную модель ИИ заканчивается, вопрос сместился на «какая минимальная модель достаточна» — https://habr.com/ru/articles/1078182/
+- 2026-09-05 — отправлено — «Звук Студио»: ИИ-аналитик на ГигаЧате превращает статистику артиста в готовые рекомендации по развитию карьеры — https://www.cnews.ru/news/line/2026-09-04_personalnyj_menedzher_v
