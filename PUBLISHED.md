@@ -189,3 +189,6 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-09-05 — отправлено — Fractional CMO перевела отдел маркетинга на связку ИИ-агентов за 6 недель, освободила 15-20 часов в неделю за счёт трёх ставок — https://vc.ru/ai/3119831-kak-direktor-po-marketingu-perevela-otdel-na-ai-agentov
 - 2026-09-05 — отправлено — Financial Times/habr: гонка за самую мощную модель ИИ заканчивается, вопрос сместился на «какая минимальная модель достаточна» — https://habr.com/ru/articles/1078182/
 - 2026-09-05 — отправлено — «Звук Студио»: ИИ-аналитик на ГигаЧате превращает статистику артиста в готовые рекомендации по развитию карьеры — https://www.cnews.ru/news/line/2026-09-04_personalnyj_menedzher_v
+- 2026-09-06 — отправлено — GPT-6 Astra стала доступна на всех платных тарифах ChatGPT (Plus, Pro, Business, Enterprise) — https://habr.com/ru/news/1078790/
+- 2026-09-06 — отправлено — Telegram Serverless: бета-хостинг ботов на своей инфраструктуре без VPS и Docker — https://habr.com/ru/news/1078906/
+- 2026-09-06 — отправлено — Strelka.Ai: как формулировать запрос к нейросети как задание для сотрудника — https://vc.ru/ai/3122570-kak-predprinimatelyu-rabotat-s-ii-bez-navykov-programmirovaniya
