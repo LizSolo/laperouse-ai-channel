@@ -192,3 +192,9 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-09-06 — отправлено — GPT-6 Astra стала доступна на всех платных тарифах ChatGPT (Plus, Pro, Business, Enterprise) — https://habr.com/ru/news/1078790/
 - 2026-09-06 — отправлено — Telegram Serverless: бета-хостинг ботов на своей инфраструктуре без VPS и Docker — https://habr.com/ru/news/1078906/
 - 2026-09-06 — отправлено — Strelka.Ai: как формулировать запрос к нейросети как задание для сотрудника — https://vc.ru/ai/3122570-kak-predprinimatelyu-rabotat-s-ii-bez-navykov-programmirovaniya
+- 2026-09-07 — отправлено — Когда компьютерное зрение на складе окупается, а когда становится дорогим экспериментом, формула расчёта окупаемости — https://vc.ru/ai/3123748-okupayemost-kompyuternogo-zreniya-na-sklade
+- 2026-09-07 — отправлено — Claude по просьбе разработчика выставил на Mac дату 4026 года и парализовал работу компьютера — https://habr.com/ru/news/1078788/
+- 2026-09-07 — отправлено — n8n: визуальный конструктор для автоматизации бизнес-процессов и AI-агентов, self-hosted и открытый код — https://vc.ru/ai/3123632-kak-n8n-stal-liderom-v-avtomatizatsii-protsessov
+- 2026-09-07 — отправлено — Почему текст от ChatGPT нельзя публиковать от имени руководителя без правок: семь пунктов делового контекста — https://vc.ru/ai/3122891-pochemu-nelzya-publikovat-tekst-ot-imeni-rukovoditelya-sozdannyy-chatgpt
+- 2026-09-07 — отправлено — OpenClaw: open source платформа для личного ИИ-ассистента на собственном сервере — https://vc.ru/ai/3121812-polnyj-gajd-po-sozdaniyu-lichnogo-ai-assistenta-openclaw
+- 2026-09-07 — отправлено — Семь системных скиллов вместо одного промпта для ИИ-копирайтинга (Нейроскуф) — https://vc.ru/ai/3105314-sistemnye-navyki-dlya-ii-kopiraitera
