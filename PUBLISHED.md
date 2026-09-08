@@ -198,3 +198,10 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-09-07 — отправлено — Почему текст от ChatGPT нельзя публиковать от имени руководителя без правок: семь пунктов делового контекста — https://vc.ru/ai/3122891-pochemu-nelzya-publikovat-tekst-ot-imeni-rukovoditelya-sozdannyy-chatgpt
 - 2026-09-07 — отправлено — OpenClaw: open source платформа для личного ИИ-ассистента на собственном сервере — https://vc.ru/ai/3121812-polnyj-gajd-po-sozdaniyu-lichnogo-ai-assistenta-openclaw
 - 2026-09-07 — отправлено — Семь системных скиллов вместо одного промпта для ИИ-копирайтинга (Нейроскуф) — https://vc.ru/ai/3105314-sistemnye-navyki-dlya-ii-kopiraitera
+- 2026-09-08 — отправлено — Amvera Polide Agent: российская альтернатива Cursor/Replit для лендингов и Telegram-ботов, оплата в рублях — https://habr.com/ru/companies/amvera/news/1079474/
+- 2026-09-08 — отправлено — TeamStream MCP: видеотека МТС Линк как база знаний для ИИ-ассистента — https://habr.com/ru/companies/ru_mts/articles/1079476/
+- 2026-09-08 — отправлено — Grok 4.6: результат на уровне GPT-5.6 Sol при цене в разы ниже, ловушка тарифа SuperGrok Lite — https://vc.ru/ai/3125855-grok-4-samyj-deshevyy-flagnan-ii-i-ego-konkurentnye-nedostatki
+- 2026-09-08 — отправлено — Google Workspace Studio: новые no-code шаги автоматизации для Drive, Gmail и Chat — http://workspaceupdates.googleblog.com/2026/09/automate-drive-gmail-and-google-chat-actions-with-new-steps-in-Workspace-Studio.html
+- 2026-09-08 — отправлено — Zendesk в каталоге плагинов ChatGPT Business/Enterprise: разбор тикетов и черновики ответов — https://help.openai.com/en/articles/20001512-using-zendesk-in-chatgpt-and-codex
+- 2026-09-08 — отправлено — Почему ИИ-сгенерированные фото блюд в меню чаще отталкивают клиентов, чем привлекают — https://techcrunch.com/2026/09/03/the-sameness-problem-behind-those-unappetizing-ai-generated-menus/
+- 2026-09-08 — отправлено — Legora проверила 41 финансовый документ через GPT-6 Astra за один прогон, точность выросла почти на 40% — https://openai.com/index/legora-financial-statement-review-with-astra/
