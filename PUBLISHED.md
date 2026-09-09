@@ -205,3 +205,7 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-09-08 — отправлено — Zendesk в каталоге плагинов ChatGPT Business/Enterprise: разбор тикетов и черновики ответов — https://help.openai.com/en/articles/20001512-using-zendesk-in-chatgpt-and-codex
 - 2026-09-08 — отправлено — Почему ИИ-сгенерированные фото блюд в меню чаще отталкивают клиентов, чем привлекают — https://techcrunch.com/2026/09/03/the-sameness-problem-behind-those-unappetizing-ai-generated-menus/
 - 2026-09-08 — отправлено — Legora проверила 41 финансовый документ через GPT-6 Astra за один прогон, точность выросла почти на 40% — https://openai.com/index/legora-financial-statement-review-with-astra/
+- 2026-09-09 — отправлено — Недельный ритм принятия решений с ИИ для руководителя: пятидневный цикл от развилки до фиксации решения — https://vc.ru/ai/3128131-kak-naladit-rabotnyj-ritm-s-ii-dlya-effektivnogo-upravleniya
+- 2026-09-09 — отправлено — RPA Круг Громова 2026: сравнение шести российских RPA-платформ по архитектуре и ИИ-возможностям — https://habr.com/ru/articles/1079854/
+- 2026-09-09 — отправлено — Как компания Siberian.pro учит сотрудников пользоваться ИИ через еженедельные воркшопы — https://habr.com/ru/articles/1079590/
+- 2026-09-09 — отправлено — ChatGPT Images 2.5: генерация быстрее на 50%, точнее сохраняет вид товара, шаблоны и Sketch — https://openai.com/index/introducing-chatgpt-images-2-5/
