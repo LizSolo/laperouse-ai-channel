@@ -209,3 +209,9 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-09-09 — отправлено — RPA Круг Громова 2026: сравнение шести российских RPA-платформ по архитектуре и ИИ-возможностям — https://habr.com/ru/articles/1079854/
 - 2026-09-09 — отправлено — Как компания Siberian.pro учит сотрудников пользоваться ИИ через еженедельные воркшопы — https://habr.com/ru/articles/1079590/
 - 2026-09-09 — отправлено — ChatGPT Images 2.5: генерация быстрее на 50%, точнее сохраняет вид товара, шаблоны и Sketch — https://openai.com/index/introducing-chatgpt-images-2-5/
+- 2026-09-10 — отправлено — Как считать видимость бренда в ответах ИИ: наивный подсчёт завышает результат почти втрое — https://habr.com/ru/articles/1080516/
+- 2026-09-10 — отправлено — Опрос «Ашманов и партнёры»: 56% готовы доверить ИИ поиск товара, только 13% — оплату покупки — https://www.cnews.ru/news/line/2026-09-09_gotovnost_doverit_ii_poisk
+- 2026-09-10 — отправлено — Реальный потолок ускорения разработки от ИИ 7-8%, а не кратный рост из презентаций — https://habr.com/ru/companies/banki/articles/1080194/
+- 2026-09-10 — отправлено — Notion: владелец рабочего пространства теперь выбирает модели ИИ для Notion Agent и Custom Agents отдельно — https://www.notion.com/releases
+- 2026-09-10 — отправлено — Gemini в Google Workspace как оркестратор задач между приложениями без переключения — http://workspaceupdates.googleblog.com/2026/09/create-content-schedule-events-and-coordinate-tasks-across-Workspace-regardless-of-what-app-you-are-in.html
+- 2026-09-10 — отправлено — Cymphony привлекла $30 млн на контроль доступа ИИ-агентов к корпоративным системам — https://techcrunch.com/2026/09/09/sequoia-doubles-down-on-cymphony-as-ai-agents-create-new-enterprise-security-risks/
