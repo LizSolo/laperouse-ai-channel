@@ -215,3 +215,11 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-09-10 — отправлено — Notion: владелец рабочего пространства теперь выбирает модели ИИ для Notion Agent и Custom Agents отдельно — https://www.notion.com/releases
 - 2026-09-10 — отправлено — Gemini в Google Workspace как оркестратор задач между приложениями без переключения — http://workspaceupdates.googleblog.com/2026/09/create-content-schedule-events-and-coordinate-tasks-across-Workspace-regardless-of-what-app-you-are-in.html
 - 2026-09-10 — отправлено — Cymphony привлекла $30 млн на контроль доступа ИИ-агентов к корпоративным системам — https://techcrunch.com/2026/09/09/sequoia-doubles-down-on-cymphony-as-ai-agents-create-new-enterprise-security-risks/
+- 2026-09-11 — отправлено — Параллельные AI-агенты: доска оркестрации быстрее в 1,38 раза, но дороже в 2,24 раза — https://habr.com/ru/articles/1080948/
+- 2026-09-11 — отправлено — Google Sheets: максимум ячеек удвоен до 20 млн, в Sheets на Android появился Gemini — https://workspaceupdates.googleblog.com/
+- 2026-09-11 — отправлено — GigaChat 3.5 Reasoning: открытые веса на Hugging Face, локальный запуск требует 8×H100, бесплатно доступна в giga.chat — https://habr.com/ru/companies/sberbank/articles/1080596/
+- 2026-09-11 — отправлено — Почему AI-сайты выглядят одинаково и как это чинит файл DESIGN.md с разделом запретов — https://vc.ru/ai/3132247-pochemu-sayty-na-osnove-ii-vyglyadyat-odnakovoi
+- 2026-09-11 — отправлено — Check Point нашёл уязвимость в ChatGPT: чужой Gmail читался через общий внутренний сервис — https://www.cnews.ru/news/top/2026-09-10_chatgpt_oshibochno_daval_dostup
+- 2026-09-11 — отправлено — Claude Managed Agents: политика разрешений auto сама одобряет, отклоняет или ставит на паузу вызовы инструментов — https://platform.claude.com/docs/en/release-notes/overview
+- 2026-09-11 — отправлено — OpenAI приостановила регистрацию новых подписок на ChatGPT Pro за $200 из-за спроса на GPT-6 Astra — https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/
+- 2026-09-11 — отправлено — AI-агенты завалили госуслуги заявлениями: жалобы британского омбудсмена выросли с 2 600 до 7 000 — https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/
