@@ -223,3 +223,7 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-09-11 — отправлено — Claude Managed Agents: политика разрешений auto сама одобряет, отклоняет или ставит на паузу вызовы инструментов — https://platform.claude.com/docs/en/release-notes/overview
 - 2026-09-11 — отправлено — OpenAI приостановила регистрацию новых подписок на ChatGPT Pro за $200 из-за спроса на GPT-6 Astra — https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/
 - 2026-09-11 — отправлено — AI-агенты завалили госуслуги заявлениями: жалобы британского омбудсмена выросли с 2 600 до 7 000 — https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/
+- 2026-09-12 — отправлено — DLP для LLM: шлюз AGIMA обезличивает запросы сотрудников к ChatGPT/Claude, не ломая поиск по клиенту — https://habr.com/ru/companies/agima/articles/1081356/
+- 2026-09-12 — отправлено — МФО выдали заём мошеннику по фото паспорта: 60 займов на 2,5 млн рублей на одно имя, почему проверки по фото недостаточно — https://habr.com/ru/companies/smartengines/articles/1081388/
+- 2026-09-12 — отправлено — Google Workspace: GA-релиз переноса пользователей и данных из Microsoft прямо при настройке рабочего пространства — http://workspaceupdates.googleblog.com/2026/09/seamlessly-import-your-team-and-data-from-Microsoft-to-Google-Workspace-during-setup.html
+- 2026-09-12 — отправлено — ChatGPT Business: платные места Premium по $100-125 в месяц с впятеро большим лимитом использования — https://openai.com/index/premium-seats-chatgpt-business/
