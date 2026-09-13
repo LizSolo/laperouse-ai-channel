@@ -227,3 +227,9 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-09-12 — отправлено — МФО выдали заём мошеннику по фото паспорта: 60 займов на 2,5 млн рублей на одно имя, почему проверки по фото недостаточно — https://habr.com/ru/companies/smartengines/articles/1081388/
 - 2026-09-12 — отправлено — Google Workspace: GA-релиз переноса пользователей и данных из Microsoft прямо при настройке рабочего пространства — http://workspaceupdates.googleblog.com/2026/09/seamlessly-import-your-team-and-data-from-Microsoft-to-Google-Workspace-during-setup.html
 - 2026-09-12 — отправлено — ChatGPT Business: платные места Premium по $100-125 в месяц с впятеро большим лимитом использования — https://openai.com/index/premium-seats-chatgpt-business/
+- 2026-09-13 — отправлено — Cursor заблокирован в России после покупки Anysphere со стороны SpaceX за $60 млрд, разбор доступных из России альтернатив для 1С — https://www.cnews.ru/news/top/2026-09-11_odin_iz_krupnejshih_ii-instrumentov
+- 2026-09-13 — отправлено — GitHub простыми словами: зачем репозиторий и коммиты тем, кто пишет код через ИИ-агента, а не сам — https://vc.ru/ai/3134330-chto-takoe-github-i-ego-znachenie-dlya-lyudey
+- 2026-09-13 — отправлено — Голосовое сообщение сотрудника превращается в задачу через связку Telegram + n8n + Gemini + Google Таблицы — https://vc.ru/ai/3130623-kak-preobrazovat-golosovoe-soobshchenie-v-zadachu-s-pomoshchyu-ii
+- 2026-09-13 — отправлено — Unity выпустила официальный плагин с 30+ скиллами для Claude Code, Codex и Grok в проектах Unity 6 — https://habr.com/ru/news/1081400/
+- 2026-09-13 — отправлено — Инженер поручил Claude спроектировать печатную плату целиком по одному текстовому запросу — https://habr.com/ru/news/1081606/
+- 2026-09-13 — отправлено — Yandex AI Studio выпустила визуальный конструктор Workflows для сборки мультиагентных пайплайнов без кода — https://yandex.cloud/ru/blog/yandex-ai-studio-workflows-multiagent-pipelines
