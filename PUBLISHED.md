@@ -248,3 +248,7 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-09-16 — отправлено — Многодневные ИИ-агенты незаметно забывают правила комплаенса при сжатии контекста, падение соблюдения правил доходит до 46 процентных пунктов — https://venturebeat.com/orchestration/long-running-ai-agents-quietly-drop-compliance-rules-and-bigger-context-windows-wont-fix-it
 - 2026-09-16 — отправлено — Google Workspace: Gemini подключается напрямую к Salesforce, HubSpot, QuickBooks и Asana через MCP прямо в Docs, Sheets, Drive и Chat — https://workspaceupdates.googleblog.com/
 - 2026-09-16 — отправлено — Gmail: поиск по почте с ИИ-обзором ответов на естественном языке стал доступен всем платным пользователям по всему миру — https://workspaceupdates.googleblog.com/
+2026-09-17 — отправлено — Cloudflare: настройка Disallow AI Training разделяет поисковых и обучающих ИИ-краулеров сайта — https://habr.com/ru/news/1083142/
+2026-09-17 — отправлено — Kalypta (Deveillance): macOS-приложение в закрытой бете искажает голос на созвоне, чтобы ИИ-стенографист не смог его расшифровать — https://habr.com/ru/news/1083160/
+2026-09-17 — отправлено — «Второй мозг» для ИИ-агента: база из 6 файлов о компании вместо пересказа контекста в каждом промпте — https://vc.ru/ai/3140140-vtoroy-mozg-dlya-marketinga
+2026-09-17 — отправлено — Claude объединил чат, Cowork, Artifacts и Design в одном окне, добавил презентации и совместные документы — https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface/
