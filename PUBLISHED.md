@@ -200,7 +200,7 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 - 2026-09-07 — отправлено — Семь системных скиллов вместо одного промпта для ИИ-копирайтинга (Нейроскуф) — https://vc.ru/ai/3105314-sistemnye-navyki-dlya-ii-kopiraitera
 - 2026-09-08 — отправлено — Amvera Polide Agent: российская альтернатива Cursor/Replit для лендингов и Telegram-ботов, оплата в рублях — https://habr.com/ru/companies/amvera/news/1079474/
 - 2026-09-08 — отправлено — TeamStream MCP: видеотека МТС Линк как база знаний для ИИ-ассистента — https://habr.com/ru/companies/ru_mts/articles/1079476/
-- 2026-09-08 — отправлено — Grok 4.6: результат на уровне GPT-5.6 Sol при цене в разы ниже, ловушка тарифа SuperGrok Lite — https://vc.ru/ai/3125855-grok-4-samyj-deshevyy-flagnan-ii-i-ego-konkurentnye-nedostatki
+- 2026-09-08 — отправлено — Grok 4.6: результат на уровне GPT-5.6 Sol при цене в разы ниже, ловушка тарифа SuperGrok Lite — https://vc.ru/ai/3125855-grok-4-samyj-deshevyj-flagnan-ii-i-ego-konkurentnye-nedostatki
 - 2026-09-08 — отправлено — Google Workspace Studio: новые no-code шаги автоматизации для Drive, Gmail и Chat — http://workspaceupdates.googleblog.com/2026/09/automate-drive-gmail-and-google-chat-actions-with-new-steps-in-Workspace-Studio.html
 - 2026-09-08 — отправлено — Zendesk в каталоге плагинов ChatGPT Business/Enterprise: разбор тикетов и черновики ответов — https://help.openai.com/en/articles/20001512-using-zendesk-in-chatgpt-and-codex
 - 2026-09-08 — отправлено — Почему ИИ-сгенерированные фото блюд в меню чаще отталкивают клиентов, чем привлекают — https://techcrunch.com/2026/09/03/the-sameness-problem-behind-those-unappetizing-ai-generated-menus/
@@ -330,3 +330,8 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-09-30 — отправлено — OpenAI DevDay: офисный набор ChatGPT — Space, Pages и Collaborative Slides для совместной работы команды с агентом над документами — https://techcrunch.com/2026/09/29/openai-takes-on-microsoft-with-the-launch-of-what-feels-a-whole-lot-like-chatgpts-own-office-suite/
 2026-09-30 — отправлено — Amazon открыла Seller Central плагину Claude: продавцы через диалог меняют цены, остатки и листинги без кода — https://www.geekwire.com/2026/amazon-opens-its-seller-tools-to-outside-ai-agents-starting-with-anthropics-claude/
 2026-09-30 — отправлено — OpenAI Dots: персональные ИИ-агенты на GPT-6 Astra работают в фоне 24/7 через ChatGPT, Slack и Teams — https://techcrunch.com/2026/09/29/openai-launches-dots-its-bubbly-agentic-avatar/
+2026-10-01 — отправлено — Flowwow: песочница для сотрудников без инженерного бэкграунда, которые вайб-кодят себе рабочие инструменты — https://habr.com/ru/companies/flowwow/articles/1088660/
+2026-10-01 — отправлено — VK WorkSpace и Hi-Tech Mail: исследование показало, что мешает малому и среднему бизнесу внедрять ИИ и за какие задачи его уже ценят — https://www.cnews.ru/news/line/2026-09-23_issledovanie_vk_workspace_i_hi-tech
+2026-10-01 — отправлено — Google: Skills в Gemini app и Workspace заменяют Gems, переиспользуемые инструкции вместо повторного объяснения контекста — https://workspaceupdates.googleblog.com/2026/09/skills-gemini-app-workspace.html
+2026-10-01 — отправлено — ChatGPT Business: @ChatGPT в Slack и Microsoft Teams без отдельной лицензии на каждого сотрудника — https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes
+2026-10-01 — отправлено — OpenAI GPT-6.1 Sol: цена в пять раз ниже Astra при близком качестве на агентных задачах — https://openai.com/index/introducing-gpt-6-1-sol/
