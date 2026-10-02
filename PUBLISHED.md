@@ -335,3 +335,7 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-01 — отправлено — Google: Skills в Gemini app и Workspace заменяют Gems, переиспользуемые инструкции вместо повторного объяснения контекста — https://workspaceupdates.googleblog.com/2026/09/skills-gemini-app-workspace.html
 2026-10-01 — отправлено — ChatGPT Business: @ChatGPT в Slack и Microsoft Teams без отдельной лицензии на каждого сотрудника — https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes
 2026-10-01 — отправлено — OpenAI GPT-6.1 Sol: цена в пять раз ниже Astra при близком качестве на агентных задачах — https://openai.com/index/introducing-gpt-6-1-sol/
+2026-10-02 — отправлено — Русский текст в Claude Opus 5 стоит в 3,9 раза дороже, чем в GPT-5.5 при одинаковой цене за токен, из-за разницы токенизаторов — https://habr.com/ru/articles/1089148/
+2026-10-02 — отправлено — Yandex AI Studio: публикация готового ИИ-агента в Telegram, Яндекс Телемосте и MAX за пару кликов, по токену бота — https://yandex.cloud/ru/blog/ai-agents-messengers
+2026-10-02 — отправлено — Claude Marketplace: витрина из 2000+ готовых коннекторов и плагинов для Claude вместо заказа интеграции с нуля — https://claude.com/blog/claude-marketplace
+2026-10-02 — отправлено — America's SBDC и OpenAI обучат 150 бизнес-консультантов и проведут трёхчасовые воркшопы с ChatGPT для 1000+ малых предприятий в США — https://www.prnewswire.com/news-releases/americas-sbdc-announces-partnership-with-openai-to-bring-ai-training-to-small-businesses-nationwide-302893549.html
