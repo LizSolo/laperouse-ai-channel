@@ -346,3 +346,11 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-04 — отправлено — Вайбкодинг без навыков программирования: методика автора 46-тысячного Telegram-бота (spec.md, Git, одна задача за раз) — https://vc.ru/ai/3168737-kak-nachat-vajbkodit-bez-znanij-programmirovaniya
 2026-10-04 — отправлено — Bitrix24: MCP или API для интеграции ИИ-агента в CRM, с чего начать пилот и как ограничить права агента — https://www.bitrix24.ru/journal/mcp-vs-api/
 2026-10-04 — отправлено — Claude Code: моды меняют поведение агента на лету, у них полный доступ к компьютеру, устанавливать стоит только из доверенных источников — https://claude.com/blog/claude-code-mods
+2026-10-05 — отправлено — Пять правил защиты корпоративных данных при работе сотрудников с чат-ботами (чистая скрепка, обезличивание, отключение истории) — https://vc.ru/ai/3175645-sekrety-kompanii-v-internete-pravila-rabotyi-s-umnyimi-programmami
+2026-10-05 — отправлено — Google с 9 октября ограничивает бесплатный Gemini до Flash-Lite 3.5, платные тарифы выше AI Plus не меняются — https://vc.ru/ai/3174634-google-ogranichivaet-dostup-k-gemini-3-6-flash-i-3-1-pro
+2026-10-05 — отправлено — Как автор проверила свои посты в соцсетях через ChatGPT и после точечных правок увеличила отклики вдвое — https://vc.ru/ai/3174637-kak-neyroset-uvelichila-otklyki-na-posty
+2026-10-05 — отправлено — Роспатент разобрал первый в России спор об авторстве ИИ-сгенерированного персонажа «Балерина Капучино» — https://www.cnews.ru/news/top/2026-10-02_v_odnom_iz_pervyh_v_rossii
+2026-10-05 — отправлено — Bitrix24 «Вайбкод»: сотрудники без навыков программирования создали больше 1300 рабочих приложений — https://www.bitrix24.ru/journal/vaybkoding-proizvoditelnost-sotrudnikov/
+2026-10-05 — отправлено — ChatGPT Data: плагин строит дашборды и отвечает на бизнес-вопросы по подключённым данным компании обычным языком — https://help.openai.com/en/articles/20001518-using-the-data-plugin-in-chatgpt-work-and-codex
+2026-10-05 — отправлено — Голосовой режим ChatGPT получил доступ к плагинам и подключённым приложениям на вебе, iOS и Android — https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+2026-10-05 — отправлено — Codex Cloud: переносимые облачные окружения для задач кодогенерации, доступные с любого устройства — https://learn.chatgpt.com/docs/environments/cloud-environments
