@@ -367,3 +367,9 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-07 — отправлено — Яндекс выпустил «Алису AI Про» для бизнеса: развёртывание в своей инфраструктуре, 120+ навыков и 20+ плагинов — https://yandex.cloud/ru/blog/alice-ai-pro-scale-2026
 2026-10-07 — отправлено — Anthropic расширила Claude for Startups: год Claude Team на 5 мест и $1000 кредитов для стартапов моложе 5 лет — https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/
 2026-10-07 — отправлено — Anthropic расширила Cyber Verification Program: доступ к Claude без обычных ограничений для поиска уязвимостей — https://www.anthropic.com/news/cyber-verification-program
+2026-10-08 — отправлено — Appius-PLM добавила локальный ИИ-поиск по конструкторской и технологической документации без выхода в интернет — https://www.cnews.ru/news/line/2026-10-07_iskusstvennyj_intellekt
+2026-10-08 — отправлено — Разбор SemiAnalysis: почему «Claude Max в 5 раз выгоднее ChatGPT Pro» меряет не то, сравнивать подписки стоит по закрытым задачам — https://habr.com/ru/articles/1091556/
+2026-10-08 — отправлено — Claude for Google Workspace: бета-расширение открывает Claude в боковой панели Документов, Таблиц и Презентаций — https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides
+2026-10-08 — отправлено — SynthID: бесплатный сайт Google для проверки, сгенерирован ли файл ИИ, по невидимой метке — https://techcrunch.com/2026/10/07/googles-new-synthid-website-can-identify-ai-generated-media/
+2026-10-08 — отправлено — ChatGPT Intelligent UI: интерактивные кнопки, графики и калькуляторы прямо в ответах вместо текста — https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/
+2026-10-08 — отправлено — Claude Haiku 5.5: на 75-90% дешевле предыдущей версии для массовых задач с ограниченным бюджетом — https://www.anthropic.com/claude-haiku-5-5
