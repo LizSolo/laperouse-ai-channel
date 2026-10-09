@@ -378,5 +378,4 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-09 — отправлено — Тест-драйв GigaChat 3.5 на 10 бизнес-задачах: где доверять, а где проверять — https://habr.com/ru/articles/1092034/
 2026-10-09 — отправлено — NODA: считать стоимость одной завершённой ИИ-операции, а не стоимость токенов — https://vc.ru/ai/3184366-tokeny-kak-statiya-rashodov-stoimost-ii-operatsii
 2026-10-09 — отправлено — Claude Max и Team получили ежемесячный бюджет API-кредитов до $500 — https://support.claude.com/en/articles/17154008
-2026-10-09 — отправлено — Gemini: навыки (skills) заменяют Gems с 5 октября — https://workspaceupdates.googleblog.com/2026/09/skills-gemini-app-workspace.html
 2026-10-09 — отправлено — Google AI Edge Foresight: офлайн-заметки со встреч на Mac, конкурент Granola — https://techcrunch.com/2026/10/08/google-releases-a-new-local-first-granola-competitor/
