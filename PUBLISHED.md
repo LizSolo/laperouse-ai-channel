@@ -373,3 +373,9 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-08 — отправлено — SynthID: бесплатный сайт Google для проверки, сгенерирован ли файл ИИ, по невидимой метке — https://techcrunch.com/2026/10/07/googles-new-synthid-website-can-identify-ai-generated-media/
 2026-10-08 — отправлено — ChatGPT Intelligent UI: интерактивные кнопки, графики и калькуляторы прямо в ответах вместо текста — https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/
 2026-10-08 — отправлено — Claude Haiku 5.5: на 75-90% дешевле предыдущей версии для массовых задач с ограниченным бюджетом — https://www.anthropic.com/claude-haiku-5-5
+2026-10-09 — отправлено — МегаФон: деление рабочих процессов на три группы по риску ошибки задаёт границу автономности ИИ — https://www.cnews.ru/news/line/2026-10-08_v_megafone_rasskazali_1
+2026-10-09 — отправлено — ChatGPT по MCP вместо проджект-менеджера: семь задач для YouGile — https://habr.com/ru/companies/yougile/articles/1091934/
+2026-10-09 — отправлено — Тест-драйв GigaChat 3.5 на 10 бизнес-задачах: где доверять, а где проверять — https://habr.com/ru/articles/1092034/
+2026-10-09 — отправлено — NODA: считать стоимость одной завершённой ИИ-операции, а не стоимость токенов — https://vc.ru/ai/3184366-tokeny-kak-statiya-rashodov-stoimost-ii-operatsii
+2026-10-09 — отправлено — Claude Max и Team получили ежемесячный бюджет API-кредитов до $500 — https://support.claude.com/en/articles/17154008
+2026-10-09 — отправлено — Google AI Edge Foresight: офлайн-заметки со встреч на Mac, конкурент Granola — https://techcrunch.com/2026/10/08/google-releases-a-new-local-first-granola-competitor/
