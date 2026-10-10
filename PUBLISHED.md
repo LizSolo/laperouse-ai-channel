@@ -379,3 +379,11 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-09 — отправлено — NODA: считать стоимость одной завершённой ИИ-операции, а не стоимость токенов — https://vc.ru/ai/3184366-tokeny-kak-statiya-rashodov-stoimost-ii-operatsii
 2026-10-09 — отправлено — Claude Max и Team получили ежемесячный бюджет API-кредитов до $500 — https://support.claude.com/en/articles/17154008
 2026-10-09 — отправлено — Google AI Edge Foresight: офлайн-заметки со встреч на Mac, конкурент Granola — https://techcrunch.com/2026/10/08/google-releases-a-new-local-first-granola-competitor/
+2026-10-10 — отправлено — Аналитик и ИИ: три инструмента, которые превращают хаос в требования — https://habr.com/ru/companies/ppr/articles/1092374/
+2026-10-10 — отправлено — Как редактировать фото в ChatGPT: заменить фон, удалить объект и изменить детали — https://vc.ru/ai/3185655-redaktirovanie-foto-v-chatgpt
+2026-10-10 — отправлено — Как предпринимателю запустить своего ИИ-программиста за 500 рублей (DeepSeek + Codex CLI) — https://vc.ru/ai/3186420-kak-predprinimatelyu-zapustit-ii-programmista-deepseek
+2026-10-10 — отправлено — Своя модель решений на русском за вечер аренды GPU — https://habr.com/ru/articles/1090744/
+2026-10-10 — отправлено — Как создать ИИ-бота ВК на ChatGPT за 10 минут (GPTunneL) — https://habr.com/ru/companies/gptunnel/articles/1092536/
+2026-10-10 — отправлено — Claude научили создавать интерактивные дашборды и анимации в чате — https://vc.ru/ai/3184874-claude-nauchilsya-sozdavat-dashbordy-i-animatsii-v-chate
+2026-10-10 — отправлено — Workspace Studio: вложенные условия, фильтр ответов в Gmail и черновик письма с итогами встречи из Meet — http://workspaceupdates.googleblog.com/2026/10/new-logic-and-search-steps-in-workspace-Studio-help-expand-automation-capabilities.html
+2026-10-10 — отправлено — Anthropic не может надёжно контролировать своих ИИ-агентов и отключила им доступ в живой интернет — https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/
