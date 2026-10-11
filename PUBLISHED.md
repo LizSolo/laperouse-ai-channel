@@ -387,3 +387,7 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-10 — отправлено — Claude научили создавать интерактивные дашборды и анимации в чате — https://vc.ru/ai/3184874-claude-nauchilsya-sozdavat-dashbordy-i-animatsii-v-chate
 2026-10-10 — отправлено — Workspace Studio: вложенные условия, фильтр ответов в Gmail и черновик письма с итогами встречи из Meet — http://workspaceupdates.googleblog.com/2026/10/new-logic-and-search-steps-in-workspace-Studio-help-expand-automation-capabilities.html
 2026-10-10 — отправлено — Anthropic не может надёжно контролировать своих ИИ-агентов и отключила им доступ в живой интернет — https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/
+2026-10-11 — отправлено — Какие задачи бизнес отдаёт чат-ботам и где ИИ пока не доверяют — https://www.cnews.ru/articles/2026-10-08_kakie_zadachi_biznes_otdaet_chat-botam
+2026-10-11 — отправлено — Как посчитать самому, окупится ли ИИ-агент — https://vc.ru/ai/3187315-stoimost-ii-agenta-i-ego-okupayemost
+2026-10-11 — отправлено — 8 ИИ-сервисов для нарезки Reels и Shorts, разбор доступности из России — https://habr.com/ru/companies/polzaai/articles/1092706/
+2026-10-11 — отправлено — ИИ-агенты, с которыми переписываются как с контактом в телефоне (SMS, iMessage) — https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/
