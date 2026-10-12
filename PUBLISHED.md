@@ -391,3 +391,7 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-11 — отправлено — Как посчитать самому, окупится ли ИИ-агент — https://vc.ru/ai/3187315-stoimost-ii-agenta-i-ego-okupayemost
 2026-10-11 — отправлено — 8 ИИ-сервисов для нарезки Reels и Shorts, разбор доступности из России — https://habr.com/ru/companies/polzaai/articles/1092706/
 2026-10-11 — отправлено — ИИ-агенты, с которыми переписываются как с контактом в телефоне (SMS, iMessage) — https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/
+2026-10-12 — отправлено — Какие права выдать ИИ-агенту: границы по обратимости действия и цене ошибки — https://vc.ru/ai/3188355-prava-ii-agenta-kak-opredelit-granitsy-i-limity
+2026-10-12 — отправлено — Юридический рентген для нейросетей: как закрепить права на ИИ-контент и промпты — https://vc.ru/ai/3187990-kak-legalizovat-ii-kontent-i-zashchitit-svoi-prompty-ot-patentnykh-trollej
+2026-10-12 — отправлено — Нейросети в работе руководителя: что делегировать ИИ, а что оставить себе — https://vc.ru/ai/3188953-neyroseti-v-upravlenii-kak-delegirovat-zadachi-effektivno
+2026-10-12 — отправлено — Русский текст в Claude дороже английского на треть, три способа платить меньше — https://vc.ru/ai/3187818-russkiy-tekst-v-claude-stoit-dorozhe-angliyskogo
