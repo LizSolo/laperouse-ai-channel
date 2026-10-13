@@ -395,3 +395,9 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-12 — отправлено — Юридический рентген для нейросетей: как закрепить права на ИИ-контент и промпты — https://vc.ru/ai/3187990-kak-legalizovat-ii-kontent-i-zashchitit-svoi-prompty-ot-patentnykh-trollej
 2026-10-12 — отправлено — Нейросети в работе руководителя: что делегировать ИИ, а что оставить себе — https://vc.ru/ai/3188953-neyroseti-v-upravlenii-kak-delegirovat-zadachi-effektivno
 2026-10-12 — отправлено — Русский текст в Claude дороже английского на треть, три способа платить меньше — https://vc.ru/ai/3187818-russkiy-tekst-v-claude-stoit-dorozhe-angliyskogo
+2026-10-13 — отправлено — «Гравител» автоматизировал исходящий обзвон на нейросети: до 10 тыс. звонков в час с интеграцией в Битрикс24, amoCRM и 1С — https://www.cnews.ru/news/line/2026-10-12_do_10_tysyach_zvonkov_v_chas
+2026-10-13 — отправлено — ИИ-сметчик занизил итог сметы на 515 786 рублей: почему финальные суммы должен считать код, а не нейросеть — https://habr.com/ru/articles/1093050/
+2026-10-13 — отправлено — Claude Sonnet 4.5 отключат 30 ноября 2026: что проверить в своих интеграциях по API — https://platform.claude.com/docs/en/about-claude/model-deprecations
+2026-10-13 — отправлено — Google запустил агентный режим Gemini для бизнеса: цель вместо инструкции, подключение к Workspace, Slack, Jira и MCP-серверам — https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/
+2026-10-13 — отправлено — Honeyjar: ИИ пишет пресс-релизы и ищет журналистов для компаний без своего PR-отдела — https://techcrunch.com/2026/10/12/honeyjar-offers-ai-tools-to-improve-pr-and-comms-at-every-company/
+2026-10-13 — отправлено — Meta запустила Muse for Small Business: ИИ-агент для маркетинга и операционки, недоступен из России — https://www.axios.com/2026/09/29/meta-muse-ai-small-business
