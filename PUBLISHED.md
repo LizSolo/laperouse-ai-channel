@@ -408,3 +408,11 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-14 — отправлено — Anthropic обновила Usage Policy: с 12 ноября отдельные требования для здравоохранения, права, финансов, HR и автономного оборудования — https://www.anthropic.com/news/2026-usage-policy-update
 2026-10-14 — отправлено — Character.AI подала на банкротство через 5 лет после основания, активы продают частями Disney — https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/
 2026-10-14 — отправлено — American Express представила Intent Intelligence Framework: фиксирует намерение покупателя до того, как ИИ-агент совершит покупку — https://techcrunch.com/2026/10/13/amex-introduces-a-framework-to-prevent-ai-agents-from-making-unauthorized-purchases/
+2026-10-15 — отправлено — ИИ для руководителя: я отдал ассистенту половину рутины — где он сэкономил часы, а где подставил (Аспро.Cloud) — https://habr.com/ru/companies/aspro/articles/1094330/
+2026-10-15 — отправлено — Google разрешила ставить на Android приложения из AI Studio без публикации в Google Play — https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you/
+2026-10-15 — отправлено — Владислав Беляев, AutoFAQ.ai: разработка с ИИ может оказаться дороже готового решения — https://www.cnews.ru/articles/2026-10-13_vladislav_belyaevautofaqai_razrabotka
+2026-10-15 — отправлено — Бесплатная транскрибация аудио и видео любого размера: подборка инструментов — https://vc.ru/ai/3193848-besplatnaya-transkribatsiya-audio-i-video
+2026-10-15 — отправлено — Личный ИИ-агент без платной подписки: как считать пользу для бизнеса (Павел Вензовский) — https://habr.com/ru/articles/1094234/
+2026-10-15 — отправлено — Google приостановила раскатку Gemini Skills в Workspace, сроки отключения Gems не изменились — https://workspaceupdates.googleblog.com/2026/09/skills-gemini-app-workspace.html
+2026-10-15 — отправлено — Floqer: ИИ-агенты ищут и обогащают данные о клиентах для B2B команд продаж — https://techcrunch.com/2026/10/14/floqers-ai-agents-help-b2b-revenue-teams-research-customers/
+2026-10-15 — отправлено — Apate: ИИ-агенты выдают себя за жертв мошенников, чтобы собирать данные о мошеннических схемах — https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/
