@@ -416,3 +416,13 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-15 — отправлено — Google приостановила раскатку Gemini Skills в Workspace, сроки отключения Gems не изменились — https://workspaceupdates.googleblog.com/2026/09/skills-gemini-app-workspace.html
 2026-10-15 — отправлено — Floqer: ИИ-агенты ищут и обогащают данные о клиентах для B2B команд продаж — https://techcrunch.com/2026/10/14/floqers-ai-agents-help-b2b-revenue-teams-research-customers/
 2026-10-15 — отправлено — Apate: ИИ-агенты выдают себя за жертв мошенников, чтобы собирать данные о мошеннических схемах — https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/
+2026-10-16 — отправлено — Токеномика прайсов: три валюты, в которых нам выставляют счёт за ИИ — https://habr.com/ru/companies/ru_mts/articles/1093270/
+2026-10-16 — отправлено — «Переводчик с тимлидского»: что слышит команда, когда вы говорите «внедряем ИИ-агентов» — https://habr.com/ru/articles/1095024/
+2026-10-16 — отправлено — Внутренний AI-ассистент: как перейти от идеи «сделаем свой ChatGPT» к работающему сервису — https://vc.ru/services/3195913-vnutrenniy-ai-assistent-kak-sozdat-korporativnyy-chatgpt
+2026-10-16 — отправлено — Битрикс24 открыл тестовый доступ к приложению «Коворк/Код» на базе BitrixGPT 5.6 — https://www.bitrix24.ru/journal/bitrix24-cowork-code-test/
+2026-10-16 — отправлено — ВкусВилл обновил MCP-сервер: добавил OAuth-авторизацию для внешних ИИ-агентов — https://habr.com/ru/companies/vkusvill/articles/1094732/
+2026-10-16 — отправлено — Fast mode для Claude Opus 5.5 вышел из research preview, лимит появился в уровнях API Start/Build/Scale — https://platform.claude.com/docs/en/release-notes/overview
+2026-10-16 — отправлено — Gmail Live и AI Inbox: голосовой поиск по почте и разбор переписки в задачи для платных Workspace — https://workspaceupdates.googleblog.com/2026/10/gmails-ai-inbox-is-rolling-out-to-paid-Workspace-users.html
+2026-10-16 — отправлено — Figma представила Figma Specs и другие функции для работы ИИ-агентов с дизайн-системой — https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/
+2026-10-16 — отправлено — Zenzap: корпоративный чат-мессенджер с ИИ для сотрудников без личного компьютера — https://techcrunch.com/2026/10/14/zenzap-raises-44m-for-its-ai-chat-app-that-aims-to-replace-whatsapp-in-the-workplace/
+2026-10-16 — отправлено — Amazon Bee выпустила два носимых ИИ-устройства для записи разговоров — https://techcrunch.com/2026/10/15/amazons-bee-launches-two-new-personal-ai-devices-starting-at-75/
