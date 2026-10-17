@@ -426,3 +426,7 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-16 — отправлено — Figma представила Figma Specs и другие функции для работы ИИ-агентов с дизайн-системой — https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/
 2026-10-16 — отправлено — Zenzap: корпоративный чат-мессенджер с ИИ для сотрудников без личного компьютера — https://techcrunch.com/2026/10/14/zenzap-raises-44m-for-its-ai-chat-app-that-aims-to-replace-whatsapp-in-the-workplace/
 2026-10-16 — отправлено — Amazon Bee выпустила два носимых ИИ-устройства для записи разговоров — https://techcrunch.com/2026/10/15/amazons-bee-launches-two-new-personal-ai-devices-starting-at-75/
+2026-10-17 — отправлено — GigaStudio от Сбера открыли для широкой аудитории: ИИ-конструктор сайтов и веб-приложений без кода — https://www.cnews.ru/news/line/2026-10-16_ii-instrument_dlya_sozdaniya
+2026-10-17 — отправлено — Сколько живёт ссылка в ответе нейросети: замер устойчивости цитирований у Алисы AI и Perplexity — https://habr.com/ru/articles/1095330/
+2026-10-17 — отправлено — Реклама, сделанная людьми, вовлекает сильнее, чем ИИ-креативы: исследование Ipsos и Сиракузского университета — https://www.bitrix24.ru/journal/ii-kreativy-reklama-issledovanie/
+2026-10-17 — отправлено — Jev от TypeSafe AI: «решающая» модель для классификации и роутинга на Vercel AI Gateway — https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/
