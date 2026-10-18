@@ -430,3 +430,6 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-17 — отправлено — Сколько живёт ссылка в ответе нейросети: замер устойчивости цитирований у Алисы AI и Perplexity — https://habr.com/ru/articles/1095330/
 2026-10-17 — отправлено — Реклама, сделанная людьми, вовлекает сильнее, чем ИИ-креативы: исследование Ipsos и Сиракузского университета — https://www.bitrix24.ru/journal/ii-kreativy-reklama-issledovanie/
 2026-10-17 — отправлено — Jev от TypeSafe AI: «решающая» модель для классификации и роутинга на Vercel AI Gateway — https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/
+2026-10-18 — отправлено — Сотрудник Anthropic Japan передал рутину продаж флоту из 6 агентов Claude (команда «Nakama») — https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day
+2026-10-18 — отправлено — ИИ-агенты как участники команды в Jira: роли AI front-dev, backend-агент и бизнес-аналитик через поле Assignee — https://habr.com/ru/articles/1095690/
+2026-10-18 — отправлено — Blueprints AI v2: генерация согласованных по строительным нормам чертежей сразу по всем разделам здания — https://techcrunch.com/2026/10/12/this-ai-startup-says-it-can-generate-permit-ready-blueprints-in-minutes/
