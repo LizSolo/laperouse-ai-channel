@@ -456,3 +456,10 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-21 — отправлено — ChatGPT теперь можно заблокировать: PIN-код или Face ID для отдельных чатов — https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/
 2026-10-21 — отправлено — Gemini запускает бизнес-страницу и инструменты для владельцев малого бизнеса: брендинг, финансы, подключение Shopify/Canva/Zoho и других сервисов — https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/
 2026-10-21 — отправлено — Claude Code Review вышел из research preview в общую доступность для Claude Team и Enterprise — https://claude.com/blog/code-review-is-now-generally-available
+2026-10-22 — отправлено — Свой конвейер Reels: бесплатный open-source OpenShorts вместо OpusClip/Klap/Submagic — https://vc.ru/ai/3198180-kak-sozdat-svoy-konveyer-reels-besplatno
+2026-10-22 — отправлено — HoneyBook собрала AI-ревьюера на Claude Code из трёх лет комментариев к PR, сэкономила почти 7 раз — https://habr.com/ru/companies/otus/articles/1096720/
+2026-10-22 — отправлено — Локальный ИИ на видеокарте Tesla V100 за 130 000 рублей для работы с внутренними документами — https://vc.ru/ai/3204627-sborka-kompyutera-dlya-lokalnogo-zapuskai-ii-na-baze-tesla-v100
+2026-10-22 — отправлено — Google Docs Live: голосовой соавтор в мобильном приложении собирает структурированный черновик документа — http://workspaceupdates.googleblog.com/2026/10/create-structured-documents-using-just-your-voice-with-Docs-Live-in-Google-Docs-on-mobile.html
+2026-10-22 — отправлено — Walmart запустил Agent Gateway для покупок ИИ-агентами, Amazon таких агентов блокирует — https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/
+2026-10-22 — отправлено — Опрос Monday.com и Nielsen: ИИ усложнил менеджерам оценку работы сотрудников — https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/
+2026-10-22 — отправлено — Anthropic обновила Usage Policy: требования к Claude в найме, оценке клиентов и управлении оборудованием — https://www.anthropic.com/news/2026-usage-policy-update
