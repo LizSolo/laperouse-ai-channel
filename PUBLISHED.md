@@ -474,3 +474,11 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-23 — отправлено — 1Password for Agents: ИИ-агент входит в аккаунт по подтверждению, не видя сам пароль — https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/
 2026-10-23 — отправлено — Canva Craft: первая модель генерации изображений Canva с редактированием через Canva Magic — https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/
 2026-10-23 — отправлено — Anthropic передаёт стандарт Agent Skills в нейтральный фонд Agentic AI Foundation при Linux Foundation — https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation
+2026-10-24 — отправлено — AI-тексты в карточках товаров: почему покупатели против — https://vc.ru/ai/3211829-pokupateli-protiv-ai-tekstov-v-kartochkakh-tovarov
+2026-10-24 — отправлено — «Наш ИИ принимал настоящие заказы. Проект всё равно закрыли» — https://vc.ru/ai/3212616-pochemu-biznes-otkazyvaetsya-ot-ii-proektov
+2026-10-24 — отправлено — 5 уровней ИИтизации процессов: как понять, на каком вы сейчас — https://habr.com/ru/articles/1098154/
+2026-10-24 — отправлено — Предвзятость с убедительным объяснением: как нейросети дискриминируют кандидатов при скрининге резюме — https://habr.com/ru/articles/1098436/
+2026-10-24 — отправлено — Радиус поражения: семь рамок перед тем как пустить ИИ-агента на свой сервер — https://habr.com/ru/articles/1098582/
+2026-10-24 — отправлено — OpenAI открыла доступ к Decisions API для быстрых да/нет-решений — https://vc.ru/ai/3211419-openai-otkryla-dostup-k-decisions-api
+2026-10-24 — отправлено — Топ-9 AI-сервисов для создания контента и роста блога без команды — https://vc.ru/ai/3212571-top-ai-servisov-dlya-sozdaniya-kontenta
+2026-10-24 — отправлено — Gemini Notebook: действия с блокнотами прямо из приложения Gemini — http://workspaceupdates.googleblog.com/2026/10/take-actions-on-your-notebooks-from-Gemini-Notebook-directly-in-the-Gemini-app.html
