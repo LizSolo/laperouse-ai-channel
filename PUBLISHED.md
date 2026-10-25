@@ -482,3 +482,11 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-24 — отправлено — OpenAI открыла доступ к Decisions API для быстрых да/нет-решений — https://vc.ru/ai/3211419-openai-otkryla-dostup-k-decisions-api
 2026-10-24 — отправлено — Топ-9 AI-сервисов для создания контента и роста блога без команды — https://vc.ru/ai/3212571-top-ai-servisov-dlya-sozdaniya-kontenta
 2026-10-24 — отправлено — Gemini Notebook: действия с блокнотами прямо из приложения Gemini — http://workspaceupdates.googleblog.com/2026/10/take-actions-on-your-notebooks-from-Gemini-Notebook-directly-in-the-Gemini-app.html
+2026-10-25 — отправлено — ИИ-агент покупает чехол на маркетплейсах: тест Ozon, Wildberries, Яндекс Маркет и Мегамаркета — https://vc.ru/ai/3212795-ii-agenty-dlya-pokupok-test-na-ozon-wildberries-i-yandeks-market
+2026-10-25 — отправлено — Где нейросетевой текст уместен, а где отпугивает читателя — https://habr.com/ru/articles/1098876/
+2026-10-25 — отправлено — Опрос «Дела PR»: 37% компаний не следят, что нейросети говорят об их бренде — https://www.bitrix24.ru/journal/news/kompanii-reputaciya-neyroseti-opros/
+2026-10-25 — отправлено — ChatGPT Locked Chats: скрытые чаты с PIN-кодом или Face ID — https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/
+2026-10-25 — отправлено — Cloudflare выложила открытый скилл для ИИ-аудита безопасности кода — https://vc.ru/ai/3213989-skill-cloudflare-dlya-audita-bezopasnosti-koda
+2026-10-25 — отправлено — Музыкальный клип в ChatGPT/Claude через коннектор CyHUB — https://vc.ru/ai/3213758-sozdanie-muzykalnogo-klipa-s-pomoshchyu-chatgpt-i-claude
+2026-10-25 — отправлено — 258 попыток генерации на один клип: реальная цена ИИ-видео (Higgsfield) — https://vc.ru/ai/3214447-generaciya-video-s-neirosetyami-slozhnosti-i-opyt-komandy
+2026-10-25 — отправлено — ИИ-агенты, с которыми общаются текстовыми сообщениями (TechCrunch) — https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/
