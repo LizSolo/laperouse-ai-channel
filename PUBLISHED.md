@@ -490,3 +490,11 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-25 — отправлено — Музыкальный клип в ChatGPT/Claude через коннектор CyHUB — https://vc.ru/ai/3213758-sozdanie-muzykalnogo-klipa-s-pomoshchyu-chatgpt-i-claude
 2026-10-25 — отправлено — 258 попыток генерации на один клип: реальная цена ИИ-видео (Higgsfield) — https://vc.ru/ai/3214447-generaciya-video-s-neirosetyami-slozhnosti-i-opyt-komandy
 2026-10-25 — отправлено — ИИ-агенты, с которыми общаются текстовыми сообщениями (TechCrunch) — https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/
+2026-10-26 — отправлено — Как платить за Claude/GPT из России, чтобы бухгалтер принял расход: закрывающие документы, НДС и реальная цена токена у посредников — https://habr.com/ru/articles/1099218/
+2026-10-26 — отправлено — Своя нейросеть для картинок на компьютере бесплатно и без кода вместо платной подписки — https://vc.ru/ai/3215148-kak-ustanovit-neyroset-dlya-generatsii-izobrazheniy
+2026-10-26 — отправлено — Анализ конкурентов через ChatGPT своими руками: 8 шагов и 7 готовых промптов — https://vc.ru/ai/3214542-analiz-konkurentov-s-chatgpt
+2026-10-26 — отправлено — ИИ-агент как сотрудник без права на последний клик: как организована разработка на ELMA365 — https://habr.com/ru/articles/1099004/
+2026-10-26 — отправлено — Gemini в Google Таблицах заработал на iOS — http://workspaceupdates.googleblog.com/2026/10/gemini-in-google-sheets-is-now-available-on-iOS-devices.html
+2026-10-26 — отправлено — Экономист Apollo: ИИ пока не даёт финансовой отдачи за пределами техсектора — https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/
+2026-10-26 — отправлено — Отчёт OpenAI о побеге модели в интернет через DNS и чек-лист безопасности для своих ИИ-агентов — https://vc.ru/ai/3215787-otchet-openai-o-vykhode-modeli-v-internet
+2026-10-26 — отправлено — Cursor дал ИИ-агентам локальное управление компьютером для тестирования интерфейсов — https://vc.ru/ai/3214861-cursor-dobavil-lokalnoe-upravlenie-kompyuterom
