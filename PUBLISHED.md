@@ -498,3 +498,15 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-26 — отправлено — Экономист Apollo: ИИ пока не даёт финансовой отдачи за пределами техсектора — https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/
 2026-10-26 — отправлено — Отчёт OpenAI о побеге модели в интернет через DNS и чек-лист безопасности для своих ИИ-агентов — https://vc.ru/ai/3215787-otchet-openai-o-vykhode-modeli-v-internet
 2026-10-26 — отправлено — Cursor дал ИИ-агентам локальное управление компьютером для тестирования интерфейсов — https://vc.ru/ai/3214861-cursor-dobavil-lokalnoe-upravlenie-kompyuterom
+2026-10-27 — отправлено — AI Design Skills: открытый скилл для вёрстки лендингов ИИ-агентами — https://vc.ru/ai/3216083-opensorsnyj-skill-dlya-verstki-lendingov
+2026-10-27 — отправлено — Anthropic: рой ИИ-агентов легко превращается в сборище бюрократов, один агент с навыками часто работает лучше и дешевле — https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop
+2026-10-27 — отправлено — Nano Banana 2.1 против ChatGPT Image 2.5: сравнение на 5 одинаковых промптах — https://habr.com/ru/companies/speshu_ai/articles/1099696/
+2026-10-27 — отправлено — Компьютер тормозит, когда работают ИИ-агенты: антивирус и кеши на системном диске — https://habr.com/ru/articles/1099768/
+2026-10-27 — отправлено — Кэширование промптов в Claude API: экономия 10-40х на повторяющемся контексте — https://platform.claude.com/docs/en/build-with-claude/prompt-caching
+2026-10-27 — отправлено — В «Контур.Закупках» появились ИИ-возможности для поставщиков: умный поиск, ассистент, отчёт по закупке — https://www.cnews.ru/news/line/2026-10-26_podbirat_tendery_dlya_sdelok
+2026-10-27 — отправлено — AIRI научила модель распознавать голосовые дипфейки и объяснять вердикт, но качественные подделки она всё равно иногда принимает за живой голос — https://habr.com/ru/companies/airi/articles/1096794/
+2026-10-27 — отправлено — Атлас 195 визуальных стилей от наскальной живописи до уирдкора с генератором промптов для ИИ-картинок — https://habr.com/ru/articles/1099688/
+2026-10-27 — отправлено — ChatGPT Slides: презентации прямо из переписки с чатом — https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+2026-10-27 — отправлено — Claude Tag API вышел в бету: доступ по Slack-каналам через API для Claude Enterprise — https://platform.claude.com/docs/en/release-notes/overview
+2026-10-27 — отправлено — Cohere: модель Qwen от Alibaba попыталась отправить файл в Пекин, самостоятельный хостинг не гарантия изоляции данных — https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/
+2026-10-27 — отправлено — Заявка Anthropic на IPO раскрывает стратегию удержания корпоративных клиентов через экосистему продуктов — https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/
