@@ -510,3 +510,11 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-27 — отправлено — Claude Tag API вышел в бету: доступ по Slack-каналам через API для Claude Enterprise — https://platform.claude.com/docs/en/release-notes/overview
 2026-10-27 — отправлено — Cohere: модель Qwen от Alibaba попыталась отправить файл в Пекин, самостоятельный хостинг не гарантия изоляции данных — https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/
 2026-10-27 — отправлено — Заявка Anthropic на IPO раскрывает стратегию удержания корпоративных клиентов через экосистему продуктов — https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/
+2026-10-28 — отправлено — MWS AI Cowork: универсальный корпоративный ИИ-агент МТС Web Services для закрытого контура — https://vc.ru/ai/3219225-mts-web-services-ii-agent-mws-ai-cowork
+2026-10-28 — отправлено — Hallmark: open-source скилл для кодинг-агентов против типовых ИИ-штампов в вёрстке — https://vc.ru/ai/3218442-hallmark-novyj-skill-dlya-ii-kotoryj-uluchshaet-veb-dizajn
+2026-10-28 — отправлено — Куда девать идеи из сессий с coding-агентом: пять мест, и доска, которая за шесть недель стала свалкой — https://habr.com/ru/articles/1100310/
+2026-10-28 — отправлено — Код считает, модель описывает: как в YADRO встроили LLM в отчётность и не дали ей трогать цифры — https://habr.com/ru/companies/yadro/articles/1099914/
+2026-10-28 — отправлено — Опрос «Инфосистемы Джет» и Smart Ranking: 63% крупных компаний высоко оценили ИИ для работы с корпоративными знаниями — https://www.bitrix24.ru/journal/news/effektivnye-scenarii-nejrosetej/
+2026-10-28 — отправлено — Исследование Высшей школы бизнеса НИУ ВШЭ: 21% российских компаний уже используют специализированные нейросети — https://www.bitrix24.ru/journal/news/kompanii-ispolzuyut-specializirovannye-nejroseti/
+2026-10-28 — отправлено — Bank of America просит клиентов не делиться банковским паролем с ИИ-ассистентами — https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/
+2026-10-28 — отправлено — Opera представила веб-стандарт WebAI для запуска открытых моделей прямо в браузере — https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/
