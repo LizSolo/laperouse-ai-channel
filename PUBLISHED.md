@@ -518,3 +518,15 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-28 — отправлено — Исследование Высшей школы бизнеса НИУ ВШЭ: 21% российских компаний уже используют специализированные нейросети — https://www.bitrix24.ru/journal/news/kompanii-ispolzuyut-specializirovannye-nejroseti/
 2026-10-28 — отправлено — Bank of America просит клиентов не делиться банковским паролем с ИИ-ассистентами — https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/
 2026-10-28 — отправлено — Opera представила веб-стандарт WebAI для запуска открытых моделей прямо в браузере — https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/
+2026-10-29 — отправлено — Где разместить рекламу в AI-сервисах: сравнение Adent, Gradius, Kontezza, Koah и Kontext — https://vc.ru/ai/3222542-gde-razmestit-reklamu-v-ai-servisakh
+2026-10-29 — отправлено — Как собрать ИИ-агента для поиска клиентов в Aizor без программиста — https://vc.ru/ai/3221438-sozdanie-ii-agenta-dlya-poiska-klientov-v-aizor
+2026-10-29 — отправлено — Claude пишет 90% своего кода: система контроля качества Anthropic — https://vc.ru/ai/3222101-claude-razrabatyvaet-kod-s-pomoshchyu-ii-sistema-kontrolya-kachestva-anthropic
+2026-10-29 — отправлено — Нейросети дороже обрабатывают запросы на русском, чем на английском — https://www.cnews.ru/news/top/2026-10-28_mir_pogryaz_v_tsifrovom_natsizme
+2026-10-29 — отправлено — OSiO и Uncom: локальный ИИ-блок для работы с данными без облака — https://www.cnews.ru/news/line/2026-10-28_osio_i_uncom_predstavili_ii-kompleks
+2026-10-29 — отправлено — Битрикс24 выпустил Бизнес-процессы 2.0 с ИИ-агентами — https://www.bitrix24.ru/journal/news/konstruktor-biznes-processov-ai-bitrix24/
+2026-10-29 — отправлено — Fill with Gemini в Google Таблицах: ссылки на источники по каждой ячейке — http://workspaceupdates.googleblog.com/2026/10/fill-with-gemini-now-provides-cell-level-citations-for-web-sources-and-supports-larger-requests.html
+2026-10-29 — отправлено — Опрос «Билайн бизнес»: 38% компаний доверили общение с клиентами ИИ-агентам — https://www.bitrix24.ru/journal/news/kompanii-doverili-obshchenie-ii-agentam/
+2026-10-29 — отправлено — Anthropic запустила отчётность по расходам компаний на Claude — https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/
+2026-10-29 — отправлено — Nvidia выпустила открытую модель транскрибации Nemotron 3.5 Transcribe — https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/
+2026-10-29 — отправлено — Chrome научился заполнять формы данными из Gmail — https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/
+2026-10-29 — отправлено — Gemini выпустил новые инструменты для владельцев малого бизнеса — https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/
