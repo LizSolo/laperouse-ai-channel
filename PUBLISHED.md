@@ -530,3 +530,37 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-29 — отправлено — Nvidia выпустила открытую модель транскрибации Nemotron 3.5 Transcribe — https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/
 2026-10-29 — отправлено — Chrome научился заполнять формы данными из Gmail — https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/
 2026-10-29 — отправлено — Gemini выпустил новые инструменты для владельцев малого бизнеса — https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/
+2026-10-30 — отправлено — СИБУР: агентная система из восьми агентов разбирает входящие письма клиентов на разных языках — https://habr.com/ru/companies/sibur_official/articles/1101182/
+2026-10-30 — отправлено — Почему нейросети описывают товар общими словами: видимость сайта для ИИ-ботов (GEO/AI-SEO) — https://habr.com/ru/articles/1101396/
+2026-10-30 — отправлено — Бизнес-тренер провела ИИ-аудит языкового центра: что ChatGPT и Алиса рассказывают о компании клиентам — https://vc.ru/ai/3224433-personalnoe-obuchenie-ii-dlya-rukovoditeley-yazykovyh-tsentrov
+2026-10-30 — отправлено — Три китайские нейросети (Kolors, Kimi AI, Kling AI) как бесплатные альтернативы Midjourney/Claude Pro/Seedance — https://vc.ru/ai/3224477-kitayskie-nevroseti-besplatnye-alternativy
+2026-10-30 — отправлено — Сбер запустил Zoobr: мобильное приложение для интерактивного обучения по любой теме — https://vc.ru/ai/3223300-sber-zapustil-ii-servis-zoobr-dlya-interaktivnogo-obucheniya
+2026-10-30 — отправлено — CNews: какие задачи бизнес отдаёт чат-ботам и где ИИ пока не доверяют (разбор форума) — https://www.cnews.ru/articles/2026-10-08_kakie_zadachi_biznes_otdaet_chat-botam
+2026-10-30 — отправлено — «Видеокарты — ещё не инфраструктура»: риски самостоятельного внедрения ИИ на предприятии — https://www.cnews.ru/articles/2026-10-22_videokarty_eshche_ne_infrastruktura
+2026-10-30 — отправлено — Gemini для личных аккаунтов: с 9 октября режим Auto по умолчанию, без подписки — только Flash-Lite — https://support.google.com/gemini/answer/17004136
+2026-10-30 — отправлено — Gemini: создание, просмотр и редактирование файлов (слайды, таблицы, PDF, код) прямо в чате — http://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html
+2026-10-30 — отправлено — Reddit переходит на логин-доступ для части контента из-за падения органического поискового трафика — https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/
+2026-10-30 — отправлено — Иск к OpenAI: GPT-4o якобы помог сотруднице Amazon снизить дозу лекарства от эпилепсии — https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/
+2026-10-30 — отправлено — Anthropic выпустила пять интерактивных Artifacts для юридической работы в Claude — https://vc.ru/ai/3222987-interaktivnye-artifacts-ot-anthropic-dlya-avtomatizatsii-yuridicheskoy-raboty
+2026-10-30 — отправлено — Kimi K3: открытая модель Moonshot AI на 2,8 трлн параметров с весами в открытом доступе — https://habr.com/ru/companies/pt/articles/1101328/
+2026-10-30 — отправлено — Открытый навык video-use для Claude Code автоматически монтирует видео по текстовой расшифровке — https://habr.com/ru/companies/speshu_ai/articles/1101338/
+2026-10-30 — отправлено — «Газпром нефть» построила нейросеть «Алхимик» для подбора рецептур масел на своих данных — https://habr.com/ru/articles/1101256/
+2026-10-30 — отправлено — MWS Tables: ИИ-ассистент собирает структуру таблиц и формулы по текстовому описанию — https://habr.com/ru/companies/mws/articles/1098494/
+2026-10-30 — отправлено — Фрилансер заработал $2 млн за год на сервисе, прототип которого написал с Claude Code — https://vc.ru/ai/3223618-vaybkoding-kak-frilanser-zarabotat-2-milliona-dollars-na-servise
+2026-10-30 — отправлено — Пользователей Claude из России и Китая блокируют по паспортным данным, сравнение с Kimi при оплате картой «Мир» — https://vc.ru/ai/3223657-blokirovki-polzovatelei-claude-iz-rossii-i-kitaya
+2026-10-30 — отправлено — Claude: ежемесячные API-кредиты для тарифов Max и Team, нужно привязать Claude Console — https://support.claude.com/en/articles/12138966-release-notes
+2026-10-30 — отправлено — Claude API: максимальный размер запроса вырос с 32 МБ до 128 МБ — https://platform.claude.com/docs/en/release-notes/overview
+2026-10-30 — отправлено — Claude API: fast mode для Opus 5.5 вышел из research preview, лимит по умолчанию на тарифах Start/Build/Scale — https://platform.claude.com/docs/en/release-notes/overview
+2026-10-30 — отправлено — Claude: администраторы организации могут отключать web fetch или ограничивать домены — https://platform.claude.com/docs/en/release-notes/overview
+2026-10-30 — отправлено — Notion 3.8: MCP-доступ под контролем админа, Skills API, права на уровне колонок, биллинг через ChatGPT — https://www.notion.com/releases
+2026-10-30 — отправлено — Google Таблицы: компактный макет сводных таблиц теперь сохраняется при экспорте в Excel — http://workspaceupdates.googleblog.com/2026/10/apply-compact-form-layout-for-pivot-tables-in-Google-Sheets.html
+2026-10-30 — отправлено — ChatGPT научился подключаться к iCloud Mail и Calendar — https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+2026-10-30 — отправлено — ChatGPT: плагин Meetings в бете для macOS на тарифах Pro и Business ведёт заметки со встреч — https://help.openai.com/en/articles/20001546-the-meetings-plugin-in-chatgpt
+2026-10-30 — отправлено — Google расширяет рекламу в режиме AI Mode за пределы США впервые — https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/
+2026-10-30 — отправлено — Wabi: ИИ-агент собирает рабочие мини-приложения по текстовому описанию задачи — https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/
+2026-10-30 — отправлено — Meta тихо запустила AI-приложение для подбора образов одежды Style Sketch — https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/
+2026-10-30 — отправлено — Barclays масштабирует Claude по всему банку: маршрутизация ~120 000 писем клиентов в день — https://www.anthropic.com/news/barclays-scales-claude
+2026-10-30 — отправлено — DeepMind и GovTech Сингапура: модель на устройстве для детекции скама в переписке без отправки в облако — https://deepmind.google/blog/on-device-ai-scam-detection-mddi/
+2026-10-30 — отправлено — Anthropic запустила Cyber Mission: бесплатное ИИ-сканирование уязвимостей open-source проектов (OSS Scanner) — https://www.anthropic.com/news/anthropic-cyber-mission
+2026-10-30 — отправлено — OpenAI и Atlassian расширяют партнёрство: модели GPT-6 Astra и GPT-5.6 в Jira/Confluence через Rovo — https://openai.com/index/atlassian-partnership/
+2026-10-30 — отправлено — OpenAI и Ironclad обучили и проверили ИИ-агентов на 11 задачах по работе с контрактами — https://openai.com/index/advancing-computer-use-with-ironclad/
