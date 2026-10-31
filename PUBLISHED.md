@@ -564,3 +564,31 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-10-30 — отправлено — Anthropic запустила Cyber Mission: бесплатное ИИ-сканирование уязвимостей open-source проектов (OSS Scanner) — https://www.anthropic.com/news/anthropic-cyber-mission
 2026-10-30 — отправлено — OpenAI и Atlassian расширяют партнёрство: модели GPT-6 Astra и GPT-5.6 в Jira/Confluence через Rovo — https://openai.com/index/atlassian-partnership/
 2026-10-30 — отправлено — OpenAI и Ironclad обучили и проверили ИИ-агентов на 11 задачах по работе с контрактами — https://openai.com/index/advancing-computer-use-with-ironclad/
+2026-10-31 — отправлено — Росгосстрах разобрал пилот из 500 комплаенс-задач за 12-24 часа вместо недели конвейером из n8n и локальных моделей Ollama — https://habr.com/ru/companies/rgs_it/articles/1101682/
+2026-10-31 — отправлено — Консультант разбирает частую ошибку внедрения ИИ: инструкции без привязки к бизнес-цели и вопроса «что изменится для сотрудника» — https://habr.com/ru/articles/1101946/
+2026-10-31 — отправлено — ВТБ персонализирует каналы и время связи с клиентами на основе 30 тысяч признаков истории откликов — https://www.cnews.ru/news/line/2026-10-30_vtb_personaliziroval_kommunikatsii
+2026-10-31 — отправлено — «Билайн бизнес» запустил Контакт.ИИ: облачную телефонию, CRM с чат-ботом и ИИ-аналитику в одной платформе — https://www.cnews.ru/news/line/2026-10-30_kontaktii_ot_bilajn_biznes
+2026-10-31 — отправлено — Опрос СберПро и TAdviser: 80% компаний планируют расширять генеративный ИИ, но 65% пилотов не доходят до регулярного использования — https://www.bitrix24.ru/journal/news/vnedrenie-generativnogo-ii-issledovanie/
+2026-10-31 — отправлено — На фоне падения акций Alphabet на 12% за день: как не завязывать критичный ИИ-процесс бизнеса на одном тарифе — https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/
+2026-10-31 — отправлено — DoorDash получил всего несколько сотен заказов от ИИ-агентов против миллионов через собственное приложение — https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/
+2026-10-31 — отправлено — Стартап Pomerado из Y Combinator подключает ИИ-агентов к сайтам без API через MCP-интеграции — https://vc.ru/ai/3226229-podklyuchenie-ii-k-saytu-bez-api-startap-pomerado
+2026-10-31 — отправлено — Google и Purdue: метод SKILL.state убирает историю шагов агента и заметно снижает расход токенов — https://vc.ru/ai/3226710-google-i-purdue-optimizirovali-ii-agenta-s-ispolzovaniem-skill-state
+2026-10-31 — отправлено — OpenAI вдвое увеличила лимиты на тарифах ChatGPT Pro и Business Premium с 29 октября — https://vc.ru/ai/3225297-openai-uvelichila-limity-dlya-tarifov-pro-i-business-premium
+2026-10-31 — отправлено — Google закрывает ИИ-агента для кода Jules к 31 декабря, предлагает выгрузить историю сессий заранее — https://vc.ru/ai/3225552-google-prekrashchaet-podderzhku-ii-agenta-jules
+2026-10-31 — отправлено — Nano Banana (модели Google для редактирования изображений) в России: доступ только через сервисы-посредники — https://vc.ru/ai/3225945-kak-ispolzovat-nano-banana-v-rossii
+2026-10-31 — отправлено — HOSTKEY собрал бота техподдержки на открытой модели Gemma с конвейером проверок вокруг ответов — https://habr.com/ru/companies/hostkey/articles/1101710/
+2026-10-31 — отправлено — МТС описала систему Hard Stop: контроль автономных ИИ-агентов на уровне операционной системы — https://habr.com/ru/companies/ru_mts/articles/1097646/
+2026-10-31 — отправлено — ВТБ пока не доверяет ИИ самостоятельное управление ИТ-инфраструктурой банка, хотя операционные задачи ИИ уже ускорил в разы — https://www.cnews.ru/news/line/2026-10-30_vtb_ii_poka_nelzya_doverit
+2026-10-31 — отправлено — Claude API: fast mode для модели Opus 4.8 объявлен устаревшим, отключение 30 ноября — https://platform.claude.com/docs/en/release-notes/overview
+2026-10-31 — отправлено — Claude API: Usage and Cost Analytics API вышел в бету с детализацией расходов по workspace и пользователю — https://platform.claude.com/docs/en/manage-claude/usage-cost-analytics-api
+2026-10-31 — отправлено — Google Slides: Gemini теперь редактирует всю презентацию одним запросом вместо одного слайда за раз — http://workspaceupdates.googleblog.com/2026/10/edit-entire-presentations-with-gemini-in-Google-Slides.html
+2026-10-31 — отправлено — Notion разрешила подключать личную подписку ChatGPT к рабочему ИИ-агенту вместо кредитов Notion AI — https://www.notion.com/releases
+2026-10-31 — отправлено — ChatGPT: Locked Chats закрывает отдельный чат PIN-кодом или Face ID, скрывая его из истории и поиска — https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/
+2026-10-31 — отправлено — Опрос Modifiers и JetLend: 82% предпринимателей готовы рассмотреть подрядчика по рекомендации нейросети — https://www.bitrix24.ru/journal/news/predprinimateli-podryadchik-sovet-ii/
+2026-10-31 — отправлено — Zest запустила ИИ-консьержа, который бронирует рестораны прямо в переписке через OpenTable и Resy — https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/
+2026-10-31 — отправлено — Anthropic передала стандарт Agent Skills независимому фонду Agentic AI Foundation вместе с OpenAI и Block — https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation
+2026-10-31 — отправлено — Anthropic обновила правила использования Claude: с 12 ноября строже требования к высокорисковым сценариям — https://www.anthropic.com/news/2026-usage-policy-update
+2026-10-31 — отправлено — Anthropic расширила Cyber Verification Program: верифицированным ИБ-специалистам меньше блокировок классификатора — https://www.anthropic.com/news/cyber-verification-program
+2026-10-31 — отправлено — Google выпустила открытую модель эмбеддингов EmbeddingGemma 2 для локального поиска без отправки данных в облако — https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/
+2026-10-31 — отправлено — OpenAI и ServiceNow расширили партнёрство: ChatGPT подключается к контуру ServiceNow клиента — https://openai.com/index/openai-servicenow-partnership-expansion/
+2026-10-31 — отправлено — Oracle начала продавать ChatGPT и Codex через свой маркетплейс одним счётом с другими сервисами (пока в США) — https://openai.com/index/oracle-apps-in-chatgpt/
