@@ -614,3 +614,11 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-11-02 — отправлено — Тот же форум: дешёвый вход в ИИ для небольших компаний — один оцифрованный процесс и готовое решение вместо разработки с нуля — https://www.cnews.ru/articles/2026-10-04_grani_iskusstvennogo_intellekta
 2026-11-02 — отправлено — Почему сервис речевой аналитики может правильно распознать разговор и неправильно его оценить: ошибки интерпретации и агрегации — https://habr.com/ru/articles/1102126/
 2026-11-02 — отправлено — «Пять взглядов на искусственный интеллект»: совладелец консалтингового агентства С2 о письменных правилах работы с ИИ-ассистентами — https://vc.ru/ai/3229397-pyat-vzglyadov-na-iskusstvennyy-intellekt
+2026-11-03 — отправлено — Чем заменить Claude Code в России при блокировке: перенос проекта в Codex или OpenCode Go — https://vc.ru/ai/3229117-zamena-claude-code-v-rossii-codex-i-opencode-go
+2026-11-03 — отправлено — Anthropic ограничила Claude Code в клонировании существующих игр даже при переименовании файлов — https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games
+2026-11-03 — отправлено — Кейс на Хабре: медиана решения обращений поддержки упала с 22 часов до 22 минут после цифрового агента, но внедрение не считается завершённым — https://habr.com/ru/articles/1102936/
+2026-11-03 — отправлено — GateRook: открытый шлюз для доступа ИИ-агента к базам и логам компании с подтверждением человека — https://habr.com/ru/articles/1102946/
+2026-11-03 — отправлено — Эксперимент: DeepSeek патчит типовые ошибки 1С:УНФ расширениями, не дожидаясь обновления вендора — https://habr.com/ru/articles/1102948/
+2026-11-03 — отправлено — Adobe: визит с ИИ-трафиком приносит розничным магазинам США на 83% больше выручки, чем остальные каналы — https://www.bitrix24.ru/journal/news/adobe-ii-trafik-vyruchka-83/
+2026-11-03 — отправлено — Claude API: Message threads хранят историю диалога на сервере, сокращая объём запроса в длинных агентных циклах — https://platform.claude.com/docs/en/release-notes/overview
+2026-11-03 — отправлено — OpenAI объединяет вкладки Chat и Work в приложении ChatGPT, общий пул токенов с Codex — https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/
