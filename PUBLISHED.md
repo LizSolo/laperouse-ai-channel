@@ -622,3 +622,12 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-11-03 — отправлено — Adobe: визит с ИИ-трафиком приносит розничным магазинам США на 83% больше выручки, чем остальные каналы — https://www.bitrix24.ru/journal/news/adobe-ii-trafik-vyruchka-83/
 2026-11-03 — отправлено — Claude API: Message threads хранят историю диалога на сервере, сокращая объём запроса в длинных агентных циклах — https://platform.claude.com/docs/en/release-notes/overview
 2026-11-03 — отправлено — OpenAI объединяет вкладки Chat и Work в приложении ChatGPT, общий пул токенов с Codex — https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/
+2026-11-04 — отправлено — Siberian.pro: ИИ-агенты разбирают звонки продажников, готовят КП и следят за воронкой, 4-12 рублей за лид — https://vc.ru/ai/3232155-avtomatizatsiya-prodazh-s-ii-kak-uskorit-rabotu-menedzherov
+2026-11-04 — отправлено — Сбербанк сократил время выпуска контента с двух недель до часа тремя ИИ-проверками вместо каскада согласователей — https://habr.com/ru/companies/sberbank/articles/1103056/
+2026-11-04 — отправлено — Claude Ultra за $200: сняли пятичасовой лимит для подтверждённых аккаунтов, переименование тарифов Max 20x/5x — https://vc.ru/ai/3233458-claude-ultra-za-200-dollarov-snyatie-pyatichasovogo-limita
+2026-11-04 — отправлено — Как платить за DeepSeek API из России: карта для зарубежных платежей или Alipay через Сбербанк — https://vc.ru/ai/3233420-oplata-deepseek-api-iz-rossii
+2026-11-04 — отправлено — Proton подгоняла инженеров использовать ИИ-агентов в ущерб проверке безопасности, затем извинилась — https://vc.ru/ai/3232861-proton-izvinyaetsya-za-prinuzhdenie-k-ispolzovaniyu-ii
+2026-11-04 — отправлено — Рынок ИИ-пентеста в России: тысячи небольших IT-компаний обновляются каждую неделю, а проверяются раз в год или реже — https://vc.ru/ai/3233480-ii-pentest-v-rossii-novye-tehnologii-dlya-zashchity-produktov
+2026-11-04 — отправлено — Генеративная терапевтическая сказка для воспитателя детского сада за 3-5 минут по трём параметрам — https://vc.ru/ai/3234116-generativnyj-ii-v-dou-sozdanie-terapevticheskoj-skazki
+2026-11-04 — отправлено — Google Meet: администратор может показать в Green Room политику компании перед звонком — https://workspaceupdates.googleblog.com/
+2026-11-04 — отправлено — Битрикс24 Вайбкод: как нетехническому сотруднику собрать приложение без кода, кейс рекрутера — https://www.bitrix24.ru/journal/vaybkoding/
