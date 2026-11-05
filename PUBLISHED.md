@@ -631,3 +631,8 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-11-04 — отправлено — Генеративная терапевтическая сказка для воспитателя детского сада за 3-5 минут по трём параметрам — https://vc.ru/ai/3234116-generativnyj-ii-v-dou-sozdanie-terapevticheskoj-skazki
 2026-11-04 — отправлено — Google Meet: администратор может показать в Green Room политику компании перед звонком — https://workspaceupdates.googleblog.com/
 2026-11-04 — отправлено — Битрикс24 Вайбкод: как нетехническому сотруднику собрать приложение без кода, кейс рекрутера — https://www.bitrix24.ru/journal/vaybkoding/
+2026-11-05 — отправлено — Перевод в бизнесе: риски машинного ИИ-перевода во внешнеэкономической деятельности — https://vc.ru/ai/3236101-perevod-v-biznese-riski-iskusstvennyj-intellekt-i-kachestvo-uslug
+2026-11-05 — отправлено — Какую нейросеть выбирать под задачу, а не по общему рейтингу: разбор по 14 задачам — https://vc.ru/ai/3235435-neyroseti-dlya-zadach-modeli-i-ikh-primenenie
+2026-11-05 — отправлено — Как оплатить Perplexity Pro из России: карта для подписок и Stripe в USD — https://vc.ru/ai/3235365-oplata-perplexity-pro-iz-rossii
+2026-11-05 — отправлено — Почти никто не бронирует Uber через ИИ-агента: 4 поездки за самую загруженную неделю октября — https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/
+2026-11-05 — отправлено — Пробелы в базе знаний поддержки видны по истории обращений клиентов — https://habr.com/ru/articles/1103448/
