@@ -636,3 +636,13 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-11-05 — отправлено — Как оплатить Perplexity Pro из России: карта для подписок и Stripe в USD — https://vc.ru/ai/3235365-oplata-perplexity-pro-iz-rossii
 2026-11-05 — отправлено — Почти никто не бронирует Uber через ИИ-агента: 4 поездки за самую загруженную неделю октября — https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/
 2026-11-05 — отправлено — Пробелы в базе знаний поддержки видны по истории обращений клиентов — https://habr.com/ru/articles/1103448/
+2026-11-06 — отправлено — Рекламный ролик с ИИ в SYNTX.AI за пару минут на модели Seedance 2.5 — https://vc.ru/ai/3236052-sozdanie-reklamnogo-rolika-s-ii
+2026-11-06 — отправлено — Выставка роботов-уборщиков в Москве: наблюдения инженера-интегратора для спортзалов и бассейнов — https://vc.ru/ai/3238229-vystavka-robotov-klinerov-v-moskve
+2026-11-06 — отправлено — Скрытые расходы на уборку людьми против роботов: химия на глаз, перерывы, больничные, ночные доплаты — https://vc.ru/ai/3237887-skrytye-raskhody-pri-uborke-roboty-vmesto-lyudey
+2026-11-06 — отправлено — ChatGPT Images 2.6: сохранённые референсы персонажей и GIF-анимации — https://vc.ru/ai/3236627-obnovlenie-chatgpt-images-2-6-gif-animatsii-i-novye-modeli
+2026-11-06 — отправлено — Как выбрать бизнес-процесс для делегирования ИИ: трудозатраты вместо кастдева — https://habr.com/ru/articles/1104192/
+2026-11-06 — отправлено — Claude заблокировал аккаунт после проверки загранпаспорта, через 3 часа восстановили — https://habr.com/ru/articles/1104162/
+2026-11-06 — отправлено — Редизайн 22 страниц сайта с ИИ за один рабочий день, не будучи дизайнером — https://habr.com/ru/articles/1103800/
+2026-11-06 — отправлено — YouGile: правила управления проектами с ИИ, включая расчёт стоимости переноса дедлайна через MCP — https://habr.com/ru/companies/yougile/articles/1103954/
+2026-11-06 — отправлено — СИБУР: агент-критик «душнила» сократил оценку замены материала с 88 дней до двух недель — https://habr.com/ru/companies/sibur_official/articles/1103812/
+2026-11-06 — отправлено — Gemini в Google Forms: автоматические выводы и рекомендации по ответам опроса — https://workspaceupdates.googleblog.com/2026/11/get-actionable-insights-with-gemini-in-Google-Forms.html
