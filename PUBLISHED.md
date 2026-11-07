@@ -646,3 +646,22 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-11-06 — отправлено — YouGile: правила управления проектами с ИИ, включая расчёт стоимости переноса дедлайна через MCP — https://habr.com/ru/companies/yougile/articles/1103954/
 2026-11-06 — отправлено — СИБУР: агент-критик «душнила» сократил оценку замены материала с 88 дней до двух недель — https://habr.com/ru/companies/sibur_official/articles/1103812/
 2026-11-06 — отправлено — Gemini в Google Forms: автоматические выводы и рекомендации по ответам опроса — https://workspaceupdates.googleblog.com/2026/11/get-actionable-insights-with-gemini-in-Google-Forms.html
+2026-11-07 — отправлено — Вайбкодинг кончается хаосом: 637 мест архитектурного дрифта и спецификация как источник истины — https://habr.com/ru/articles/1103890/
+2026-11-07 — отправлено — AIBOM/MLBOM: что стоит за документом «на основе ИИ» у поставщика — https://habr.com/ru/companies/codescoring/articles/1104096/
+2026-11-07 — отправлено — Skill Hub: карточка владельца, версии и прав для ИИ-автоматизаций в команде — https://habr.com/ru/companies/agima/articles/1104082/
+2026-11-07 — отправлено — Супер-бюджетные игровые ассеты с Nano Banana 2 Lite: цена и недочёты — https://habr.com/ru/companies/studyai/articles/1103606/
+2026-11-07 — отправлено — Продакт не читает код ИИ-агента: 89 автоматических проверок вместо чтения кода — https://habr.com/ru/articles/1103924/
+2026-11-07 — отправлено — Box встроил Nvidia Nemotron для поиска по корпоративным документам по смыслу — https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system/
+2026-11-07 — отправлено — Agentic cheminformatics: агент Google Antigravity сокращает дни перебора молекул до часа — https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/
+2026-11-07 — отправлено — Прайс поставщика из фото в Excel за три сообщения ИИ-ассистенту — https://vc.ru/ai/3240265-kak-perenesti-dannye-iz-pdf-v-excel-s-pomoshchyu-ii
+2026-11-07 — отправлено — Как защитить рабочий аккаунт Claude и ChatGPT: второй фактор, экспорт переписки — https://vc.ru/ai/3239480-kak-zashchitit-akkaunt-claude-i-chatgpt-sovety-po-bezopasnosti
+2026-11-07 — отправлено — ИИ-помощник получает контекст 1С и проверяет расширения перед обновлением — https://habr.com/ru/companies/infostart/articles/1104668/
+2026-11-07 — отправлено — Монтаж черновика видео через ИИ-агента в редакторе Edits по протоколу MCP — https://vc.ru/ai/3239921-novyy-redaktor-edits-ot-instagram-s-ii-dlya-montazha
+2026-11-07 — отправлено — Какие нейросети работают в России без VPN: список Битрикс24 — https://www.bitrix24.ru/journal/neyroseti-bez-vpn/
+2026-11-07 — отправлено — ИИ для руководителя: что делегировать и где хранятся данные у 10 инструментов — https://www.bitrix24.ru/journal/ii-dlya-rukovoditelej/
+2026-11-07 — отправлено — DeepSeek Harness: интерфейс для ИИ-агента без программирования, риски сырого продукта — https://vc.ru/ai/3240117-deepseek-harness-sozdanie-interfeysa-dlya-ii-agentov
+2026-11-07 — отправлено — Ассистент для рабочих встреч своими руками: цифры по себестоимости и объёму — https://habr.com/ru/articles/1104684/
+2026-11-07 — отправлено — Perplexity запустила «виртуальных ИИ-сотрудников»: маркетинг без независимой проверки — https://vc.ru/ai/3239132-perplexity-zapustil-virtualnykh-ii-sotrudnikov
+2026-11-07 — отправлено — 45% автоматических ИИ-отчётов о встречах получили низкую оценку: причина в промпте — https://habr.com/ru/companies/atom/articles/1104602/
+2026-11-07 — отправлено — Woof: модель озвучки на 32 МБ работает офлайн в браузере без облачного счёта — https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/
+2026-11-07 — отправлено — Gemini Canvas превращает набросок от руки в рабочее приложение — https://blog.google/innovation-and-ai/products/gemini-app/turn-drawings-into-apps-gemini/
