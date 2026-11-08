@@ -665,3 +665,12 @@ T-02 в `RULES.md` сверяется со **всеми** строками, не
 2026-11-07 — отправлено — 45% автоматических ИИ-отчётов о встречах получили низкую оценку: причина в промпте — https://habr.com/ru/companies/atom/articles/1104602/
 2026-11-07 — отправлено — Woof: модель озвучки на 32 МБ работает офлайн в браузере без облачного счёта — https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/
 2026-11-07 — отправлено — Gemini Canvas превращает набросок от руки в рабочее приложение — https://blog.google/innovation-and-ai/products/gemini-app/turn-drawings-into-apps-gemini/
+2026-11-08 — отправлено — Anthropic тихо ограничила каталог дополнений Claude статусом Verified — https://vc.ru/ai/3241194-anthropic-ogranichila-dostup-k-dopolneniyam-dlya-claude
+2026-11-08 — отправлено — Нейросети в MAX за рубли: что решить до первого платежа — https://habr.com/ru/articles/1104888/
+2026-11-08 — отправлено — SalesAgent: бесплатный ИИ-продавец вместо 200 тысяч рублей в Яндекс Директе — https://habr.com/ru/articles/1104876/
+2026-11-08 — отправлено — Правда ли нейросети выдумывают ссылки и почему в их ответах остаются удалённые статьи — https://habr.com/ru/articles/1104870/
+2026-11-08 — отправлено — E-com и финтех РФ: карта из 424 продуктов, доступных ИИ-агентам — https://habr.com/ru/articles/1104816/
+2026-11-08 — отправлено — Затестил Kimi, Qwen, DeepSeek и Grok на редактуре текстов: модели молча переписывают больше, чем просили — https://habr.com/ru/articles/1104964/
+2026-11-08 — отправлено — Серый рынок зарубежного ИИ вырос до 100-150 млн рублей в месяц — https://www.bitrix24.ru/journal/news/seryy-dostup-k-zarubezhnym-ii-modelyam/
+2026-11-08 — отправлено — 74% покупателей выбирали подарки с помощью нейросетей, но перепроверяют скидки — https://www.bitrix24.ru/journal/news/ii-poisk-podarkov-skidok-opros/
+2026-11-08 — отправлено — Сотни копий хакерского ИИ-инструмента Artex найдены открытыми без пароля — https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/
